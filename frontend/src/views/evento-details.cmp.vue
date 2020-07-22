@@ -3,12 +3,14 @@
     <div class="evento-details-hiro flex align-center">
       <div class="evento-details-hiro-title">
         <h1 class="evento-details-h1">{{evento.title}}</h1>
-        <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2>
-        <h3 class="evento-details-h3">{{evento.tags}}</h3>
-        <h4 class="evento-details-h4">Rating: 5</h4>
+        <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
+        <img :src="evento.createdBy.imgUrl" alt="createdBy" class="creator-img" />
+         
+        <h3  v-for="tag in evento.tags" :key="tag" class="evento-details-h3">{{tag}}</h3>
+        <h4 class="evento-details-h4">Rating: {{evento.createdBy.rating}} ({{evento.createdBy.raters}})</h4>
       </div>
       <div class="evento-details-hiro-img">
-        <img src="../assets/imgs/Web-design-secrets.jpg" />
+        <img class="hiro-img" src="../assets/imgs/Web-design-secrets.jpg" />
       </div>
     </div>
     <div class="evento-content flex">
@@ -19,13 +21,22 @@
         </p>
         <p>
           <span>Brodcast from:</span>
+          {{evento.country}}
         </p>
         <p>
           <span>Language:</span>
+          {{evento.lang}}
         </p>
         <p>
-          <span>Suitable for:</span>
+          <span>Duration: </span>
+          {{evento.dur}} Minutes
         </p>
+        <p>
+          <span>Up to {{evento.capacity}} pepole </span>
+          
+        </p>
+
+
         <h2 class="evento-description">Description</h2>
         <p>
           {{evento.desc}}
@@ -55,25 +66,27 @@
           💛
           <br />Join event!
         </button>
-        <form v-if="!loggedInUser" class="guest-sign">
+        <div v-else>
+        <h3>Event start in: 55 minutes</h3>
+        <button class="join-btn">
+          Start event!
+        </button>
+        </div>
+        <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
           <p>
-            <span>Full Name:</span>
-            <input type="text" placeholder="Type your name" />
+            <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
           </p>
           <p>
-            <span>Email:</span>
-            <input type="text" placeholder="Type your Email" />
-          </p>
-          <p>
-            <span>Photo:</span>
-            <input type="file" name id />
+            <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
           <button>Submit</button>
         </form>
         <h3>Members</h3>
-        <div v-for="member in evento.members" :key="member.id">
-          <p>{{member.fullName}}</p>
-          <img :src="member.imgUrl" alt="Member" class="member-img" />
+        <div class="members" v-for="member in evento.members" :key="member.id">
+          <!-- <p>{{member.fullName}}</p> -->
+          <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
+          <avatar v-else :src="member.imgUrl"></avatar>
+          <!-- <img v-else :src="member.imgUrl" alt="Member" class="member-img" /> -->
         </div>
       </div>
     </div>
@@ -83,15 +96,20 @@
 
 <script>
 import { eventoService } from "../services/evento.service.js";
+import Avatar from 'vue-avatar'
 
 export default {
   name: "evento-details",
   data() {
     return {
       evento: null,
-      loggedInUser: {},
-      join: false
+      join: false,
+      guestToAdd:{}
     };
+  },
+
+  computed:{
+  loggedInUser() {return this.$store.getters.loggedInUser;}
   },
 
   methods: {
@@ -104,12 +122,22 @@ export default {
     async joinEvent() {
       this.join = true;
       await this.$store.dispatch({ type: "addMember", evento: this.evento });
-      await this.$store.dispatch({ type: "addEventoToUser", evento: this.evento });
+      // await this.$store.dispatch({ type: "addEventoToUser", evento: this.evento });
+    },
+
+    addGuest(){
+      this.join = true;
+      this.evento.members.push(this.guestToAdd)
+      console.log(this.evento);
+      this.$store.dispatch({ type: "saveEvento", evento: this.evento });
     }
   },
 
   created() {
     this.loadEvento();
-  }
+  },
+  components: {
+    Avatar
+  },
 };
 </script>
