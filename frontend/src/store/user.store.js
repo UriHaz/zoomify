@@ -10,7 +10,10 @@ Vue.use(Vuex);
 export const userStore = {
 	strict: true,
 	state: {
-		loggedInUser: {},
+		loggedInUser: {
+			fullName : "will smith",
+			imgUrl : "https://api.adorable.io/avatars/285/abxcfxvvcott@adorable.png"
+		},
 		users: [],
 	},
 	getters: {

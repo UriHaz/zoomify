@@ -1,6 +1,20 @@
 <template>
      <div class="login-page">
-    <div>
+    
+      <h2>{{msg}}</h2>
+
+      <div v-if="loggedInUser">
+      <h3>
+        Loggedin User:
+        {{loggedInUser.fullName}}
+        <form @submit.prevent="updateUser">
+          <input type="text" v-model="userToEdit.fullName" />
+        </form>
+        <button @click="doLogout">Logout</button>
+      </h3>
+    </div>
+
+    <div v-else>
       <h2> Login </h2>
     <form class="flex column" @submit.prevent="doLogin">
       <input type="text" v-model="loginCred.email" placeholder="Email">
@@ -30,7 +44,7 @@ export default {
         email: 'john@doe.com',
         password: 'rocair'
       },
-      signupCred: null,
+      signupCred: {},
       msg: '',
       userToEdit: {}
     }
@@ -45,20 +59,22 @@ export default {
     }
   },
   created() {
-
-    console.log('this.loggedInUser', this.loggedInUser)
+    
   },
   methods: {
     async doLogin() {
       const cred = this.loginCred
       if(!cred.email || !cred.password) return this.msg = 'Please enter user/password'
-      await this.$store.dispatch({type :'login', userCred:cred})
+      await this.$store.dispatch({type :'login', userCred: this.loginCred})
       this.loginCred = {};
       
     },   
     doSignup() {
-      this.$store.dispatch({type: 'signup', user: this.signupCred})
-      this.signupCred = userService.getEmptyuser();
+      const cred = this.signupCred
+      if (!cred.email || !cred.password || !cred.fullName)
+        return (this.msg = "Please fill up the form");
+      this.$store.dispatch({type: 'signup', userCred: this.signupCred})
+      this.signupCred = {}
     },
     getAllUsers() {
       this.$store.dispatch({type: 'loadUsers'})
@@ -69,17 +85,23 @@ export default {
     updateUser() {
       this.$store.dispatch({type: 'updateUser', user: this.userToEdit})
     },
+    doLogout() {
+      this.$store.dispatch({ type: "logout" });
+    },
   },
-  components: {
-    
-  },
+  computed:{
+    loggedInUser() {
+      return this.$store.getters.loggedInUser;
+    }
+},
   watch : {
     loggedInUser() {
       this.userToEdit = {...this.loggedInUser}
     }
   },
   created() {
-    // this.signupCred = userService.getEmptyuser();
+    this.loggedInUser
+    console.log("this.loggedinUser", this.loggedInUser);
   }  
 }
 </script>
