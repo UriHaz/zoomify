@@ -12,9 +12,6 @@
         outline: none;
         text-decoration: none;
         width: 10rem;
-        // align-self: center;
-        // border-image: initial;
-        // padding: 0.5rem 2rem;
 
         &:hover {
           font-weight: bold;
@@ -23,16 +20,9 @@
           background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
         }
     }
-    // label {
-        // display: inline-block;
-        // display: inline-flex;
-        // margin-left: 5rem;
-        // float: inherit;
-    // }
 
     h1 {
         font-size: 3rem;
-        // margin: 0;
     }
 
     h2 {
@@ -64,6 +54,53 @@
     width: 20rem;
 }
 
+
+
+
+
+
+.event-date-time {
+    display: flex;
+    justify-content: center;
+}
+
+
+.add-event-date {
+    background-color: white;
+    border-color: rgb(94, 23, 235);
+    border-image: initial;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(94, 23, 235);
+    height: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    width: 10rem;
+}
+
+.add-event-time {
+    background-color: white;
+    border-color: rgb(94, 23, 235);
+    border-image: initial;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(94, 23, 235);
+    height: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    width: 10rem;
+}
+
+
+
+
+
+
+
+
+
 .back-btn {
     background-color: #ff3232b7;
 }
@@ -71,4 +108,3 @@
 .add-btn {
     background-color: #69f809;
 }
-    
