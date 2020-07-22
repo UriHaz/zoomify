@@ -14,12 +14,12 @@
 
       <div class="event-date-time">
       <label>
-        <h3>Date! Be there on:</h3>
+        <h3>Be there on:</h3>
         <!-- <input class="add-event-placeholder" type="date" v-model="eventoToEdit.startDate" placeholder="Event start date..." /> -->
         <input class="add-event-date" type="date" v-model="eventoToEdit.startDate" />
       </label>
       <label>
-        <h3>Time! Starting at:</h3>
+        <h3>Starting at:</h3>
         <input class="add-event-time" type="time" v-model="eventoToEdit.startTime" />
       </label>
       </div>
