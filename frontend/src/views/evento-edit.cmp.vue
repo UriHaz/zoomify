@@ -29,12 +29,12 @@
 
       <label>
         <h3>Event Description:</h3>
-        <input class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.desc" placeholder="Add event description..." />
+        <textarea class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.desc" placeholder="Add event description..." />
       </label>
 
      <label>
         <h3>About the Host:</h3>
-        <input class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.about" placeholder="Add some abouts..." />
+        <textarea class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.about" placeholder="Add some abouts..." />
       </label>
 
 <div>
