@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+#app {
+  text-align: center;
+  color: #2c3e50;
+}
+
+
+body, html {
+  background-color: whitesmoke;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+
+h1 {
+  color: #5e17eb;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+h2 {
+  color: #5e17eb;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #5e17eb;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: #5e17eb;
+  font-weight: bold;
+  font-size: 1rem;
+}

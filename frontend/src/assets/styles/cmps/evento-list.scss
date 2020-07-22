@@ -1,0 +1,11 @@
+.list-container {
+  // margin-top: 2.8rem;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  a {
+    text-decoration: none;
+    // color: #22292f
+    color: #474959
+  }
+
+}

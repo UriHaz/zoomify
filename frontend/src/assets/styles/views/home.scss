@@ -1,0 +1,137 @@
+.centered-h1 {
+    color: #5e17eb;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 5rem;
+
+    @media (max-width:1080px) {
+      float: none;
+    }
+    @media (min-width:1080px) {
+      text-align: left;
+    }
+  }
+  
+  .home-vector {
+    width: 30em;
+    float: right;
+    @media (max-width:1080px) {
+    float: none;
+     }
+  }
+
+  .txt-vect-hero {
+    margin: 5% 10%;
+  }
+
+
+ 
+.hp-btn {
+  font-family: 'open Sans';
+  color: #5e17eb;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  outline: none;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: #5e17eb;
+  border-image: initial;
+  border-radius: 2rem;
+  width: 15rem;
+  text-decoration: none;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  
+  &:hover {
+    font-weight: bold;
+    transition: 0.3s;
+    color: #5e17eb;
+    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+  }
+}
+
+
+
+.sub-nav-bar {
+  position: absolute;
+  color: rgb(59, 59, 59);
+  font-size: 1.5rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+
+  .hp-sub-link-1 {
+    color: #5e17eb;
+    padding-top: 1rem;
+  }
+      a {
+        color: #5e17eb;
+        font-size: 1.3rem;
+        margin: 1rem 1rem;
+        text-decoration: none;
+        align-items: center;
+        // background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.00em;
+        background-position: 0 88%;
+        transition: background-size 0.25s ease-in;
+        &:hover {
+        background-size: 100% 15%;
+        }
+      }
+        .hp-sub-link-2 {
+        display: flex;
+        list-style: none;
+        margin: 15px;
+  }
+}
+
+
+
+
+
+
+
+    
+
+
+
+      // .hero {
+      //   padding-bottom: 10px;
+      //   width: 100%;
+      //   height: 100px;
+      //   width: 100%;
+      //   // height: 100%;
+      //   height: 75vh;
+      //   // z-index: 9;
+      // }
+      // .hero-bg {
+      //   background-image: linear-gradient(100deg, white, #5e17eb);
+      // }
+    
+    
+      // .to-all-events {
+      //   color: #5e17eb;
+      //   font-family: 'open Sans';
+      //   text-decoration: none;
+      //   padding: 0.5rem 2rem;
+      //   background-color: white;
+      //   outline: none;
+      //   border-width: 0.1rem;
+      //   border-style: solid;
+      //   border-color: #5e17eb;
+      //   border-image: initial;
+      //   border-radius: 2rem;
+      //   width: 15rem;
+      //   text-decoration: none;
+      //   margin: 2rem auto;
+    
+      //   &:hover {
+      //     font-weight: bold;
+      //     transition: 0.3s;
+      //     color: #5e17eb;
+      //     background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+      //   }
+      // }

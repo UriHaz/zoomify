@@ -1,0 +1,961 @@
+[{
+    "title" : "AngularJS Vs. React - Pros & Cons",
+    "createdBy" : {
+        "id" : "e001",
+        "fullName" : "Misko Hevery",
+        "imgUrl" : "https://i.imgur.com/gra6rSf.jpg",
+        "rating": 4.1,
+        "raters": 74
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "technology", 
+        "coding"
+    ],
+    "members" : [{
+        "id" : "e001",
+        "fullName" : "Misko Hevery",
+        "imgUrl" : "https://i.imgur.com/s85nzVj.jpg"
+    }],
+    "country" : "australia",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "The TOP tips to write a perfect code",
+    "createdBy" : {
+        "id" : "e002",
+        "fullName" : "Denis Robbins",
+        "imgUrl" : "https://i.imgur.com/QwZ8IDo.jpg",
+        "rating": 4.2,
+        "raters": 67
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "23:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "technology", 
+        "coding"
+    ],
+    "members" : [{
+        "id" : "e002",
+        "fullName" : "Denis Robbins",
+        "imgUrl" : "https://i.imgur.com/SXtojjP.jpg"
+    }],
+    "country" : "United Kingdom",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Build a customer Care Dream-Team",
+    "createdBy" : {
+        "id" : "e003",
+        "fullName" : "Amber Mccarthy",
+        "imgUrl" : "https://i.imgur.com/n7SmZ2F.jpg",
+        "rating": 4.3,
+        "raters": 63
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "21:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "support"
+    ],
+    "members" : [{
+        "id" : "e003",
+        "fullName" : "Amber Mccarthy",
+        "imgUrl" : "https://i.imgur.com/4pWJA7E.jpg"
+    }],
+    "country" : "Scotland",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Building a successful sales team",
+    "createdBy" : {
+        "id" : "e004",
+        "fullName" : "John Armis",
+        "imgUrl" : "https://i.imgur.com/G1PcSei.jpg",
+        "rating": 4.4,
+        "raters": 93
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "sales"
+    ],
+    "members" : [{
+        "id" : "e004",
+        "fullName" : "John Armis",
+        "imgUrl" : "https://i.imgur.com/3RuI4yD.png"
+    }],
+    "country" : "Czech Republic",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Copy, Micro-Copy and your content strategy",
+    "createdBy" : {
+        "id" : "e005",
+        "fullName" : "Sarah Parmon",
+        "imgUrl" : "https://i.imgur.com/uIiG0XW.jpg",
+        "rating": 4.4,
+        "raters": 81
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "marketing"
+    ],
+    "members" : [{
+        "id" : "e005",
+        "fullName" : "Sarah Parmon",
+        "imgUrl" : "hhttps://i.imgur.com/cavkVjv.jpg"
+    }],
+    "country" : "Denmark",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Creating organization leadership program",
+    "createdBy" : {
+        "id" : "e006",
+        "fullName" : "Richard Cooper",
+        "imgUrl" : "https://i.imgur.com/5Ly8Du5.jpg",
+        "rating": 4.4,
+        "raters": 81
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career",
+        "business"
+    ],
+    "members" : [{
+        "id" : "e006",
+        "fullName" : "Richard Cooper",
+        "imgUrl" : "https://i.imgur.com/gBh4UzH.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Fast recovering from wrong decision making",
+    "createdBy" : {
+        "id" : "e007",
+        "fullName" : "Dr. Karen McGrine",
+        "imgUrl" : "https://i.imgur.com/7o9n98u.jpg",
+        "rating": 4.7,
+        "raters": 92
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career"
+,        "business"
+    ],
+    "members" : [{
+        "id" : "e007",
+        "fullName" : "Dr. Karen McGrine",
+        "imgUrl" : "https://i.imgur.com/kibZjnt.jpg"
+    }],
+    "country" : "United Kingdim",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How SEO & PPC supports each other",
+    "createdBy" : {
+        "id" : "e008",
+        "fullName" : "Neil Dosson",
+        "imgUrl" : "https://i.imgur.com/NRbHF5C.jpg",
+        "rating": 5,
+        "raters": 100
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "marketing"
+    ],
+    "members" : [{
+        "id" : "e00A",
+        "fullName" : "Neil Dosson",
+        "imgUrl" : "https://i.imgur.com/8hus19V.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to build manager self-awareness",
+    "createdBy" : {
+        "id" : "e009",
+        "fullName" : "Dr. James Davis",
+        "imgUrl" : "https://i.imgur.com/OUf88S7.jpg",
+        "rating": 4.9,
+        "raters": 86
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career"
+    ],
+    "members" : [{
+        "id" : "e009",
+        "fullName" : "Dr. James Davis",
+        "imgUrl" : "https://i.imgur.com/B9QGAPR.jpg"
+    }],
+    "country" : "United Kingdom",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to master SAAS social media marketing",
+    "createdBy" : {
+        "id" : "e010",
+        "fullName" : "Simon Collison",
+        "imgUrl" : "https://i.imgur.com/6pJ4JZF.jpg",
+        "rating": 4.8,
+        "raters": 59
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "marketing"
+    ],
+    "members" : [{
+        "id" : "e010",
+        "fullName" : "Simon Collison",
+        "imgUrl" : "https://i.imgur.com/XQEQHVT.jpg"
+    }],
+    "country" : "United Kingdom",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to online market your awesome product",
+    "createdBy" : {
+        "id" : "e011",
+        "fullName" : "Cameron Mollins",
+        "imgUrl" : "https://i.imgur.com/VTH5vZq.jpg",
+        "rating": 3.1,
+        "raters": 76
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "marketing"
+    ],
+    "members" : [{
+        "id" : "e011",
+        "fullName" : "Cameron Mollins",
+        "imgUrl" : "https://i.imgur.com/fmAuJQp.jpg"
+    }],
+    "country" : "United Kingdom",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to successfuly manage your manager",
+    "createdBy" : {
+        "id" : "e012",
+        "fullName" : "Tim Posner",
+        "imgUrl" : "https://i.imgur.com/xWtv8N5.jpg",
+        "rating": 3.2,
+        "raters": 71
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "21:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career"
+    ],
+    "members" : [{
+        "id" : "e012",
+        "fullName" : "Tim Posner",
+        "imgUrl" : "https://i.imgur.com/s4SDkXH.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to treat a problematic customer",
+    "createdBy" : {
+        "id" : "e013",
+        "fullName" : "Sheila Moore",
+        "imgUrl" : "https://i.imgur.com/ayWq0vl.jpg",
+        "rating": 3.3,
+        "raters": 58
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "support"
+    ],
+    "members" : [{
+        "id" : "e013",
+        "fullName" : "Sheila Moore",
+        "imgUrl" : "https://i.imgur.com/MwYeHV5.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Learn from others' Tech career failures",
+    "createdBy" : {
+        "id" : "e014",
+        "fullName" : "Prof. Brenda Seligman",
+        "imgUrl" : "https://i.imgur.com/kF1pm0I.jpg",
+        "rating": 3.4,
+        "raters": 43
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "18:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career"
+    ],
+    "members" : [{
+        "id" : "e014",
+        "fullName" : "Prof. Brenda Seligman",
+        "imgUrl" : "https://i.imgur.com/VQxG2S5.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Mastering HTML & CSS in 60 minutes",
+    "createdBy" : {
+        "id" : "e015",
+        "fullName" : "Gilka Mesker",
+        "imgUrl" : "https://i.imgur.com/CeUlUj0.jpg",
+        "rating": 4.7,
+        "raters": 78
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "design",
+        "coding"
+    ],
+    "members" : [{
+        "id" : "e015",
+        "fullName" : "Gilka Mesker",
+        "imgUrl" : "https://i.imgur.com/Xx8LloT.jpg"
+    }],
+    "country" : "India",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Node, APIs, and all the REST",
+    "createdBy" : {
+        "id" : "e016",
+        "fullName" : "Miles Thompson",
+        "imgUrl" : "https://i.imgur.com/FtmGPew.jpg",
+        "rating": 4.9,
+        "raters": 68
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "technology",
+        "coding"
+    ],
+    "members" : [{
+        "id" : "e016",
+        "fullName" : "Miles Thompson",
+        "imgUrl" : "https://i.imgur.com/SbFOgs5.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Overcome creativity blockers at work",
+    "createdBy" : {
+        "id" : "e017",
+        "fullName" : "Ethan Marcotte",
+        "imgUrl" : "https://i.imgur.com/jVTz5VT.jpg",
+        "rating": 3.7,
+        "raters": 84
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "design"
+    ],
+    "members" : [{
+        "id" : "e017",
+        "fullName" : "Ethan Marcotte",
+        "imgUrl" : "https://i.imgur.com/C3o9cXD.jpg"
+    }],
+    "country" : "France",
+    "lang": "French",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "So, what's really new with Vue?",
+    "createdBy" : {
+        "id" : "e018",
+        "fullName" : "Evan You",
+        "imgUrl" : "https://i.imgur.com/Hojujnk.jpg",
+        "rating": 4.7,
+        "raters": 96
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "marketing"
+    ],
+    "members" : [{
+        "id" : "e018",
+        "fullName" : "Evan You",
+        "imgUrl" : "https://i.imgur.com/Hyt68vT.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Starting a Tech career? Let's talk about it",
+    "createdBy" : {
+        "id" : "e019",
+        "fullName" : "Martin Pinker",
+        "imgUrl" : "https://i.imgur.com/cI6TyNs.jpg",
+        "rating": 4.5,
+        "raters": 93
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career"
+    ],
+    "members" : [{
+        "id" : "e019",
+        "fullName" : "Martin Pinker",
+        "imgUrl" : "https://i.imgur.com/bjkkNcs.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "The coming future of B2B Marketing",
+    "createdBy" : {
+        "id" : "e020",
+        "fullName" : "Phillip Schiller",
+        "imgUrl" : "https://i.imgur.com/bTdyNMt.jpg",
+        "rating": 4.8,
+        "raters": 92
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "marketing"
+    ],
+    "members" : [{
+        "id" : "e020",
+        "fullName" : "Phillip Schiller",
+        "imgUrl" : "https://i.imgur.com/jI0h1Jx.jpg"
+    }],
+    "country" : "United States",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "The grand history of JavaScript",
+    "createdBy" : {
+        "id" : "e021",
+        "fullName" : "Samer Ahmed",
+        "imgUrl" : "https://i.imgur.com/8TZUQaV.jpg",
+        "rating": 4.8,
+        "raters": 78
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "technology",
+        "coding"
+    ],
+    "members" : [{
+        "id" : "e021",
+        "fullName" : "Samer Ahmed",
+        "imgUrl" : "https://i.imgur.com/1tiXpP5.jpg"
+    }],
+    "country" : "United Kingdom",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "The next generation of Customer Support",
+    "createdBy" : {
+        "id" : "e022",
+        "fullName" : "Mikkel Svane",
+        "imgUrl" : "https://i.imgur.com/1Y3I2pu.jpg",
+        "rating": 4.2,
+        "raters": 98
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "support"
+    ],
+    "members" : [{
+        "id" : "e022",
+        "fullName" : "Mikkel Svane",
+        "imgUrl" : "https://i.imgur.com/xwr0rs3.jpg"
+    }],
+    "country" : "Sweden",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Time to know some Sass tricks & hacks",
+    "createdBy" : {
+        "id" : "e023",
+        "fullName" : "Chris Coyier",
+        "imgUrl" : "https://i.imgur.com/Kt9mDmi.jpg",
+        "rating": 4.1,
+        "raters": 54
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "19:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "design",
+        "coding"
+    ],
+    "members" : [{
+        "id" : "e023",
+        "fullName" : "Chris Coyier",
+        "imgUrl" : "https://i.imgur.com/uS6hY6M.jpg"
+    }],
+    "country" : "Spain",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Why diversity is a real organizatiom power",
+    "createdBy" : {
+        "id" : "e024",
+        "fullName" : "Steven Huang",
+        "imgUrl" : "https://i.imgur.com/ZAvTOWZ.jpg",
+        "rating": 4.4,
+        "raters": 99
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "21:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "business"
+    ],
+    "members" : [{
+        "id" : "e024",
+        "fullName" : "Steven Huang",
+        "imgUrl" : "https://i.imgur.com/NinZtCI.jpg"
+    }],
+    "country" : "Netherlands",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Why executive social media presence matters",
+    "createdBy" : {
+        "id" : "e025",
+        "fullName" : "Rachel Andrew",
+        "imgUrl" : "https://i.imgur.com/hdbvRF6.jpg",
+        "rating": 4.3,
+        "raters": 65
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:30",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "career",
+        "business"
+    ],
+    "members" : [{
+        "id" : "e025",
+        "fullName" : "Rachel Andrew",
+        "imgUrl" : "https://i.imgur.com/MU554vI.jpg"
+    }],
+    "country" : "Ireland",
+    "lang": "English",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to prepare yourself for a Sales career",
+    "createdBy" : {
+        "id" : "e026",
+        "fullName" : "Maria Pedro",
+        "imgUrl" : "https://i.imgur.com/I56UXuX.jpg",
+        "rating": 3.9,
+        "raters": 48
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "sales"
+    ],
+    "members" : [{
+        "id" : "e026",
+        "fullName" : "Maria Pedro",
+        "imgUrl" : "https://i.imgur.com/7ubtvjb.jpg"
+    }],
+    "country" : "Brazil",
+    "lang": "Portuguese",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "How to overcome Sales objections the smart way",
+    "createdBy" : {
+        "id" : "e027",
+        "fullName" : "Albert Muller",
+        "imgUrl" : "https://i.imgur.com/lKqlP6H.jpg",
+        "rating": 4.3,
+        "raters": 94
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "20:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "sales"
+    ],
+    "members" : [{
+        "id" : "e027",
+        "fullName" : "Albert Muller",
+        "imgUrl" : "https://i.imgur.com/bLE4Ofm.jpg"
+    }],
+    "country" : "Germany",
+    "lang": "Deutsch",
+    "desc": "lorem",
+    "price": 20
+},
+{
+    "title" : "Online Sales and the Shopping Experience",
+    "createdBy" : {
+        "id" : "e028",
+        "fullName" : "Gretel Zigler",
+        "imgUrl" : "https://i.imgur.com/VLIzB64.jpg",
+        "rating": 4.6,
+        "raters": 61
+    },
+    "gallery": [
+        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
+        { "videoUrls" : [ 
+            {"vid1": "https://www.google.com/video1.jpg"},
+            {"vid2": "https://www.google.com/video2.jpg"}] }
+    ],
+    "link" : "https://us02web.zoom.us/j/7568815336",
+    "startDate" : "2020-07-22",
+    "startTime" : "23:00",
+    "dur" : 60,
+    "capacity" : 55,
+    "members.length" : 55,
+    "tags" : [ 
+        "sales"
+    ],
+    "members" : [{
+        "id" : "e028",
+        "fullName" : "Gretel Zigler",
+        "imgUrl" : "https://i.imgur.com/X1syyzf.jpg"
+    }],
+    "country" : "Germany",
+    "lang": "Deutsch",
+    "desc": "lorem",
+    "price": 20
+}]
