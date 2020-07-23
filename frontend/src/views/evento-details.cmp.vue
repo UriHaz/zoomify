@@ -36,6 +36,8 @@
           
         </p>
 
+        <i class="far fa-clock"></i>
+
 
         <h2 class="evento-description">Description</h2>
         <p>
@@ -98,6 +100,7 @@
 import { eventoService } from "../services/evento.service.js";
 import Avatar from 'vue-avatar'
 
+
 export default {
   name: "evento-details",
   data() {
@@ -138,6 +141,7 @@ export default {
   },
   components: {
     Avatar
+
   },
 };
 </script>
