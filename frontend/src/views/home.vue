@@ -9,8 +9,8 @@
           </h1>
           <router-link to="/login" class="hp-btn">Share your Event ›</router-link>
         </div>
-        <img src="../assets/imgs/hero2.mp4" class="home-vector" />
-        <!-- <img src="../assets/imgs/hero1.jpeg" class="home-vector" /> -->
+        <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
+        <img src="../assets/imgs/hero1.jpeg" class="home-vector" />
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
       </div>
 
