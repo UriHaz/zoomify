@@ -12,10 +12,13 @@
         <h4 class="card-h4">By {{evento.createdBy.fullName}},<br>{{evento.country}}</h4>
       </div>
       <h3 class="card-h3">{{ evento.title }}</h3>
-      <p>{{eventoDate}}</p>
+      
+      <div class="event-star-date">
       <div class="star">
         <p class="fas fa-star">{{evento.createdBy.rating}}</p>
-        <span class="raters">({{evento.createdBy.raters}})</span>
+        <span class="raters"> ({{evento.createdBy.raters}}) </span>
+      </div>
+      <p class="event-date">{{eventoDate}}</p>
       </div>
       </div>
 
