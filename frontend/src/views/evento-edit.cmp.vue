@@ -32,22 +32,33 @@
       <label>
         <h3>Event Description:</h3>
         <textarea class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.desc" placeholder="Add event description..." />
-      <!-- </label>
+</label>
+</div>
 
-     <label> -->
+<div class="justify-center flex">
+     <label>
         <h3>About the Host:</h3>
         <textarea class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.about" placeholder="Add some abouts..." />
       </label>
-</div
-<div>
+</div>
+
+
+<div class="justify-center flex">
     <button class="back-btn" title="Back" @click="$router.push('/events')">◄ Back to Events</button>
+    </div>
+<div class="justify-center flex">
       <button  class="add-btn">Add Event ►</button>
 </div>    
+
     </form>
+
     <button v-if="eventoToEdit.id" @click="removeEvento">Delete</button>
    </section>
 </template>
 <script>
+
+
+
 import { eventoService } from "../services/evento.service.js";
 const _ = require("lodash");
 
