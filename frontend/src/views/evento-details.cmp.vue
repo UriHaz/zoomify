@@ -14,12 +14,12 @@
         <div class="evento-details-title">
         <h1 class="evento-details-h1">{{evento.title}}</h1>
         <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
-        <img :src="evento.createdBy.imgUrl" alt="createdBy" class="creator-img" />
          
         
         <h4 class="evento-details-h4"><i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})</h4>
       </div>
         
+        <div class="evento-info flex space-between">
         <p>
           <i class="far fa-flag"></i>
           {{evento.country}}
@@ -37,7 +37,7 @@
           Up to {{evento.capacity}} pepole
           
         </p>
-
+        </div>
         <h2 class="evento-description">Description</h2>
         <p>
           {{evento.desc}}
@@ -88,11 +88,10 @@
           <button>Submit</button>
         </form>
         <h3>Members</h3>
-        <div class="members" v-for="member in evento.members" :key="member.id">
-          <!-- <p>{{member.fullName}}</p> -->
+        <div class="evento-members" v-for="member in evento.members" :key="member.id">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
-          <!-- <img v-else :src="member.imgUrl" alt="Member" class="member-img" /> -->
+         
         </div>
       </div>
     </div>

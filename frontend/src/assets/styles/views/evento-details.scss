@@ -28,11 +28,15 @@
 .evento-details-title {
     text-align: left;
 
-    
+
     .creator-img{
         width: 20px;
     }
     
+}
+
+.evento-info{
+    border: #080808 1px solid;
 }
 
 
@@ -47,6 +51,13 @@
 .evento-join{
     width: 30%;
     padding: 0 2rem;
+}
+
+.evento-members{
+    display: grid;
+    grid-template-columns: repeat(minmax(10px,10px));
+    grid-template-rows: repeat();
+
 }
 
 .member-img {
