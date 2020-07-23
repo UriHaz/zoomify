@@ -4,12 +4,12 @@
 
       <!-- <img v-if="evento.imgUrls" :src="evento.imgUrls"> -->
       <!-- <img class="evento-img" v-else :src="`https://www.jeffbullas.com/wp-content/uploads/2017/06/Why-Live-Events-Should-Be-At-The-Center-Of-Your-Marketing-Strategy.jpg`"> -->
-      <img class="evento-img" :src="evento.createdBy.imgUrl">
+      <img class="evento-img" :src="evento.imgUrl">
 
     <h3 class="card-h3">{{ evento.title }}</h3>
     <h4 class="card-h4">By {{ evento.createdBy.fullName }}</h4>
     <p>{{eventoDate}}</p>
-    <p>{{evento.createdBy.rating}}/5</p>
+    <p class="fas fa-star">{{evento.createdBy.rating}}/5</p>
     <!-- <p>id: {{ evento.id }}</p> -->
 
     <!-- <a :href="`#${evento.link}`" class="join">Join ›</a> -->
