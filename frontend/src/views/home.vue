@@ -38,18 +38,26 @@
 
 
       <el-carousel :interval="4000" type="card" height="500px">
-        <el-carousel-item v-for="evento in eventos" :key="evento.id">
-                    <evento-preview :evento="evento" />
+        <el-carousel-item v-for="evento in technologyEventos" :key="evento.id">
+          <evento-preview :evento="evento" />                 
         </el-carousel-item>
       </el-carousel>
 
       <el-carousel :interval="4000" type="card" height="500px">
-        <el-carousel-item v-for="evento in eventos" :key="evento.id">
-                    <evento-preview :evento="evento" />
+        <el-carousel-item v-for="evento in upcomingEventos" :key="evento.id">
+          <evento-preview :evento="evento" />                 
+        </el-carousel-item>
+      </el-carousel>
+
+      <el-carousel :interval="4000" type="card" height="500px">
+        <el-carousel-item v-for="evento in popularEventos" :key="evento.id">
+          <evento-preview :evento="evento" />
         </el-carousel-item>
       </el-carousel>
     
     </section>
+
+     <!-- eventos.tags.includes('technology') -->
     
 </template>
 
@@ -66,13 +74,24 @@ export default {
   //         required: true
   //     }
   // },
+
   computed: {
     eventos() {
       return this.$store.getters.eventos;
+    },
+      popularEventos() {
+        return this.$store.getters.eventos.filter(evento => evento.createdBy.rating > 4)   
+      },
+    technologyEventos() {
+      return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "technology"))   
+    },
+    upcomingEventos() {
+      return this.$store.getters.eventos.filter(evento => evento.startDate <= "2020-07-30")   
     }
+
   },
   created() {
-    this.$store.dispatch({ type: "loadEventos" });
+    this.$store.dispatch({ type: "loadEventos"});
     // this.$store.getters.eventos;
   },
   // methods: {

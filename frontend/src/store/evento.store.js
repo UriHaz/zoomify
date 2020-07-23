@@ -54,31 +54,42 @@ export const eventoStore = {
 						},
 					},
 					actions: {
-						loadEventos({ commit, state }) {
+						async loadEventos({ commit, state }) {
 							commit({ type: "setIsLoading", isLoading: true });
-							return eventoService.query(state.filterBy)
-							.then((eventos) => {
-								commit({ type: "setEventos", eventos });
-								commit({ type: "setIsLoading", isLoading: false });
-								return eventos;
-							});
+							const eventos = await eventoService.query(state.filterBy);
+							commit({ type: "setEventos", eventos });
+							commit({ type: "setIsLoading", isLoading: false });
+							console.log("eventos:", eventos);
+							return eventos;
 						},
+
+						// TODO: loadHomepageEventos
+						/*
+						const reccomnededEventos = eventoService.query( {
+							
+							tags: "technology"
+						} ) 
+
+						const techEventos
+						const upcomingEventos
+						*/
+
 						async removeEvento({ commit }, { id }) {
-							await eventoService.remove(id)
+							await eventoService.remove(id);
 							commit({ type: "removeEvento", id });
 						},
 
 						async saveEvento({ commit }, { evento }) {
 							console.log(evento);
 							const type = evento._id ? "updateEvento" : "addEvento";
-							const savedEvento = await eventoService.save(evento)
-								commit({ type, savedEvento })
-								return savedEvento;
+							const savedEvento = await eventoService.save(evento);
+							commit({ type, savedEvento });
+							return savedEvento;
 						},
 						async addMember(context, { evento }) {
 							console.log(evento);
 							const loggedInUser = context.getters.loggedInUser;
-							const userToSave = _.cloneDeep(loggedInUser)
+							const userToSave = _.cloneDeep(loggedInUser);
 							console.log(userToSave);
 							evento.members.push(userToSave);
 							const savedEvento = await eventoService.save(evento);

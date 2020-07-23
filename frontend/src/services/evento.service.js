@@ -10,7 +10,7 @@ export const eventoService = {
 
 
 function query(
-	filterBy = { txt: "", isInStock: "", order: "asc", type: "", sort: "name" }
+	filterBy = { txt: "", isInStock: "", order: "asc", tags: "", sort: "name" }
 ) {
 	const query = `?txt=${filterBy.txt}&_sort=${filterBy.sort}&_order=${filterBy.order}`;
 
