@@ -64,36 +64,20 @@
 
 .add-event-placeholder {
     background-color: white;
-    border-color: rgb(94, 23, 235);
+    // border-color: rgb(94, 23, 235);
+    border-color: #bbc1e1;
     border-image: initial;
     border-radius: 0.5rem;
     border-style: solid;
     border-width: 1px;
-    color: rgb(94, 23, 235);
+    // color: rgb(94, 23, 235);
     height: 2.5rem;
     outline: none;
     padding: 1rem;
     width: 20rem;
 }
 
-
-
-
-
-
-// .event-date-time {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .event-about {
-//     display: flex;
-//     justify-content: center;
-// }
-
 .add-event-date {
-    // display: flex;
-    // justify-content: center;
     background-color: white;
     border-color: rgb(94, 23, 235);
     border-image: initial;
@@ -109,8 +93,6 @@
 }
 
 .add-event-time {
-    // display: flex;
-    // justify-content: center;
     background-color: white;
     border-color: rgb(94, 23, 235);
     border-image: initial;
