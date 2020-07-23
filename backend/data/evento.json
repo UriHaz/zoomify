@@ -1,38 +1,85 @@
-[{
-    "title" : "AngularJS Vs. React - Pros & Cons",
-    "createdBy" : {
-        "id" : "e001",
-        "fullName" : "Misko Hevery",
+[
+    {
+        "title" : "AngularJS Vs. React - Pros & Cons",
         "imgUrl" : "https://i.imgur.com/gra6rSf.jpg",
-        "rating": 4.1,
-        "raters": 74
+        "createdBy" : {
+            "id" : "h001",
+            "fullName" : "Misko Hevery",
+            "imgUrl" : "https://i.imgur.com/s85nzVj.jpg",
+            "rating": 4.1,
+            "raters": 74
+        },
+        "gallery": [
+            {
+                "imgUrls": [
+                    {
+                        "img1": "https://i.imgur.com/bULRWFO.jpg"
+                    },
+                    {
+                        "img2": "https://i.imgur.com/B2gkjPK.jpg"
+                    },
+                    {
+                        "img3": "https://i.imgur.com/7flZVeZ.jpg"
+                    },
+                    {
+                        "img4": "https://i.imgur.com/Ge8c5pr.jpg"
+                    }
+                ]
+            },
+            {
+                "videoUrls": [
+                    {
+                        "vid1": "https://www.youtube.com/watch?v=A8YZB_T0t3U"
+                    },
+                    {
+                        "vid2": "https://www.youtube.com/watch?v=QfepQIjIIRA"
+                    }
+                ]
+            }
+        ],
+        "link" : "https://us02web.zoom.us/j/7568815336",
+        "startDate" : "2020-07-29",
+        "startTime" : "20:00",
+        "dur" : 60,
+        "capacity" : 55,
+        "members.length" : 55,
+        "tags" : [ 
+            "technology", 
+            "coding"
+        ],
+        "members" : [
+            {
+                "id": "h006",
+                "fullName": "Richard Cooper",
+                "imgUrl": "https://i.imgur.com/gBh4UzH.jpg"
+            },
+            {
+                "id": "h002",
+                "fullName": "Denis Robbins",
+                "imgUrl": "https://i.imgur.com/SXtojjP.jpg"
+            },
+            {
+                "id": "h003",
+                "fullName": "Amber McCarthy",
+                "imgUrl": "https://i.imgur.com/4pWJA7E.jpg"
+            },
+            {
+                "id": "h004",
+                "fullName": "John Armis",
+                "imgUrl": "https://i.imgur.com/3RuI4yD.png"
+            },
+            {
+                "id": "h005",
+                "fullName": "Sarah Parmon",
+                "imgUrl": "https://i.imgur.com/cavkVjv.jpg"
+            }
+        ],
+        "country" : "Australia",
+        "lang": "English",
+        "desc": "Choosing the best framework in is not an easy task. Front-end frameworks are growing in popularity as they allow individuals and companies alike to build complex applications in reduced time. These technologies continue to evolve and have revolutionized the world of web development. Today, we will compare three popular front-end technologies: React and Angular. Today, we will ntroducing the frameworks and break down each framework so that you will get a feel of which one feels right for you.",
+        "about": "Misko Hevery, 34 years old from Sydney Australia, is an experienced fremaworks developer who created a full series of lessons about AngularJS and React frameworks for beginners and is considered one of the best in the field in Sydney.",
+        "price": 20
     },
-    "gallery": [
-        { "imgUrls" : [ {"img1": "https://www.google.com/image2.jpg"}] },
-        { "videoUrls" : [ 
-            {"vid1": "https://www.google.com/video1.jpg"},
-            {"vid2": "https://www.google.com/video2.jpg"}] }
-    ],
-    "link" : "https://us02web.zoom.us/j/7568815336",
-    "startDate" : "2020-07-22",
-    "startTime" : "20:00",
-    "dur" : 60,
-    "capacity" : 55,
-    "members.length" : 55,
-    "tags" : [ 
-        "technology", 
-        "coding"
-    ],
-    "members" : [{
-        "id" : "e001",
-        "fullName" : "Misko Hevery",
-        "imgUrl" : "https://i.imgur.com/s85nzVj.jpg"
-    }],
-    "country" : "australia",
-    "lang": "English",
-    "desc": "lorem",
-    "price": 20
-},
 {
     "title" : "The TOP tips to write a perfect code",
     "createdBy" : {
