@@ -1,6 +1,6 @@
 
 <template>
-   <section class="evento-edit">
+   <section class="evento-edit main-layout">
 
     <h1>{{ (eventoToEdit._id) ? 'Edit' : 'Add New' }} Event</h1>
     <h2>We will share it with others</h2>

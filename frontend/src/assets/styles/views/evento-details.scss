@@ -2,10 +2,14 @@
     color: #080808;
 }
 .evento-details-hiro {
+    border: #080808 1px solid;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     color: #080808;
     height: 300px;
     background-color: white;
     padding: 0 5rem 0 5rem;
+    margin-bottom: 20px;
       .hiro-img {
         width: 50%;
     }
@@ -13,6 +17,7 @@
    
     .evento-details-hiro-img {
         width: 50%;
+        grid-area: 2 / 2 / 2 / 2;
     }
 
 
@@ -21,7 +26,7 @@
 .evento-desc {
     padding-right: 5%;
     width: 70%;
-    margin-left: 100px;
+    // margin-left: 100px;
     border-right: 1px solid rgb(224, 224, 224);
 }
 
@@ -35,8 +40,25 @@
     
 }
 
+
+.evento-tag{
+    background-color: #6c757d;
+    color: white;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    margin: 2.5px;
+    cursor: default;
+}
+
 .evento-info{
-    border: #080808 1px solid;
+    border-top: solid rgb(206, 191, 191) 1px;
+    border-bottom: solid rgb(206, 191, 191) 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
 }
 
 
@@ -50,13 +72,13 @@
 
 .evento-join{
     width: 30%;
-    padding: 0 2rem;
+    padding: 1rem;
 }
 
-.evento-members{
+.members-container{
     display: grid;
-    grid-template-columns: repeat(minmax(10px,10px));
-    grid-template-rows: repeat();
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 5px;
 
 }
 
@@ -95,12 +117,6 @@
         text-decoration: none;
         margin: 2rem auto;
         cursor: pointer;
-
-        &:hover {
-            transition: 0.3s;
-          //   color: #5e17eb;
-           background-color: #5e17eb;
-          }
     }
 }
 

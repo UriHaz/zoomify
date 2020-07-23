@@ -1,6 +1,6 @@
 <template>
 
-  <section class="home">      
+  <section class="home main-layout">      
       <div class="txt-vect-hero">
         <div class="centered-h1">
           <h1>
