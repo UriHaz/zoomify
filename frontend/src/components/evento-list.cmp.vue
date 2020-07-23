@@ -1,4 +1,11 @@
+
+
+
+
+
+
 <template>
+
   <div >
       <div class="list-container" v-for="evento in eventos" :key="evento.id">
           <evento-preview :evento="evento" />
