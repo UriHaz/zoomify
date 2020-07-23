@@ -2,7 +2,7 @@
     align-items: center;
     button {
         color: black;
-        margin: 2rem 0  2rem 0;
+        margin: 2rem 0 2rem 0;
         font-size: 1rem;
         font-weight: lighter;
         text-decoration: none;
@@ -16,52 +16,40 @@
         text-decoration: none;
         // margin: 2rem auto;
         cursor: pointer;
-    }
-
+   }
     .back-btn {
         background-color: #efefef;
         &:hover {
             color: black;
-        background-color: white;
-        }
-      }
-        
+            background-color: white;
+       }
+   }
     .add-btn {
         color: white;
         background-color: #5e17eb;
         &:hover {
             // color: black;
-        background-color: #4f15c4;
-        }
-    }
-
-
+            background-color: #4f15c4;
+       }
+   }
     h1 {
         text-align: center;
         font-size: 3rem;
-    }
-
+   }
     h2 {
         text-align: center;
         font-size: 1.5rem;
-    }
-
+   }
     h3 {
         text-align: center;
         font-size: 1rem;
-    }
-
-
+   }
     .add-desc-placeholder {
         height: 6rem;
         border-radius: 0.5rem;
         resize: none;
-        }
-
-
-
+   }
 }
-
 .add-event-placeholder {
     background-color: white;
     // border-color: rgb(94, 23, 235);
@@ -76,7 +64,6 @@
     padding: 1rem;
     width: 20rem;
 }
-
 .add-event-date {
     background-color: white;
     border-color: rgb(94, 23, 235);
@@ -91,7 +78,6 @@
     width: 9rem;
     margin-right: 1rem;
 }
-
 .add-event-time {
     background-color: white;
     border-color: rgb(94, 23, 235);
@@ -106,12 +92,3 @@
     width: 9rem;
     margin-left: 1rem;
 }
-
-
-
-
-
-
-
-
-
