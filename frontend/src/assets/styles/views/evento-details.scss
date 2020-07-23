@@ -1,37 +1,64 @@
-// .evento-details{
-//     img {
-//         width: 100px;
-//     }
-// }
-
-
+.evento-details{
+    color: #080808;
+}
 .evento-details-hiro {
+    border: #080808 1px solid;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    color: #080808;
     height: 300px;
-    // background-color: rgb(224, 224, 224);
-    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+    background-color: white;
     padding: 0 5rem 0 5rem;
+    margin-bottom: 20px;
       .hiro-img {
         width: 50%;
     }
-    .creator-img{
-        width: 50px;
-    }
-}
-
-.evento-details-hiro-title {
-    width: 50%;
     
-}
+   
+    .evento-details-hiro-img {
+        width: 50%;
+        grid-area: 2 / 2 / 2 / 2;
+    }
 
-.evento-details-hiro-img {
-    width: 50%;
+
 }
 
 .evento-desc {
     padding-right: 5%;
     width: 70%;
-    margin-left: 100px;
+    // margin-left: 100px;
     border-right: 1px solid rgb(224, 224, 224);
+}
+
+.evento-details-title {
+    text-align: left;
+
+
+    .creator-img{
+        width: 20px;
+    }
+    
+}
+
+
+.evento-tag{
+    background-color: #6c757d;
+    color: white;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    margin: 2.5px;
+    cursor: default;
+}
+
+.evento-info{
+    border-top: solid rgb(206, 191, 191) 1px;
+    border-bottom: solid rgb(206, 191, 191) 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
 }
 
 
@@ -45,17 +72,19 @@
 
 .evento-join{
     width: 30%;
-    padding: 0 2rem;
+    padding: 1rem;
 }
 
-// .evento-join p {
-//     text-align: left;
-// }
+.members-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 5px;
+
+}
 
 .member-img {
     width: 7rem;
     border-radius: 2rem;
-    // display: inline;
 }
 
 .guest-sign{
@@ -88,38 +117,27 @@
         text-decoration: none;
         margin: 2rem auto;
         cursor: pointer;
-
-        &:hover {
-            transition: 0.3s;
-          //   color: #5e17eb;
-           background-color: #5e17eb;
-          }
     }
 }
 
 
 .join-btn {
-    color: #5e17eb;
+    background-color: #5e17eb;
+    color: white;
     margin-top: 50%;
     font-size: 1.5rem;
     font-weight: lighter;
     text-decoration: none;
     padding: 0.5rem 4rem;
-    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
     outline: none;
     border-style: solid;
     border-color: #5e17eb;
-    border-radius: 5rem;
+    border-radius: 0.2rem;
     width: 16rem;
     text-decoration: none;
     margin: 2rem auto;
+    cursor: pointer;
 
-    &:hover {
-    //   width: 19rem;
-      transition: 0.3s;
-    //   color: #5e17eb;
-      background-image: linear-gradient(120deg, #00ff22 0%, #fffb00 100%);
-    }
 
 }
 

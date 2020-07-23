@@ -1,6 +1,6 @@
 
 <template>
-<section>
+<section class="main-layout">
   <div>
     <evento-filter @setFilter="setFilter()" />
   </div>
