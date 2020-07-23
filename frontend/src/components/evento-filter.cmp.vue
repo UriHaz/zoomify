@@ -8,10 +8,10 @@
       placeholder="Search events ..."
       v-model="filterBy.txt"
     ></el-input>
-    <el-button type="primary" @click="clearAll">Clear All</el-button>
+    <!-- <el-button type="primary" @click="clearAll">Clear All</el-button> -->
     <br />
 
-    <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
+    <!-- <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
       <el-option label="sort by: price" value="price"></el-option>
       <el-option label="sort by: creator" value="creator.fullName"></el-option>
@@ -26,7 +26,7 @@
       <el-option label="Show all categories" value></el-option>
       <el-option label="Funny" value="Funny"></el-option>
       <el-option label="Educational" value="Educational"></el-option>
-    </el-select>
+    </el-select> -->
 
   </section>
 </template>
