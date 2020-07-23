@@ -1,30 +1,21 @@
-// .evento-details{
-//     img {
-//         width: 100px;
-//     }
-// }
-
-
+.evento-details{
+    color: #080808;
+}
 .evento-details-hiro {
+    color: #080808;
     height: 300px;
-    // background-color: rgb(224, 224, 224);
-    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+    background-color: white;
     padding: 0 5rem 0 5rem;
       .hiro-img {
         width: 50%;
     }
-    .creator-img{
-        width: 50px;
-    }
-}
-
-.evento-details-hiro-title {
-    width: 50%;
     
-}
+   
+    .evento-details-hiro-img {
+        width: 50%;
+    }
 
-.evento-details-hiro-img {
-    width: 50%;
+
 }
 
 .evento-desc {
@@ -32,6 +23,20 @@
     width: 70%;
     margin-left: 100px;
     border-right: 1px solid rgb(224, 224, 224);
+}
+
+.evento-details-title {
+    text-align: left;
+
+
+    .creator-img{
+        width: 20px;
+    }
+    
+}
+
+.evento-info{
+    border: #080808 1px solid;
 }
 
 
@@ -48,14 +53,16 @@
     padding: 0 2rem;
 }
 
-// .evento-join p {
-//     text-align: left;
-// }
+.evento-members{
+    display: grid;
+    grid-template-columns: repeat(minmax(10px,10px));
+    grid-template-rows: repeat();
+
+}
 
 .member-img {
     width: 7rem;
     border-radius: 2rem;
-    // display: inline;
 }
 
 .guest-sign{
@@ -99,27 +106,22 @@
 
 
 .join-btn {
-    color: #5e17eb;
+    background-color: #5e17eb;
+    color: white;
     margin-top: 50%;
     font-size: 1.5rem;
     font-weight: lighter;
     text-decoration: none;
     padding: 0.5rem 4rem;
-    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
     outline: none;
     border-style: solid;
     border-color: #5e17eb;
-    border-radius: 5rem;
+    border-radius: 0.2rem;
     width: 16rem;
     text-decoration: none;
     margin: 2rem auto;
+    cursor: pointer;
 
-    &:hover {
-    //   width: 19rem;
-      transition: 0.3s;
-    //   color: #5e17eb;
-      background-image: linear-gradient(120deg, #00ff22 0%, #fffb00 100%);
-    }
 
 }
 

@@ -1,44 +1,43 @@
 <template>
   <section v-if="evento" class="evento-details">
     <div class="evento-details-hiro flex align-center">
-      <div class="evento-details-hiro-title">
-        <h1 class="evento-details-h1">{{evento.title}}</h1>
-        <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
-        <img :src="evento.createdBy.imgUrl" alt="createdBy" class="creator-img" />
-         
-        <h3  v-for="tag in evento.tags" :key="tag" class="evento-details-h3">{{tag}}</h3>
-        <h4 class="evento-details-h4">Rating: {{evento.createdBy.rating}} ({{evento.createdBy.raters}})</h4>
-      </div>
       <div class="evento-details-hiro-img">
         <img class="hiro-img" src="../assets/imgs/Web-design-secrets.jpg" />
       </div>
     </div>
+
+
     <div class="evento-content flex">
+
       <div class="evento-desc">
+        <span v-for="tag in evento.tags" :key="tag" class="evento-details-h3">{{tag}} </span>
+        <div class="evento-details-title">
+        <h1 class="evento-details-h1">{{evento.title}}</h1>
+        <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
+         
+        
+        <h4 class="evento-details-h4"><i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})</h4>
+      </div>
+        
+        <div class="evento-info flex space-between">
         <p>
-          <span>Starts at:</span>
-          {{evento.startDate}} {{evento.startTime}}
-        </p>
-        <p>
-          <span>Brodcast from:</span>
+          <i class="far fa-flag"></i>
           {{evento.country}}
         </p>
         <p>
-          <span>Language:</span>
+          <i class="fas fa-language"></i>
           {{evento.lang}}
         </p>
         <p>
-          <span>Duration: </span>
+          <i class="far fa-clock"></i>
           {{evento.dur}} Minutes
         </p>
         <p>
-          <span>Up to {{evento.capacity}} pepole </span>
+          <i class="fas fa-users"></i>
+          Up to {{evento.capacity}} pepole
           
         </p>
-
-        <i class="far fa-clock"></i>
-
-
+        </div>
         <h2 class="evento-description">Description</h2>
         <p>
           {{evento.desc}}
@@ -51,7 +50,9 @@
           numquam unde, aspernatur assumenda accusantium labore consequatur repellendus cumque voluptatum!
           Tempora modi reprehenderit delectus nisi magnam vero molestiae!
         </p>
-        <h3>About {{evento.createdBy.fullName}}</h3>
+        <h3>Meet your host, {{evento.createdBy.fullName}}</h3>
+        <avatar :src="evento.createdBy.imgUrl"></avatar>
+        
         <p>
           {{evento.about}}
           <br />Lorem ipsum dolor sit amet consectetur,
@@ -64,9 +65,12 @@
         <h3>Related lectures</h3>
       </div>
       <div class="evento-join">
+        <p>
+          <i class="far fa-calendar-alt"></i>
+          {{evento.startDate}} {{evento.startTime}}
+        </p>
         <button v-if="!join" @click="joinEvent" class="join-btn">
-          💛
-          <br />Join event!
+          Join Event
         </button>
         <div v-else>
         <h3>Event start in: 55 minutes</h3>
@@ -84,11 +88,10 @@
           <button>Submit</button>
         </form>
         <h3>Members</h3>
-        <div class="members" v-for="member in evento.members" :key="member.id">
-          <!-- <p>{{member.fullName}}</p> -->
+        <div class="evento-members" v-for="member in evento.members" :key="member.id">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
-          <!-- <img v-else :src="member.imgUrl" alt="Member" class="member-img" /> -->
+         
         </div>
       </div>
     </div>
