@@ -1,5 +1,5 @@
 <template>
-     <div class="login-page">
+     <div class="login-page main-layout">
     
       <h2>{{msg}}</h2>
 

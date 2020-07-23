@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about main-layout">
     <h1 class="about-h1">
       Hey, We are zOOmify
       <!-- <br />This is Us -->

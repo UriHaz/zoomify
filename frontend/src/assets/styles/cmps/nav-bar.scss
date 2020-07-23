@@ -1,11 +1,15 @@
 .nav-bar {
   color: rgb(59, 59, 59);
   font-size: 1.5rem;
-  box-shadow: 0px 0.2px 20px grey;
+  // box-shadow: 0px 0.2px 20px grey;
+  border-bottom: 1px solid  rgb(224, 224, 224);
   background-repeat: no-repeat;
   cursor: pointer;
   justify-content: space-between;
   display: flex;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   .app-logo {
     color: #5e17eb;
@@ -26,13 +30,12 @@
     margin: 1rem 1rem;
     text-decoration: none;
     align-items: center;
-    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.00em;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in;
     &:hover {
-    background-size: 100% 15%;
+      color: #4f15c4;
   }
   // @media (max-width:470px) {
   //   font-size: 1.2rem;  

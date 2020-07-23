@@ -1,5 +1,5 @@
 <template>
-  <section v-if="evento" class="evento-details">
+  <section v-if="evento" class="evento-details main-layout">
     <div class="evento-details-hiro flex align-center">
       <div class="evento-details-hiro-img">
         <img class="hiro-img" src="../assets/imgs/Web-design-secrets.jpg" />
@@ -10,35 +10,37 @@
     <div class="evento-content flex">
 
       <div class="evento-desc">
-        <span v-for="tag in evento.tags" :key="tag" class="evento-details-h3">{{tag}} </span>
         <div class="evento-details-title">
+        <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}} </span>
         <h1 class="evento-details-h1">{{evento.title}}</h1>
         <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
          
         
-        <h4 class="evento-details-h4"><i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})</h4>
+        <h4 class="evento-details-h4"><i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})
+        <i class="fas fa-globe-europe"></i>
+          {{evento.country}}</h4>
       </div>
         
         <div class="evento-info flex space-between">
         <p>
-          <i class="far fa-flag"></i>
-          {{evento.country}}
+          <i class="far fa-clock"></i>
+          {{evento.dur}} Minutes
         </p>
         <p>
           <i class="fas fa-language"></i>
           {{evento.lang}}
         </p>
         <p>
-          <i class="far fa-clock"></i>
-          {{evento.dur}} Minutes
+          <i class="fas fa-desktop"></i>
+          Join from your computer, phone, or tablet
         </p>
         <p>
-          <i class="fas fa-users"></i>
+          <i class="far fa-user"></i>
           Up to {{evento.capacity}} pepole
           
         </p>
         </div>
-        <h2 class="evento-description">Description</h2>
+        <h2 class="evento-description">What you'll do</h2>
         <p>
           {{evento.desc}}
           <br />Lorem ipsum dolor sit amet consectetur,
@@ -88,10 +90,12 @@
           <button>Submit</button>
         </form>
         <h3>Members</h3>
+        <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
-         
+         </div>
+
         </div>
       </div>
     </div>

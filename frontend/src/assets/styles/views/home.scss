@@ -13,7 +13,7 @@
   }
   
   .home-vector {
-    width: 30em;
+    width: 25em;
     float: right;
     @media (max-width:1080px) {
     float: none;
@@ -21,17 +21,19 @@
   }
 
   .txt-vect-hero {
+    height: 45vh;
     margin: 5% 10%;
+
   }
 
 
  
 .hp-btn {
   font-family: 'open Sans';
-  color: #5e17eb;
+  color: white;
   text-decoration: none;
   padding: 0.5rem 2rem;
-  background-color: white;
+  background-color: #5e17eb;
   outline: none;
   border-width: 0.1rem;
   border-style: solid;
@@ -44,17 +46,13 @@
   font-size: 1.2rem;
   
   &:hover {
-    font-weight: bold;
-    transition: 0.3s;
-    color: #5e17eb;
-    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+    background-color: #4f15c4;
   }
 }
 
 
 
 .sub-nav-bar {
-  position: absolute;
   color: rgb(59, 59, 59);
   font-size: 1.5rem;
   background-repeat: no-repeat;
