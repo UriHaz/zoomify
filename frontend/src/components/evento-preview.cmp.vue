@@ -9,7 +9,7 @@
     <h3 class="card-h3">{{ evento.title }}</h3>
     <h4 class="card-h4">By {{ evento.createdBy.fullName }}</h4>
     <p>{{eventoDate}}</p>
-    <p>{{evento.createdBy.rating}}/5 <i class="fas fa-star"></i></p>
+    <div class="star"><p class="fas fa-star"> {{evento.createdBy.rating}}/5</p></div>
     <!-- <p>id: {{ evento.id }}</p> -->
 
     <!-- <a :href="`#${evento.link}`" class="join">Join ›</a> -->
