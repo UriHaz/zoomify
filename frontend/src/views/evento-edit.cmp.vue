@@ -6,7 +6,7 @@
     <h2>We will share it with others</h2>
     <form class="flex column" v-if="eventoToEdit" @submit.prevent="saveEvento">
       <label>
-        <h3>My event is about...</h3>
+        <h3>My event is about:</h3>
         <input class="add-event-placeholder" type="text" v-model="eventoToEdit.title" placeholder="Add event title..." />
       </label>
 
@@ -38,8 +38,8 @@
       </label>
 
 <div>
-    <button class="back-btn" title="Back" @click="$router.push('/events')">◄ Back to Events ↶</button>
-      <button  class="add-btn">⭞ Add Event ►</button>
+    <button class="back-btn" title="Back" @click="$router.push('/events')">◄ Back to Events</button>
+      <button  class="add-btn">Add Event ►</button>
 </div>    
     </form>
     <button v-if="eventoToEdit.id" @click="removeEvento">Delete</button>

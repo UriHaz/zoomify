@@ -1,26 +1,39 @@
 .evento-edit {
     button {
-        // background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+        color: black;
+        margin-top: 50%;
+        font-size: 1rem;
+        font-weight: lighter;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+        outline: none;
+        border-style: solid;
         border-color: #5e17eb;
         border-radius: 0.5rem;
-        border-style: solid;
-        border-width: 0.1rem;
-        color: #5e17eb;
-        font-family: 'open Sans';
-        font-size: 1rem;
-        margin: 2rem auto;
-        outline: none;
+        width: 14rem;
+        height: 2.5rem;
         text-decoration: none;
-        width: 10rem;
+        margin: 2rem auto;
+        cursor: pointer;
+    }
 
+    .back-btn {
+        background-color: #efefef;
         &:hover {
-          font-weight: bold;
-          transition: 0.3s;
-          color: white;
-          background-color: #5e17eb;;
-        //   background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+            color: black;
+        background-color: white;
+        }
+      }
+        
+    .add-btn {
+        color: white;
+        background-color: #5e17eb;
+        &:hover {
+            color: black;
+        background-color: #69f809;
         }
     }
+
 
     h1 {
         font-size: 3rem;
@@ -40,6 +53,9 @@
         border-radius: 0.5rem;
         resize: none;
         }
+
+
+
 }
 
 .add-event-placeholder {
@@ -68,6 +84,8 @@
 
 
 .add-event-date {
+    // display: flex;
+    // justify-content: center;
     background-color: white;
     border-color: rgb(94, 23, 235);
     border-image: initial;
@@ -83,6 +101,8 @@
 }
 
 .add-event-time {
+    // display: flex;
+    // justify-content: center;
     background-color: white;
     border-color: rgb(94, 23, 235);
     border-image: initial;
@@ -105,10 +125,3 @@
 
 
 
-.back-btn {
-    background-color: #ff3232b7;
-}
-    
-.add-btn {
-    background-color: #69f809;
-}
