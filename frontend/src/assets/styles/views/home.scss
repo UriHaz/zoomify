@@ -29,21 +29,21 @@
 
  
 .hp-btn {
-  font-family: 'open Sans';
   color: white;
-  text-decoration: none;
-  padding: 0.5rem 2rem;
   background-color: #5e17eb;
+  margin-top: 50%;
+  font-size: 1rem;
+  // font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
   outline: none;
-  border-width: 0.1rem;
   border-style: solid;
   border-color: #5e17eb;
-  border-image: initial;
   border-radius: 0.5rem;
-  width: 15rem;
+  width: 14rem;
   text-decoration: none;
   margin: 2rem auto;
-  font-size: 1.2rem;
+  cursor: pointer;
   
   &:hover {
     background-color: #4f15c4;
