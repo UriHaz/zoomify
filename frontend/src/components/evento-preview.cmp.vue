@@ -4,7 +4,7 @@
 
       <!-- <img v-if="evento.imgUrls" :src="evento.imgUrls"> -->
       <!-- <img class="evento-img" v-else :src="`https://www.jeffbullas.com/wp-content/uploads/2017/06/Why-Live-Events-Should-Be-At-The-Center-Of-Your-Marketing-Strategy.jpg`"> -->
-      <img class="evento-img" :src="evento.imgUrl">
+      <img class="evento-img" :src="evento.createdBy.imgUrl">
 
     <h3 class="card-h3">{{ evento.title }}</h3>
     <h4 class="card-h4">By {{ evento.createdBy.fullName }}</h4>
