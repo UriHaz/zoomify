@@ -44,7 +44,7 @@
 
 
 <div class="justify-center flex">
-    <button class="back-btn" title="Back" @click="$router.push('/events')">◄ Back to Events</button>
+    <button class="back-btn" title="Back" @click="$router.push('/events')">◄ To Events</button>
     <!-- </div> -->
 <!-- <div class="justify-center flex"> -->
       <button  class="add-btn">Add Event ►</button>
