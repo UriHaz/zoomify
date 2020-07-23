@@ -19,7 +19,8 @@ function remove(userId) {
 }
 
 function update(user) {
-    return httpService.put(`user/${user.id}`, user)
+    console.log('user in service:', user);
+    return httpService.put(`user/${user._id}`, user)
 }
 
 async function login(userCred) {

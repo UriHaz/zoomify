@@ -11,8 +11,10 @@ export const userStore = {
 	strict: true,
 	state: {
 		loggedInUser: {
+			_id: "5f16cdd6edfffbaab19a5352",
 			fullName : "will smith",
-			imgUrl : "https://api.adorable.io/avatars/285/abxcfxvvcott@adorable.png"
+			// imgUrl : "https://api.adorable.io/avatars/285/abxcfxvvcott@adorable.png",
+			eventos :[]
 		},
 		users: [],
 	},
@@ -87,16 +89,13 @@ export const userStore = {
 		},
 
 		async addEventoToUser (context, { evento }){
-			const users = await userService.query()
-			console.log(users);
-			context.commit({ type: "setUsers", users });
-			const loggedInUser = context.getters.loggedInUser;
-			console.log(loggedInUser);
-			loggedInUser.eventos.push(evento)
-			console.log('logged in user in store:', loggedInUser);
-			const savedUser = await userService.update(loggedInUser)
-			console.log('saved user',savedUser);
-			context.commit({type: "updateUser", savedUser });
+			console.log('evento in store', evento);
+			var loggedInUser = context.getters.loggedInUser;
+			const userCopyToUpdate = _.cloneDeep(loggedInUser)
+			console.log('user in store', userCopyToUpdate);
+			userCopyToUpdate.eventos.push(evento)
+			await userService.update(userCopyToUpdate)
+			// context.commit({type: "updateUser", savedUser });
 
 		}
 	},

@@ -38,7 +38,7 @@ export const eventoStore = {
 						},
 						removeEvento(state, { id }) {
 							const eventoIdx = state.eventos.findIndex(
-								(evento) => evento.id === id
+								(evento) => evento._id === id
 							);
 							state.eventos.splice(eventoIdx, 1);
 						},
@@ -46,8 +46,9 @@ export const eventoStore = {
 							state.eventos.unshift(savedEvento);
 						},
 						updateEvento(state, { savedEvento }) {
+							console.log(savedEvento);
 							const idx = state.eventos.findIndex(
-								(evento) => evento.id === savedEvento.id
+								(evento) => evento._id === savedEvento._id
 							);
 							state.eventos.splice(idx, 1, savedEvento);
 						},
@@ -55,28 +56,33 @@ export const eventoStore = {
 					actions: {
 						loadEventos({ commit, state }) {
 							commit({ type: "setIsLoading", isLoading: true });
-							return eventoService.query(state.filterBy).then((eventos) => {
+							return eventoService.query(state.filterBy)
+							.then((eventos) => {
 								commit({ type: "setEventos", eventos });
 								commit({ type: "setIsLoading", isLoading: false });
 								return eventos;
 							});
 						},
-						removeEvento({ commit }, { id }) {
-							return eventoService.remove(id).then(() => {
-								commit({ type: "removeEvento", id });
-							});
+						async removeEvento({ commit }, { id }) {
+							await eventoService.remove(id)
+							commit({ type: "removeEvento", id });
 						},
-						saveEvento({ commit }, { evento }) {
-							const type = evento.id ? "updateEvento" : "addEvento";
-							return eventoService.save(evento).then((savedEvento) => {
-								commit({ type, savedEvento });
+
+						async saveEvento({ commit }, { evento }) {
+							console.log(evento);
+							const type = evento._id ? "updateEvento" : "addEvento";
+							const savedEvento = await eventoService.save(evento)
+								commit({ type, savedEvento })
 								return savedEvento;
-							});
 						},
 						async addMember(context, { evento }) {
+							console.log(evento);
 							const loggedInUser = context.getters.loggedInUser;
-							evento.members.push(loggedInUser);
+							const userToSave = _.cloneDeep(loggedInUser)
+							console.log(userToSave);
+							evento.members.push(userToSave);
 							const savedEvento = await eventoService.save(evento);
+							console.log(savedEvento);
 							context.commit({ type: "updateEvento", savedEvento });
 						},
 					},

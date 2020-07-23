@@ -16,15 +16,6 @@
       <!-- <div class="hero-bg"> -->
       <!-- <img src="../assets\imgs\hero.jpg" class="hero" /> -->
       <!-- </div> -->
-      <!-- <div>
-        <div class="sub-nav-bar">
-          <div>
-            <p class="hp-sub-link-1">Recommended events:</p>
-          </div>
-          <div>
-            <p class="hp-sub-link-2">All events ›</p>
-          </div>
-        </div> -->
 
 
      <div>
