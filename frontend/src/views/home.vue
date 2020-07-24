@@ -38,13 +38,13 @@
   </div> -->
 
 
-      <el-carousel :interval="4000" type="card" height="500px">
+      <el-carousel :interval="4000" type="card" height="25rem">
         <el-carousel-item v-for="evento in eventos" :key="evento.id">
                     <evento-preview :evento="evento" />
         </el-carousel-item>
       </el-carousel>
 
-      <el-carousel :interval="4000" type="card" height="500px">
+      <el-carousel :interval="4000" type="card" height="25rem">
         <el-carousel-item v-for="evento in eventos" :key="evento.id">
                     <evento-preview :evento="evento" />
         </el-carousel-item>
