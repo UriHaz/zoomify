@@ -9,12 +9,12 @@
           </h1>
      <div class="hp-link-filter">
          
-          <router-link to="/login" class="hp-btn">Share your Event ›</router-link> 
+          <router-link to="/login" class="hp-btn">Start Your Journey ›</router-link> 
           <evento-filter/>
       </div>
 
         </div>
-        <img src="../assets/imgs/hero-gif4.gif" class="home-hero" />
+        <img src="../assets/imgs/hero2.jpeg" class="home-hero" />
         <!-- <img src="../assets/imgs/hero-gif3.gif" class="home-hero" /> -->
         <!-- <img src="../assets/imgs/hero-gif1.gif" class="home-hero" /> -->
 

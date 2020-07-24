@@ -1,74 +1,47 @@
 .nav-bar {
+  padding-top: 1rem;
   color: rgb(59, 59, 59);
   font-size: 1.5rem;
-  // box-shadow: 0px 0.2px 20px grey;
   border-bottom: 1px solid  rgb(224, 224, 224);
   background-repeat: no-repeat;
   cursor: pointer;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
-  // padding-left: 3rem;
-  // padding-right: 3remx;
+  margin-bottom: 0px;
 
-  .app-logo {
-    color: #5e17eb;
-    padding: 0 1rem;
-    font-size: 2.5rem;
-    font-weight: 900;
-
-    // @media (max-width:710px) {
-    //   font-size:2rem;
-    //   padding-top: 20px;
-    //   margin: 1rem auto;
-    // }
-  }
 
   .logo-img{
     width: 150px;
     height: 36px;
-    padding-left: 20px;
+    margin-left: 12px;
   }
 
-
-
-  a {
-    color: #5e17eb;
-    font-size: 1.3rem;
-    margin: 1rem 1rem;
-    text-decoration: none;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: 100% 0.00em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-    &:hover {
-      color: #4f15c4;
+  .user-btn{
+    padding: 5px 12px;
+    border-radius: 1.5rem;
+    border: none;
   }
-  // @media (max-width:470px) {
-  //   font-size: 1.2rem;  
-  // }
-  // @media (max-width:445px) {
-  //   font-size: 1.1rem;  
-  // }
-  // @media (max-width:423px) {
-  //   font-size: 1rem;  
-  // }
-  // @media (max-width:400px) {
-  //   font-size: 0.9rem;  
-  // }
-    // &.router-link-exact-active {
-    // color: #5e17eb;
-    // }
+
   }
 
   .nav-links {
-    display: flex;
     list-style: none;
-    margin: 15px;
+    height: 52px;
+
+    a {
+      color: #5e17eb;
+      font-size: 1.3rem;
+      padding: 1rem 1rem 1rem 1rem;
+      text-decoration: none;
+      background-repeat: no-repeat;
+      background-size: 100% 0.00em;
+      background-position: 0 88%;
+      transition: background-size 0.25s ease-in;
+      &:hover {
+        color: #4f15c4;
+    }
+
     @media (max-width:710px) {
       padding-bottom: 1rem;
       font-size: 1rem;
@@ -81,11 +54,4 @@
       margin: auto;
     }
   }
-
-//  .nav-links a:hover{
-//     color: #5e17eb;
-//     // text-decoration: underline;
-//     transition: 0.4s;
-//   }
-
 }

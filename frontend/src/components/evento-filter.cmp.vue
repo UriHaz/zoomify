@@ -75,7 +75,8 @@ export default {
   margin: 0px 10px;
 }
 .el-input.search {
-  width: 30%;
+  max-width: 200px;
   margin-bottom: 10px;
+  border-radius: 0.5rem;
 }
 </style>
