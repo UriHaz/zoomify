@@ -32,7 +32,7 @@
         "technology", 
         "coding"
     ],
-    "members" (שיהיו לפחות 10) : [
+    "members" : [
         {
             "id": "h006",
             "fullName": "Richard Cooper",
@@ -67,7 +67,7 @@
       
         }
     ],
-    "reviews" (שיהיו לפחות 5): [
+    "reviews" : [
         {
             "id": "h006",
             "fullName": "Richard Cooper",
