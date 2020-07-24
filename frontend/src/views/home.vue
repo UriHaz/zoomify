@@ -17,7 +17,7 @@
         <img src="../assets/imgs/hero-gif4.gif" class="home-hero" />
         <!-- <img src="../assets/imgs/hero-gif3.gif" class="home-hero" /> -->
         <!-- <img src="../assets/imgs/hero-gif1.gif" class="home-hero" /> -->
-        <!-- <img src="../assets/imgs/hero-gif.gif" class="home-vector" /> -->
+
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
         <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
