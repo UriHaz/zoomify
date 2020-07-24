@@ -15,15 +15,26 @@
     width: 150px;
     // height: 2rem;
     margin-left: 2rem;
-    margin-top: 1rem;
+    // margin-top: 1rem;
   }
 
   .user-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $clr2;
+    background-color: $clr7;
     padding: 5px 12px;
     border-radius: 1.5rem;
     border: none;
     margin-right: 1rem;
-    // margin-bottom: 2rem;
+    transition: background-color&color 1s ease-in;
+    // transition: color 0.25s ease-in;
+
+    &:hover {
+      background-color: $clr6;
+      color: $clr5;
+  }
   }
 
   }
@@ -33,16 +44,14 @@
     height: 52px;
 
     a {
-      color: #5e17eb;
-      font-size: 1.3rem;
+      color: $clr2;
+      font-size: 1rem;
       padding: 1rem 1rem 1rem 1rem;
+      font-weight: bold;
       text-decoration: none;
-      background-repeat: no-repeat;
-      background-size: 100% 0.00em;
-      background-position: 0 88%;
-      transition: background-size 0.25s ease-in;
+      transition: color 0.25s ease-in;
       &:hover {
-        color: #4f15c4;
+        color: $clr6;
     }
 
     // @media (max-width:710px) {

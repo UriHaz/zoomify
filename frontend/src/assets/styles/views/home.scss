@@ -1,5 +1,4 @@
 .home {
-  // overflow-x: hidden;
 
   .hp-content {
     margin: 0 5% 0 5%;
@@ -32,10 +31,10 @@
 
 
 .hp-h1{
-  // font-family: 'Open Sans', sans-serif;
-  text-shadow: 0rem 0.1rem 0.2rem black;
+  color: $clr5;
   font-size: 30px;
   margin-left: 1rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -50,7 +49,6 @@
   background-color: $clr8;
   margin: 0 0  0 1rem;
   font-size: 1rem;
-  // font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 0.7rem;
   outline: none;
@@ -59,18 +57,14 @@
   border-radius: 0.5rem;
   width: 10rem;
   text-decoration: none;
-  // margin: 2rem auto;
   
   cursor: pointer;
-  
-  // &:hover {
-  //   background-color: #4f15c4;
-  // }
+
 }
 
 
 .sub-nav-bar {
-  color: rgb(59, 59, 59);
+  color: $clr2;
   font-size: 1.5rem;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -78,20 +72,13 @@
   display: flex;
 
   .hp-sub-link-1 {
-    color: #5e17eb;
     padding-top: 1rem;
   }
       a {
-        color: #5e17eb;
+        color: $clr2;
         font-size: 1.3rem;
         margin: 1rem 1rem;
         text-decoration: none;
-        align-items: center;
-        // background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
-        background-repeat: no-repeat;
-        background-size: 100% 0.00em;
-        background-position: 0 88%;
-        transition: background-size 0.25s ease-in;
         &:hover {
         background-size: 100% 15%;
         }
@@ -102,5 +89,7 @@
         margin: 15px;
   }
 }
+
+
 
       
