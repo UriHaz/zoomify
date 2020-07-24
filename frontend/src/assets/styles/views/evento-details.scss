@@ -1,5 +1,5 @@
 .evento-details{
-    p{
+    p {
         line-height: 2;
     }
 }
@@ -8,11 +8,11 @@
 .evento-details-hero {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    height: 15.4rem;
+    height: 17rem;
+    grid-column-gap: 0.5rem;
 
     img {
         width: 100%;
-        padding: 0 0.1rem;
     }
 }
 

@@ -15,8 +15,8 @@
       
       <div class="event-star-date">
       <div class="star">
-        <p class="fas fa-star">{{evento.createdBy.rating}}</p>
-        <span class="raters"> ({{evento.createdBy.raters}}) </span>
+        <p class="fas fa-star">{{evento.avgRating}}</p>
+        <span class="raters"> ({{evento.raters}}) </span>
       </div>
       <p class="event-date">{{eventoDate}}</p>
       </div>
