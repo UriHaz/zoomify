@@ -1,9 +1,9 @@
 <template>
-  <div >
-      <div class="list-container" v-for="evento in eventos" :key="evento.id">
+      <section class="list-container">
+      <div v-for="evento in eventos" :key="evento.id">
           <evento-preview :evento="evento" />
       </div>
-  </div>
+      </section>
 </template>
 
 
