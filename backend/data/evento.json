@@ -8,9 +8,7 @@
         "fullName" : "Misko Hevery",
         "imgUrl" : "https://i.imgur.com/s85nzVj.jpg"
     },
-    "gallery": [
-        {
-            "imgUrls": [
+    "imgUrls": [
                 {
                     "img1": "https://i.imgur.com/bULRWFO.jpg"
                 },
@@ -23,19 +21,8 @@
                 {
                     "img4": "https://i.imgur.com/Ge8c5pr.jpg"
                 }
-            ]
-        },
-        {
-            "videoUrls": [
-                {
-                    "vid1": "https://www.youtube.com/watch?v=A8YZB_T0t3U"
-                },
-                {
-                    "vid2": "https://www.youtube.com/watch?v=QfepQIjIIRA"
-                }
-            ]
-        }
-    ],
+            ],
+    "videoUrl": "https://www.youtube.com/watch?v=A8YZB_T0t3U",
     "link" : "https://us02web.zoom.us/j/7568815336",
     "startDate" : "2020-07-30",
     "startTime" : "20:00",
@@ -45,7 +32,7 @@
         "technology", 
         "coding"
     ],
-    "members" : [
+    "members" (שיהיו לפחות 10) : [
         {
             "id": "h006",
             "fullName": "Richard Cooper",
@@ -80,7 +67,7 @@
       
         }
     ],
-    "reviews" : [
+    "reviews" (שיהיו לפחות 5): [
         {
             "id": "h006",
             "fullName": "Richard Cooper",
