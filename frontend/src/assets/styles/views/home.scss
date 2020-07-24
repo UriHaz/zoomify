@@ -1,15 +1,23 @@
 .home {
-
   overflow-x: hidden;
 }
 
+.hp-content {
+  margin: 0 5% 0 5%;
+}
 
+
+// .hp-filter {
+
+// }
 
 
 .centered-h1 {
     color: white;
     // float: left;
-    margin-top: 5%;
+    margin: 7% 0 0 7%;
+    // text-shadow: 0.1rem 0.2rem grey;
+    text-shadow: 0rem 0.3rem 0.5rem black;
     // margin-bottom: 5rem;
     position: absolute;
     padding-left: 5rem;

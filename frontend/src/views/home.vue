@@ -15,11 +15,14 @@
         <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
 
-     <div>
+     <div class="hp-filter">
                               <evento-filter/>
 
       </div>
       
+<div class="hp-content">
+      
+
       <nav class="sub-nav-bar">
         <router-link to="/" class="hp-sub-link-1">Recommended events:</router-link>
         <div class="hp-sub-link-2">
@@ -46,6 +49,7 @@
         </el-carousel-item>
       </el-carousel>
     
+    </div>
     </section>
     
 </template>
