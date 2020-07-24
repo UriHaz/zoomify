@@ -5,47 +5,60 @@
     <h1>{{ (eventoToEdit._id) ? 'Edit' : 'Add New' }} Event</h1>
     <h2>We will share it with others</h2>
     <form class="flex column" v-if="eventoToEdit" @submit.prevent="saveEvento">
+      
+
+      <div class="justify-center flex">
       <label>
-        <h3>My event is about...</h3>
+        <h3>My event is about:</h3>
         <input class="add-event-placeholder" type="text" v-model="eventoToEdit.title" placeholder="Add event title..." />
       </label>
+      </div>
 
+      <div class="justify-center flex">
 
-
-      <div class="event-date-time">
       <label>
         <h3>Be there on:</h3>
         <!-- <input class="add-event-placeholder" type="date" v-model="eventoToEdit.startDate" placeholder="Event start date..." /> -->
         <input class="add-event-date" type="date" v-model="eventoToEdit.startDate" />
       </label>
+
       <label>
         <h3>Starting at:</h3>
         <input class="add-event-time" type="time" v-model="eventoToEdit.startTime" />
       </label>
       </div>
 
-
-
-
+<div class="justify-center flex">
       <label>
         <h3>Event Description:</h3>
         <textarea class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.desc" placeholder="Add event description..." />
-      </label>
+</label>
+</div>
 
+<div class="justify-center flex">
      <label>
         <h3>About the Host:</h3>
         <textarea class="add-event-placeholder add-desc-placeholder" type="text" v-model="eventoToEdit.about" placeholder="Add some abouts..." />
       </label>
+</div>
 
-<div>
-    <button class="back-btn" title="Back" @click="$router.push('/events')">◄ Back to Events ↶</button>
-      <button  class="add-btn">⭞ Add Event ►</button>
-</div>    
+
+<div class="justify-center flex">
+    <button class="back-btn" title="Back" @click="$router.push('/events')">◄ To Events</button>
+    <!-- </div> -->
+<!-- <div class="justify-center flex"> -->
+      <button  class="add-btn">Add Event ►</button>
+</div>
+
     </form>
+
     <button v-if="eventoToEdit.id" @click="removeEvento">Delete</button>
    </section>
 </template>
 <script>
+
+
+
 import { eventoService } from "../services/evento.service.js";
 const _ = require("lodash");
 
