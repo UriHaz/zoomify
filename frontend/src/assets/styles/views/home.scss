@@ -10,6 +10,7 @@
 
 .el-input {
   margin-top: 2rem;
+  margin-left: 1rem;
   outline: 0;
 }
 
@@ -34,6 +35,7 @@
   // font-family: 'Open Sans', sans-serif;
   text-shadow: 0rem 0.1rem 0.2rem black;
   font-size: 30px;
+  margin-left: 1rem;
 }
 
 
@@ -46,7 +48,7 @@
 .hp-btn {
   color: $clr6;
   background-color: $clr8;
-  margin-top: 50%;
+  margin: 0 0  0 1rem;
   font-size: 1rem;
   // font-weight: bold;
   text-decoration: none;
@@ -57,7 +59,8 @@
   border-radius: 0.5rem;
   width: 10rem;
   text-decoration: none;
-  margin: 2rem auto;
+  // margin: 2rem auto;
+  
   cursor: pointer;
   
   // &:hover {
