@@ -2,7 +2,7 @@
   <section v-if="evento" class="evento-details main-layout">
     <div class="evento-details-hiro flex align-center">
       <div class="evento-details-hiro-img">
-        <img class="hiro-img" src="../assets/imgs/Web-design-secrets.jpg" />
+        <img class="hiro-img" :src="evento.imgUrl" />
       </div>
     </div>
 
@@ -52,9 +52,10 @@
           numquam unde, aspernatur assumenda accusantium labore consequatur repellendus cumque voluptatum!
           Tempora modi reprehenderit delectus nisi magnam vero molestiae!
         </p>
-        <h3>Meet your host, {{evento.createdBy.fullName}}</h3>
-        <avatar :src="evento.createdBy.imgUrl"></avatar>
-        
+        <h3>
+        <avatar inline :src="evento.createdBy.imgUrl"></avatar>
+        Meet your host, {{evento.createdBy.fullName}}
+        </h3>
         <p>
           {{evento.about}}
           <br />Lorem ipsum dolor sit amet consectetur,
@@ -71,6 +72,14 @@
           <i class="far fa-calendar-alt"></i>
           {{evento.startDate}} {{evento.startTime}}
         </p>
+         <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
+          <p>
+            <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
+          </p>
+          <p>
+            <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
+          </p>
+        </form>
         <button v-if="!join" @click="joinEvent" class="join-btn">
           Join Event
         </button>
@@ -80,15 +89,7 @@
           Start event!
         </button>
         </div>
-        <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
-          <p>
-            <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
-          </p>
-          <p>
-            <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
-          </p>
-          <button>Submit</button>
-        </form>
+       
         <h3>Members</h3>
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
@@ -119,36 +120,34 @@ export default {
   },
 
   computed:{
-  loggedInUser() {return this.$store.getters.loggedInUser;}
-  },
-
-  methods: {
-    loadEvento() {
-      const eventoId = this.$route.params._id;
-      eventoService.getById(eventoId).then(evento => {
-        this.evento = evento;
-      });
-    },
-    async joinEvent() {
-      this.join = true;
-      await this.$store.dispatch({ type: "addMember", evento: this.evento });
-      // await this.$store.dispatch({ type: "addEventoToUser", evento: this.evento });
-    },
-
-    addGuest(){
-      this.join = true;
-      this.evento.members.push(this.guestToAdd)
-      console.log(this.evento);
-      this.$store.dispatch({ type: "saveEvento", evento: this.evento });
+  loggedInUser() {
+    return this.$store.getters.loggedInUser;
     }
   },
 
+  methods: {
+    async loadEvento() {
+      const eventoId = this.$route.params._id;
+      const evento = await eventoService.getById(eventoId)
+        this.evento = evento;
+    },
+    async joinEvent() {
+      this.join = true;
+      if (this.loggedInUser){
+      this.evento.members.push(this.loggedInUser)
+      // await this.$store.dispatch({ type: "addEventoToUser", evento: this.evento })
+      }
+      else {
+        this.evento.members.push(this.guestToAdd)
+      }
+      this.$store.dispatch({ type: "saveEvento", evento: this.evento });
+    }
+  },
   created() {
     this.loadEvento();
   },
   components: {
     Avatar
-
   },
-};
+}
 </script>
