@@ -96,14 +96,17 @@
     padding: 1rem;
 }
 
+.evento-start{
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
 .members-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 5px;
 
 }
-
-
 
 .member-img {
     width: 7rem;
@@ -145,6 +148,7 @@
 
 
 .join-btn {
+    display: block;
     background-color: $clr1;
     color: #fff;
     margin-top: 50%;
@@ -160,6 +164,11 @@
     text-decoration: none;
     margin: 2rem auto;
     cursor: pointer;
+}
+
+.start-btn{
+    padding: 0.5rem 0.5rem;
+
 }
 
 

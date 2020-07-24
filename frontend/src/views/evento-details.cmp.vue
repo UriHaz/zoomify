@@ -82,26 +82,26 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!join" @click="joinEvent" class="join-btn">
+        <button v-if="!join" @click="open" class="join-btn">
           Book Event (${{evento.price}})
         </button>
-        <div v-else>
-        <h3>Event start in: 55 minutes</h3>
+        <div class="evento-start" v-else>
+        <h3>Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
         <button class="join-btn">
           Start event!
         </button>
         </div>
        
         <h3>Members</h3>
-        <el-tooltip :disabled="disabled" content="click to close tooltip function" placement="bottom" effect="light">
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
+        <el-tooltip  content='member' placement="top-start" effect="dark">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
+        </el-tooltip>
          </div>
 
         </div>
-        </el-tooltip>
       </div>
     </div>
   </section>
@@ -119,17 +119,57 @@ export default {
     return {
       evento: null,
       join: false,
-      guestToAdd:{}
+      guestToAdd:{},
+      countDownSeconds : 59,
+      countDownMinutes : 55
     };
   },
 
   computed:{
   loggedInUser() {
     return this.$store.getters.loggedInUser;
+    },
+    timerOn(){
+     return this.timer = setInterval( this.timeDown(), 1000);
+    //  return this.time;
     }
   },
 
   methods: {
+
+    countDownTimer() {
+        if(this.countDownSeconds >= 0 && this.countDownMinutes >= 0) {
+            setTimeout(() => {
+            this.countDownSeconds --
+            this.countDownTimer()
+            }, 1000)
+        }
+        else {
+          this.countDownSeconds = 59
+          this.countDownTimer()
+          this.countDownMinutes--
+          
+        }
+    },
+
+     open() {
+        this.$confirm(`Your acoount will be charged by $${this.evento.price}`,'Book', {
+          confirmButtonText: 'OK',
+          cancelButtonText: 'Cancel',
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: 'Book completed!'
+          });
+          this.joinEvent()
+          this.countDownTimer()
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: 'Book was cancelled'
+          });          
+        });
+     },
     async loadEvento() {
       const eventoId = this.$route.params._id;
       const evento = await eventoService.getById(eventoId)
