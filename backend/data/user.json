@@ -1,20 +1,12 @@
-{
-    "_id" : "5f15c7b1e02168699e5ad1af",
-    "fullName" : "will smith",
-    "email" : "wil@smith.com",
-    "password" : "belair",
-    "isAdmin" : false,
-    "rating": 4.5,
-    "raters": 132,
-    "imgUrl" : "https://api.adorable.io/avatars/285/abxcfxvvcott@adorable.png",
-    "createdEventos" : [" ליוזר הראשון 3-4 אבנטים"],
-    "signedEventos" : [" ליוזר הראשון 3-4 אבנטים"],
-    "reviews" : [ 
-        {
-            "id" : "12123",
-            "byUser" : {},
-            "txt" : "I didn't like it",
-            "rating" : 2.0
-        }
-    ]
-}
+[
+    {
+        // "_id" : "5f15c7b1e02168699e5ad1af",
+        "fullName": "Arthur Read",
+        "email": "arthur@read.com",
+        "password": "red",
+        "isAdmin": false,
+        "imgUrl": "https://i.imgur.com/glxWil9.jpg",
+        "createdEventos": [],
+        "signedEventos": []
+    }
+]
