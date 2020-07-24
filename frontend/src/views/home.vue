@@ -1,6 +1,6 @@
 <template>
 
-  <section class="home main-layout">      
+  <section class="home">      
       <div class="txt-vect-hero">
         <div class="centered-h1">
           <h1>
@@ -14,11 +14,6 @@
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
         <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
-
-      <!-- <div class="hero-bg"> -->
-      <!-- <img src="../assets\imgs\hero.jpg" class="hero" /> -->
-      <!-- </div> -->
-
 
      <div>
                               <evento-filter/>
