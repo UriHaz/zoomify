@@ -1,5 +1,24 @@
+.about {
+  color: #5e17eb;
+  text-align: center;
+
+  .about-h1 {
+    font-size: 3.5rem;
+    }
+  
+    .about-h2 {
+      font-weight: lighter;
+    }
+  
+    .about-txt {
+      margin: 1rem 16rem;
+    }
+}
+
+
 .about-card {
-    background-color: white;
+  text-align: center;
+   background-color: white;
     margin: 5rem;
     box-shadow: 0 0 0.3rem 0 grey;
     break-inside: avoid;
@@ -7,15 +26,18 @@
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
-    // width: 240px;
-    // height: 350px;
     width: 15rem;
     height: rem;
-    border: 1rem;
+    // border: 1rem;
     border-radius: 2rem;
     color: #5e17eb;
     border-width: 0.1rem;
     display: inline-grid;
+
+
+
+
+    
   }
   
   .about-card:hover {
@@ -42,37 +64,29 @@
   }
   
   .contact {
-    padding: 0.2rem;
     margin: 1rem 5.5rem;
+    color: white;
+    background-color: #5e17eb;
     width: 4rem;
-    // font-family: 'open Sans';
-    color: #5e17eb;
+    font-size: 0.8rem;
+    font-weight: lighter;
     text-decoration: none;
-    background-color: white;
+    padding: 0.5rem 0.5rem;
     outline: none;
-    border-width: 0.1rem;
     border-style: solid;
     border-color: #5e17eb;
-    border-image: initial;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover{
+      font-weight: bold;
+    color: #5e17eb;
+    background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
+    }
+
+
+
   }
   
-  .contact:hover{
-    font-weight: bold;
-  color: #5e17eb;
-  background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
-  }
 
 
-  .about-h1 {
-font-size: 3.5rem;
-  }
-
-  .about-h2 {
-    font-weight: lighter;;
-  }
-
-  .about-txt {
-    color: #5e17eb;
-    margin: 1rem 16rem;
-  }
