@@ -1,10 +1,13 @@
 <template>
   <section v-if="evento" class="evento-details main-layout">
-    <div class="evento-details-hiro flex align-center">
-      <div class="evento-details-hiro-img">
-        <img class="hiro-img" :src="evento.imgUrl" />
+   
+   
+    <div class="evento-details-hero">
+        <div><img  :src="evento.imgUrls.img2" /></div>
+        <div><img  :src="evento.imgUrl" /></div>
+        <div><img  :src="evento.imgUrls.img1" /></div>
       </div>
-    </div>
+
 
 
     <div class="evento-content flex">
