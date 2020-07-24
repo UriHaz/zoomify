@@ -13,14 +13,17 @@
 
   .logo-img{
     width: 150px;
-    height: 36px;
-    margin-left: 12px;
+    // height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
   }
 
   .user-btn{
     padding: 5px 12px;
     border-radius: 1.5rem;
     border: none;
+    margin-right: 1rem;
+    // margin-bottom: 2rem;
   }
 
   }
@@ -42,16 +45,16 @@
         color: #4f15c4;
     }
 
-    @media (max-width:710px) {
-      padding-bottom: 1rem;
-      font-size: 1rem;
-      padding-top: 5px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      margin: 0;
-      display: block;
-      margin: auto;
-    }
+    // @media (max-width:710px) {
+    //   padding-bottom: 1rem;
+    //   font-size: 1rem;
+    //   padding-top: 5px;
+    //   position: fixed;
+    //   top: 0;
+    //   right: 0;
+    //   margin: 0;
+    //   display: block;
+    //   margin: auto;
+    // }
   }
 }
