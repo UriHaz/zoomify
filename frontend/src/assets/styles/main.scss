@@ -1,6 +1,8 @@
 // SETUP
-// @import './setup/vars';
-// @import './setup/mixins';
+
+@import './setup/mixins.scss';
+@import './setup/variables.scss';
+@import './setup/typography.scss';
 
 // BASICS
 @import './basics/base.scss';
@@ -22,10 +24,4 @@
 @import './cmps/evento-list.scss';
 @import './cmps/evento-filter.scss';
 @import './cmps/evento-preview.scss';
-// @import './cmps/user-msg';
-// @import './cmps/nice-popup';
 
-
-// CUTSTOM CMPS
-// @import './custom-cmps/chat-app';
-// @import './custom-cmps/toggle-btn';

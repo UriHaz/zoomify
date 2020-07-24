@@ -103,7 +103,8 @@
     }
 
     button{
-        color: black;
+        color: $clr5;
+        background-color: $clr2;
         margin-top: 50%;
         font-size: 1rem;
         font-weight: lighter;
@@ -111,7 +112,6 @@
         padding: 0.5rem 0.5rem;
         outline: none;
         border-style: solid;
-        border-color: #5e17eb;
         border-radius: 0.5rem;
         width: 14rem;
         text-decoration: none;
@@ -122,8 +122,8 @@
 
 
 .join-btn {
-    color: white;
-    background-color: #5e17eb;
+    background-color: $clr1;
+    color: #fff;
     margin-top: 50%;
     font-size: 1rem;
     font-weight: bold;
@@ -131,9 +131,9 @@
     padding: 0.5rem 0.5rem;
     outline: none;
     border-style: solid;
-    border-color: #5e17eb;
-    border-radius: 0.5rem;
-    width: 14rem;
+    border-color: $clr1;
+    border-radius: 0.2rem;
+    width: 16rem;
     text-decoration: none;
     margin: 2rem auto;
     cursor: pointer;
