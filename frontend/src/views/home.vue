@@ -14,13 +14,13 @@
       </div>
 
         </div>
-        <img src="../assets/imgs/hero2.jpeg" class="home-hero" />
         <!-- <img src="../assets/imgs/hero-gif3.gif" class="home-hero" /> -->
         <!-- <img src="../assets/imgs/hero-gif1.gif" class="home-hero" /> -->
 
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
         <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
+        <img src="../assets/imgs/hero2.jpeg" class="home-hero" />
 
 
 <div class="hp-content">
@@ -33,30 +33,24 @@
 
         </div>
       </nav>
-   <!-- <div >
-      <div class="list-container" v-for="evento in eventos" :key="evento.id">
-          <evento-preview :evento="evento" />
-      </div>
-  </div> -->
 
 
-      <el-carousel :interval="4000" type="card" height="500px">
-        <el-carousel-item v-for="evento in technologyEventos" :key="evento.id">
+
+        <!-- <div class="eventos-line" v-for="evento in technologyEventos" :key="evento.id">
           <evento-preview :evento="evento" />                 
-        </el-carousel-item>
-      </el-carousel>
+        </div> -->
 
-      <el-carousel :interval="4000" type="card" height="500px">
-        <el-carousel-item v-for="evento in upcomingEventos" :key="evento.id">
-          <evento-preview :evento="evento" />                 
-        </el-carousel-item>
-      </el-carousel>
+        <div class="eventos-line">
+           <evento-list :eventos="popularEventos" />
+        </div>
+        <div class="eventos-line">
+           <evento-list :eventos="technologyEventos" />
+        </div>
+        <!-- <div class="eventos-line">
+           <evento-list v-if="!isLoading" :eventos="upcomingEventos" />
+        </div> -->
 
-      <el-carousel :interval="4000" type="card" height="500px">
-        <el-carousel-item v-for="evento in popularEventos" :key="evento.id">
-          <evento-preview :evento="evento" />
-        </el-carousel-item>
-      </el-carousel>
+ 
     
     </div>
     </section>
@@ -84,7 +78,7 @@ export default {
       return this.$store.getters.eventos;
     },
       popularEventos() {
-        return this.$store.getters.eventos.filter(evento => evento.createdBy.rating > 4)   
+        return this.$store.getters.eventos.filter(evento => evento.createdBy.rating > 4.7)   
       },
     technologyEventos() {
       return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "technology"))   

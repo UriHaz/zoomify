@@ -49,6 +49,41 @@
         {
             "id": "h006",
             "fullName": "Richard Cooper",
+            "imgUrl": "https://i.imgur.com/gBh4UzH.jpg"
+
+        },
+        {
+            "id": "h002",
+            "fullName": "Denis Robbins",
+            "imgUrl": "https://i.imgur.com/SXtojjP.jpg"
+      
+            
+        },
+        {
+            "id": "h003",
+            "fullName": "Amber McCarthy",
+            "imgUrl": "https://i.imgur.com/4pWJA7E.jpg"
+         
+            
+        },
+        {
+            "id": "h004",
+            "fullName": "John Armis",
+            "imgUrl": "https://i.imgur.com/3RuI4yD.png"
+         
+            
+        },
+        {
+            "id": "h005",
+            "fullName": "Sarah Parmon",
+            "imgUrl": "https://i.imgur.com/cavkVjv.jpg"
+      
+        }
+    ],
+    "reviews" : [
+        {
+            "id": "h006",
+            "fullName": "Richard Cooper",
             "imgUrl": "https://i.imgur.com/gBh4UzH.jpg",
             "review" : "great event",
             "givenRating" : 4.9
@@ -69,21 +104,22 @@
             "givenRating" : 4.8
             
         },
-        {
+          {
             "id": "h004",
             "fullName": "John Armis",
             "imgUrl": "https://i.imgur.com/3RuI4yD.png",
-            "review" : "cool",
-            "givenRating" : 5
+             "review" : "wow!",
+            "givenRating" : 4.8
             
         },
         {
             "id": "h005",
             "fullName": "Sarah Parmon",
             "imgUrl": "https://i.imgur.com/cavkVjv.jpg",
-            "review" : "wow",
-            "givenRating" : 4.2
+            "review" : "its a really good event",
+            "givenRating" : 4.5
         }
+
     ],
     "country" : "Australia",
     "lang": "English",
