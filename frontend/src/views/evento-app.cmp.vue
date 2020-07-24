@@ -2,7 +2,7 @@
 <template>
 <section>
   <div>
-    <evento-filter @setFilter="setFilter" />
+    <evento-filter @setFilter="setFilter()" />
   </div>
   <div>
     <evento-list v-if="!isLoading" :eventos="eventos" />

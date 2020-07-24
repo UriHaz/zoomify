@@ -1,16 +1,14 @@
 [{
     "title" : "AngularJS Vs. React - Pros & Cons",
     "imgUrl" : "https://i.imgur.com/gra6rSf.jpg",
+    "avgRating": 4.8,
+    "raters": 74,
     "createdBy" : {
         "id" : "h001",
         "fullName" : "Misko Hevery",
-        "imgUrl" : "https://i.imgur.com/s85nzVj.jpg",
-        "rating": 4.1,
-        "raters": 74
+        "imgUrl" : "https://i.imgur.com/s85nzVj.jpg"
     },
-    "gallery": [
-        {
-            "imgUrls": [
+    "imgUrls": [
                 {
                     "img1": "https://i.imgur.com/bULRWFO.jpg"
                 },
@@ -23,21 +21,10 @@
                 {
                     "img4": "https://i.imgur.com/Ge8c5pr.jpg"
                 }
-            ]
-        },
-        {
-            "videoUrls": [
-                {
-                    "vid1": "https://www.youtube.com/watch?v=A8YZB_T0t3U"
-                },
-                {
-                    "vid2": "https://www.youtube.com/watch?v=QfepQIjIIRA"
-                }
-            ]
-        }
-    ],
+            ],
+    "videoUrl": "https://www.youtube.com/watch?v=A8YZB_T0t3U",
     "link" : "https://us02web.zoom.us/j/7568815336",
-    "startDate" : "2020-07-29",
+    "startDate" : "2020-07-30",
     "startTime" : "20:00",
     "dur" : 60,
     "capacity" : 55,
@@ -49,28 +36,77 @@
         {
             "id": "h006",
             "fullName": "Richard Cooper",
-            "imgUrl": "https://i.imgur.com/gBh4UzH.jpg",
+            "imgUrl": "https://i.imgur.com/gBh4UzH.jpg"
+
         },
         {
             "id": "h002",
             "fullName": "Denis Robbins",
             "imgUrl": "https://i.imgur.com/SXtojjP.jpg"
+      
+            
         },
         {
             "id": "h003",
             "fullName": "Amber McCarthy",
             "imgUrl": "https://i.imgur.com/4pWJA7E.jpg"
+         
+            
         },
         {
             "id": "h004",
             "fullName": "John Armis",
             "imgUrl": "https://i.imgur.com/3RuI4yD.png"
+         
+            
         },
         {
             "id": "h005",
             "fullName": "Sarah Parmon",
             "imgUrl": "https://i.imgur.com/cavkVjv.jpg"
+      
         }
+    ],
+    "reviews" : [
+        {
+            "id": "h006",
+            "fullName": "Richard Cooper",
+            "imgUrl": "https://i.imgur.com/gBh4UzH.jpg",
+            "review" : "great event",
+            "givenRating" : 4.9
+        },
+        {
+            "id": "h002",
+            "fullName": "Denis Robbins",
+            "imgUrl": "https://i.imgur.com/SXtojjP.jpg",
+            "review" : "when do we start?",
+            "givenRating" : 4.6
+            
+        },
+        {
+            "id": "h003",
+            "fullName": "Amber McCarthy",
+            "imgUrl": "https://i.imgur.com/4pWJA7E.jpg",
+            "review" : "i like it",
+            "givenRating" : 4.8
+            
+        },
+          {
+            "id": "h004",
+            "fullName": "John Armis",
+            "imgUrl": "https://i.imgur.com/3RuI4yD.png",
+             "review" : "wow!",
+            "givenRating" : 4.8
+            
+        },
+        {
+            "id": "h005",
+            "fullName": "Sarah Parmon",
+            "imgUrl": "https://i.imgur.com/cavkVjv.jpg",
+            "review" : "its a really good event",
+            "givenRating" : 4.5
+        }
+
     ],
     "country" : "Australia",
     "lang": "English",
