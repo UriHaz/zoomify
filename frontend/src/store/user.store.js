@@ -12,7 +12,7 @@ export const userStore = {
 	state: {
 		loggedInUser: {
 			_id: "5f16cdd6edfffbaab19a5352",
-			fullName : "will smith",
+			fullName : "Arthur Read",
 			// imgUrl : "https://api.adorable.io/avatars/285/abxcfxvvcott@adorable.png",
 			eventos :[]
 		},
