@@ -4,17 +4,19 @@
 
 #app {
   // text-align: center;
-  color: #2c3e50;
+  color: $clr2;
 }
 
 
 body, html {
   background-color: white;
+  color: $clr2;
     margin: 0;
     width: 100%;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
+    // font-family: 'Raleway-Medium';
+    // font-weight: lighter;
 }
 
 
@@ -24,23 +26,23 @@ button{
 }
 
 
+
 h1 {
-  // font-family: 'Raleway-Medium';
-  font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  color: $clr4;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  
 }
 
 h3 {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: $clr4;
 }
 
 h4 {
-  font-weight: bold;
   font-size: 1rem;
+  color: $clr4;
 }

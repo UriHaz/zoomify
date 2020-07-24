@@ -12,15 +12,16 @@
 
     <div class="evento-content flex">
 
-      <div class="evento-desc">
+      <div class="top-desc">
         <div class="evento-details-title">
         <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}} </span>
+        <i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})
         <h1 class="evento-details-h1">{{evento.title}}</h1>
         <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
          
         
-        <h4 class="evento-details-h4"><i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})
-        <i class="fas fa-globe-europe"></i>
+        <h4 class="evento-details-h4">
+        <i class="fas fa-plane"></i>
           {{evento.country}}</h4>
       </div>
         
@@ -30,7 +31,7 @@
           {{evento.dur}} Minutes
         </p>
         <p>
-          <i class="fas fa-language"></i>
+          <i class="fas fa-globe-europe"></i>
           {{evento.lang}}
         </p>
         <p>
@@ -40,41 +41,42 @@
         <p>
           <i class="far fa-user"></i>
           Up to {{evento.capacity}} pepole
-          
         </p>
+          <p>
+          <i class="far fa-calendar-alt"></i>
+          {{evento.startDate}} {{evento.startTime}}
+        </p>
+          <p>
+          <i class="fas fa-tag"></i>
+          ${{evento.price}} 
+        </p>
+          
+       
         </div>
-        <h2 class="evento-description">What you'll do</h2>
+        <div class="evento-description">
+        <h3>What you'll do</h3>
         <p>
           {{evento.desc}}
-          <br />Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Illum quas facere omnis,
-          numquam unde, aspernatur assumenda accusantium labore consequatur repellendus cumque voluptatum!
-          Tempora modi reprehenderit delectus nisi magnam vero molestiae!
-          Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Illum quas facere omnis,
-          numquam unde, aspernatur assumenda accusantium labore consequatur repellendus cumque voluptatum!
-          Tempora modi reprehenderit delectus nisi magnam vero molestiae!
         </p>
+        </div>
+        <div class="about-creator" >
+        <div class="about-creator-title flex align-center">
+        <avatar :src="evento.createdBy.imgUrl"></avatar>
         <h3>
-        <avatar inline :src="evento.createdBy.imgUrl"></avatar>
         Meet your host, {{evento.createdBy.fullName}}
         </h3>
+        </div>
+
         <p>
           {{evento.about}}
-          <br />Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Illum quas facere omnis,
-          numquam unde, aspernatur assumenda accusantium labore consequatur repellendus cumque voluptatum!
-          Tempora modi reprehenderit delectus nisi magnam vero molestiae!
         </p>
+        </div>
         <h3>Reviews</h3>
 
         <h3>Related lectures</h3>
       </div>
       <div class="evento-join">
-        <p>
-          <i class="far fa-calendar-alt"></i>
-          {{evento.startDate}} {{evento.startTime}}
-        </p>
+        
          <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
           <p>
             <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
@@ -83,11 +85,11 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!join" @click="joinEvent" class="join-btn">
-          Join Event
+        <button v-if="!join" @click="open" class="join-btn">
+          Book Event (${{evento.price}})
         </button>
-        <div v-else>
-        <h3>Event start in: 55 minutes</h3>
+        <div class="evento-start" v-else>
+        <h3>Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
         <button class="join-btn">
           Start event!
         </button>
@@ -96,8 +98,10 @@
         <h3>Members</h3>
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
+        <el-tooltip  content='member' placement="top-start" effect="dark">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
+        </el-tooltip>
          </div>
 
         </div>
@@ -118,17 +122,57 @@ export default {
     return {
       evento: null,
       join: false,
-      guestToAdd:{}
+      guestToAdd:{},
+      countDownSeconds : 59,
+      countDownMinutes : 55
     };
   },
 
   computed:{
   loggedInUser() {
     return this.$store.getters.loggedInUser;
+    },
+    timerOn(){
+     return this.timer = setInterval( this.timeDown(), 1000);
+    //  return this.time;
     }
   },
 
   methods: {
+
+    countDownTimer() {
+        if(this.countDownSeconds >= 0 && this.countDownMinutes >= 0) {
+            setTimeout(() => {
+            this.countDownSeconds --
+            this.countDownTimer()
+            }, 1000)
+        }
+        else {
+          this.countDownSeconds = 59
+          this.countDownTimer()
+          this.countDownMinutes--
+          
+        }
+    },
+
+     open() {
+        this.$confirm(`Your acoount will be charged by $${this.evento.price}`,'Book', {
+          confirmButtonText: 'OK',
+          cancelButtonText: 'Cancel',
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: 'Book completed!'
+          });
+          this.joinEvent()
+          this.countDownTimer()
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: 'Book was cancelled'
+          });          
+        });
+     },
     async loadEvento() {
       const eventoId = this.$route.params._id;
       const evento = await eventoService.getById(eventoId)

@@ -67,16 +67,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.el-select {
-  margin: 5px 10px;
-}
-.el-button {
-  margin: 0px 10px;
-}
-.el-input.search {
-  max-width: 200px;
-  margin-bottom: 10px;
-  border-radius: 0.5rem;
-}
-</style>
