@@ -1,28 +1,31 @@
 <template>
 
-  <section class="home main-layout">      
-      <div class="txt-vect-hero">
-        <div class="centered-h1">
-          <h1>
+  <section class="home">      
+      <div>
+        <div class="centered-header">
+          <h1 class="hp-h1">
             Join Live Events
             <br />from Around the World
           </h1>
-          <router-link to="/login" class="hp-btn">Share your Event ›</router-link>
+     <div class="hp-link-filter">
+         
+          <router-link to="/login" class="hp-btn">Share your Event ›</router-link> 
+          <evento-filter/>
+      </div>
+
         </div>
-        <img src="../assets/imgs/hero1.jpeg" class="home-vector" />
+        <img src="../assets/imgs/hero-gif4.gif" class="home-hero" />
+        <!-- <img src="../assets/imgs/hero-gif3.gif" class="home-hero" /> -->
+        <!-- <img src="../assets/imgs/hero-gif1.gif" class="home-hero" /> -->
+
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
+        <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
 
-      <!-- <div class="hero-bg"> -->
-      <!-- <img src="../assets\imgs\hero.jpg" class="hero" /> -->
-      <!-- </div> -->
 
-
-     <div>
-                              <evento-filter/>
-
-      </div>
+<div class="hp-content">
       
+
       <nav class="sub-nav-bar">
         <router-link to="/" class="hp-sub-link-1">Recommended events:</router-link>
         <div class="hp-sub-link-2">
@@ -55,6 +58,7 @@
         </el-carousel-item>
       </el-carousel>
     
+    </div>
     </section>
 
      <!-- eventos.tags.includes('technology') -->
