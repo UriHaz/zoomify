@@ -1,29 +1,23 @@
 .evento-details{
-    p{
+    p {
         line-height: 2;
     }
 }
-.evento-details-hiro {
-    border: #080808 1px solid;
+
+
+.evento-details-hero {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    color: $clr2;
-    height: 300px;
-    background-color: white;
-    padding: 0 5rem 0 5rem;
-    margin-bottom: 20px;
-      .hiro-img {
-        width: 50%;
-    }
-    
-   
-    .evento-details-hiro-img {
-        width: 50%;
-        grid-area: 2 / 2 / 2 / 2;
-    }
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 17rem;
+    grid-column-gap: 0.5rem;
 
-
+    img {
+        width: 100%;
+    }
 }
+
+
+
 
 .top-desc {
     padding-right: 5%;
@@ -35,11 +29,9 @@
 .evento-details-title {
     text-align: left;
 
-
     .creator-img{
         width: 20px;
     }
-    
 }
 
 
