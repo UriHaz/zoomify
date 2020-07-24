@@ -1,11 +1,13 @@
 .evento-details{
-    color: #080808;
+    p{
+        line-height: 2;
+    }
 }
 .evento-details-hiro {
     border: #080808 1px solid;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    color: #080808;
+    color: $clr2;
     height: 300px;
     background-color: white;
     padding: 0 5rem 0 5rem;
@@ -23,11 +25,11 @@
 
 }
 
-.evento-desc {
+.top-desc {
     padding-right: 5%;
     width: 70%;
     // margin-left: 100px;
-    border-right: 1px solid rgb(224, 224, 224);
+    border-right: 1px solid rgb(211, 211, 211);
 }
 
 .evento-details-title {
@@ -53,17 +55,36 @@
     cursor: default;
 }
 
+.evento-details-h4{
+    color: $clr3;
+}
+
 .evento-info{
-    border-top: solid rgb(206, 191, 191) 1px;
-    border-bottom: solid rgb(206, 191, 191) 1px;
+    border-top: solid rgb(211, 211, 211) 1px;
+    border-bottom: solid rgb(211, 211, 211) 1px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 5px;
+    color: $clr3;
+
+    i{
+        font-size: 1.5rem;
+    }
+
 }
 
+.evento-description{
+    margin-bottom: 3rem;
+}
 
-.evento-desc p{
-    text-align: left;
+.about-creator{
+    margin-bottom: 3rem;
+}
+
+.about-creator-title{
+    h3{
+        margin-left: 1rem;
+    }
 }
 
 .evento-details span{
@@ -81,6 +102,8 @@
     grid-gap: 5px;
 
 }
+
+
 
 .member-img {
     width: 7rem;
@@ -140,23 +163,6 @@
 }
 
 
-.evento-details-h1 {
-    font-size: 2rem;
-}
 
-.evento-details-h2 {
-    font-size: 1.5rem;
-}
 
-.evento-details-h3 {
-    font-size: 1.2rem;
-}
-
-.evento-details-h4 {
-    font-size: 1rem;
-}
-
-.evento-description {
-    font-weight: 900;
-}
 
