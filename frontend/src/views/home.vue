@@ -1,25 +1,26 @@
 <template>
 
   <section class="home">      
-      <div class="txt-vect-hero">
-        <div class="centered-h1">
-          <h1>
+      <div>
+        <div class="centered-header">
+          <h1 class="hp-h1">
             Join Live Events
             <br />from Around the World
           </h1>
-          <router-link to="/login" class="hp-btn">Share your Event ›</router-link>
+     <div class="hp-link-filter">
+         
+          <router-link to="/login" class="hp-btn">Share your Event ›</router-link> 
+          <evento-filter/>
+      </div>
+
         </div>
-        <img src="../assets/imgs/hero-gif1.gif" class="home-vector" />
+        <img src="../assets/imgs/hero-gif1.gif" class="home-hero" />
         <!-- <img src="../assets/imgs/hero-gif.gif" class="home-vector" /> -->
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
         <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
 
-     <div class="hp-filter">
-                              <evento-filter/>
 
-      </div>
-      
 <div class="hp-content">
       
 
