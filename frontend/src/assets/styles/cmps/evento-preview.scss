@@ -7,7 +7,7 @@
     break-inside: avoid-column;
     page-break-inside: avoid;
     width: 15.2rem;
-    height: 24rem;
+    height: 22rem;
     border: 1rem;
     border-width: 0.1rem;
     border-color: #e5e5e5;
@@ -71,6 +71,7 @@
         display: flex;
    }
    .event-date {
+       margin-top: 1.2rem;
      font-size: 0.8rem;
          color: #434343;
          padding-left: 0.5rem;
