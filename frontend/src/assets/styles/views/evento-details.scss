@@ -1,13 +1,8 @@
-.evento-details{
+.evento-details {
     p {
         line-height: 2;
     }
 }
-
-
-
-
-
 
 
 .top-desc {
@@ -26,7 +21,7 @@
 }
 
 
-.evento-tag{
+.evento-tag {
     background-color: #6c757d;
     color: white;
     display: inline-block;
@@ -38,7 +33,7 @@
     cursor: default;
 }
 
-.evento-details-h4{
+.evento-details-h4 {
     color: $clr3;
 }
 
@@ -56,7 +51,7 @@
 
 }
 
-.evento-description{
+.evento-description {
     margin-bottom: 3rem;
 }
 
@@ -64,7 +59,7 @@
     margin-bottom: 3rem;
 }
 
-.about-creator-title{
+.about-creator-title {
     h3{
         margin-left: 1rem;
     }
@@ -80,8 +75,6 @@
 }
 
 
-
-
 .evento-start{
     margin-bottom: 100px;
     margin-top: 10px;
@@ -91,7 +84,7 @@
     border-radius: 0.5rem;
     border-style: solid;
 
-    .evento-start-txt{
+    .evento-start-txt {
         padding-left: 3rem;
     }
 }
@@ -108,7 +101,7 @@
     border-radius: 2rem;
 }
 
-.guest-sign{
+.guest-sign {
     input{
         width: 200px;
         height: 30px;
@@ -123,7 +116,7 @@
         -webkit-appearance: none;
     }
 
-    button{
+    button {
         color: $clr5;
         background-color: $clr2;
         margin-top: 50%;
