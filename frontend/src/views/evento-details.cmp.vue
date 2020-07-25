@@ -15,13 +15,13 @@
       <div class="top-desc">
         <div class="evento-details-title">
         <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}} </span>
-        <i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.createdBy.raters}})
+        <i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.raters}})
         <h1 class="evento-details-h1">{{evento.title}}</h1>
         <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
          
         
         <h4 class="evento-details-h4">
-        <i class="fas fa-plane"></i>
+        <i class="fas fa-map-marker-alt"></i>
           {{evento.country}}</h4>
       </div>
         
@@ -31,7 +31,7 @@
           {{evento.dur}} Minutes
         </p>
         <p>
-          <i class="fas fa-globe-europe"></i>
+          <i class="fas fa-globe-americas"></i>
           {{evento.lang}}
         </p>
         <p>
@@ -39,7 +39,7 @@
           Join from your computer, phone, or tablet
         </p>
         <p>
-          <i class="far fa-user"></i>
+          <i class="fas fa-users"></i>
           Up to {{evento.capacity}} pepole
         </p>
           <p>
@@ -54,7 +54,7 @@
        
         </div>
         <div class="evento-description">
-        <h3>What you'll do</h3>
+        <h3>Agenda of event</h3>
         <p>
           {{evento.desc}}
         </p>
@@ -71,7 +71,23 @@
           {{evento.about}}
         </p>
         </div>
+
         <h3>Reviews</h3>
+    <div class="reviews">
+        <div v-for="review in evento.reviews" :key=review.id>
+          <avatar :src="review.imgUrl"></avatar>
+          <p class="review-title">
+            {{review.givenRating}}
+            <i class="fas fa-star">
+              </i> {{review.fullName}}</p>
+          <p>{{review.txt}}</p>
+        
+        </div>
+      </div>
+
+
+
+
 
         <h3>Related lectures</h3>
       </div>
@@ -89,13 +105,16 @@
           Book Event (${{evento.price}})
         </button>
         <div class="evento-start" v-else>
-        <h3>Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
+
+          <div class="evento-start-txt">
+        <h3 >Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
+</div>
         <button class="join-btn">
           Start event!
         </button>
         </div>
        
-        <h3>Members</h3>
+        <h3>Event Members</h3>
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
         <el-tooltip  content='member' placement="top-start" effect="dark">
@@ -103,8 +122,8 @@
           <avatar v-else :src="member.imgUrl"></avatar>
         </el-tooltip>
          </div>
-
         </div>
+
       </div>
     </div>
   </section>
@@ -156,7 +175,7 @@ export default {
     },
 
      open() {
-        this.$confirm(`Your acoount will be charged by $${this.evento.price}`,'Book', {
+        this.$confirm(`Your account will be charged by $${this.evento.price}`,'Book', {
           confirmButtonText: 'OK',
           cancelButtonText: 'Cancel',
         }).then(() => {

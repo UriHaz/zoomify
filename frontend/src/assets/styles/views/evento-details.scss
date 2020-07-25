@@ -1,28 +1,14 @@
-.evento-details{
+.evento-details {
     p {
         line-height: 2;
     }
 }
 
 
-.evento-details-hero {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    height: 17rem;
-    grid-column-gap: 0.5rem;
-
-    img {
-        width: 100%;
-    }
-}
-
-
-
-
 .top-desc {
     padding-right: 5%;
     width: 70%;
-    // margin-left: 100px;
+    margin-left: 1rem;
     border-right: 1px solid rgb(211, 211, 211);
 }
 
@@ -35,7 +21,7 @@
 }
 
 
-.evento-tag{
+.evento-tag {
     background-color: #6c757d;
     color: white;
     display: inline-block;
@@ -47,11 +33,11 @@
     cursor: default;
 }
 
-.evento-details-h4{
+.evento-details-h4 {
     color: $clr3;
 }
 
-.evento-info{
+.evento-info {
     border-top: solid rgb(211, 211, 211) 1px;
     border-bottom: solid rgb(211, 211, 211) 1px;
     display: grid;
@@ -59,13 +45,13 @@
     grid-gap: 5px;
     color: $clr3;
 
-    i{
+    i {
         font-size: 1.5rem;
     }
 
 }
 
-.evento-description{
+.evento-description {
     margin-bottom: 3rem;
 }
 
@@ -73,7 +59,7 @@
     margin-bottom: 3rem;
 }
 
-.about-creator-title{
+.about-creator-title {
     h3{
         margin-left: 1rem;
     }
@@ -88,9 +74,19 @@
     padding: 1rem;
 }
 
+
 .evento-start{
     margin-bottom: 100px;
     margin-top: 10px;
+   
+    border-width: 0.4rem;
+    border-color: #03dd27;
+    border-radius: 0.5rem;
+    border-style: solid;
+
+    .evento-start-txt {
+        padding-left: 3rem;
+    }
 }
 
 .members-container{
@@ -105,7 +101,7 @@
     border-radius: 2rem;
 }
 
-.guest-sign{
+.guest-sign {
     input{
         width: 200px;
         height: 30px;
@@ -120,7 +116,7 @@
         -webkit-appearance: none;
     }
 
-    button{
+    button {
         color: $clr5;
         background-color: $clr2;
         margin-top: 50%;
@@ -142,6 +138,7 @@
 .join-btn {
     display: block;
     background-color: $clr1;
+    // background-color: $clr9;
     color: #fff;
     margin-top: 50%;
     font-size: 1rem;
@@ -152,7 +149,7 @@
     border-style: solid;
     border-color: $clr1;
     border-radius: 0.2rem;
-    width: 16rem;
+    width: 14rem;
     text-decoration: none;
     margin: 2rem auto;
     cursor: pointer;
@@ -160,10 +157,37 @@
 
 .start-btn{
     padding: 0.5rem 0.5rem;
+}
 
+
+.evento-details-hero {
+    // background-color: #6c757d;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-column-gap: 0.4rem;
+    
+    img {
+        width: 100%;
+    }
 }
 
 
 
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    grid-column-gap: 0.5rem;
+    font-size: 0.8rem;
+    height: 16rem;
 
-
+    img {
+        width: 100%;
+        display: flex;
+    }
+    .review-title {
+        font-weight: bold;
+    }
+}
+        .fa-star{
+            color: #ffbf00;
+        }

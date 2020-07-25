@@ -1,5 +1,5 @@
 <template>
-  <div class="about main-layout">
+  <div class="about">
     <h1 class="about-h1">
       Hey, We are zOOmify
       <!-- <br />This is Us -->
@@ -15,25 +15,25 @@
     <div class="about-card">
       <img src="../assets/imgs/naama.jpg" class="about-card-img" />
       <h3 class="about-card-h3">Na'ama Shoshani</h3>
-      <h4 class="about-card-h4">Subtitle</h4>
-      <p>text</p>
-      <a :href="`https://www.linkedin.com/in/naamoniko/`" class="contact">Contact</a>
+      <!-- <h4 class="about-card-h4">Subtitle</h4> -->
+      <!-- <p>text</p> -->
+      <a :href="`https://www.linkedin.com/in/naamoniko/`" class="contact-btn">Contact</a>
     </div>
 
     <div class="about-card">
       <img src="../assets/imgs/uri.jpg" class="about-card-img" />
       <h3 class="about-card-h3">Uri Hazan</h3>
-      <h4 class="about-card-h4">Subtitle</h4>
-      <p>text</p>
-      <a :href="`https://www.linkedin.com/in/uri-hazan-5a4525138/`" class="contact">Contact</a>
+      <!-- <h4 class="about-card-h4">Subtitle</h4> -->
+      <!-- <p>text</p> -->
+      <a :href="`https://www.linkedin.com/in/uri-hazan-5a4525138/`" class="contact-btn">Contact</a>
     </div>
 
     <div class="about-card">
       <img src="../assets/imgs/tom.jpg" class="about-card-img" />
       <h3 class="about-card-h3">Tom Shalem</h3>
-      <h4 class="about-card-h4">Subtitle</h4>
-      <p>text</p>
-      <a :href="`https://www.linkedin.com/in/tom-shalem//`" class="contact">Contact</a>
+      <!-- <h4 class="about-card-h4">Subtitle</h4> -->
+      <!-- <p>text</p> -->
+      <a :href="`https://www.linkedin.com/in/tom-shalem//`" class="contact-btn">Contact</a>
     </div>
   </div>
 </template>
