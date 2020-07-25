@@ -104,6 +104,9 @@
             </i>
           </div>
           <button class="join-btn">Start event!</button>
+        <h3 >Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
+       </div>
+<button type="text" @click="modal" class="join-btn">Start event!</button>
         </div>
 
         <h3>Event Members</h3>
@@ -138,8 +141,11 @@
         </div>
       </div>
     </div>
+    
   </section>
 </template>
+
+
 
 
 <script>
@@ -180,6 +186,13 @@ export default {
   },
 
   methods: {
+
+modal() {
+        this.$alert(' <iframe width="390" height="200"  src="https://www.youtube.com/embed/wBdDbQxIodU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 'The event will start soon...', {
+          dangerouslyUseHTMLString: true
+        });
+      },
+
     countDownTimer() {
       if (this.countDownSeconds >= 0 && this.countDownMinutes >= 0) {
         setTimeout(() => {

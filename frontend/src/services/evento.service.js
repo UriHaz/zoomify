@@ -10,9 +10,9 @@ export const eventoService = {
 
 
 function query(
-	filterBy = { txt: "", isInStock: "", order: "asc", tags: "", sort: "name" }
+	filterBy = { txt: "", order: "asc", tags: "", sort: "title" }
 ) {
-	const query = `?txt=${filterBy.txt}&_sort=${filterBy.sort}&_order=${filterBy.order}`;
+	const query = `?txt=${filterBy.txt}&_sort=${filterBy.sort}&_order=${filterBy.order}&tags_like=${filterBy.tags}`;
 
 	return httpService.get(`evento/${query}`);
 }

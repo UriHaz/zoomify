@@ -1,20 +1,26 @@
-.evento-filter{
-    margin-top: 20px;
-    height: 50px;
-    margin-bottom: 30px;
-}
+.search-bar {
+  display: grid;
+  padding: 0.7rem 0;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto;
+  border-bottom: 1px solid  rgb(224, 224, 224);
+
+
 
 .el-select {
-    margin: 5px 10px;
+  max-width: 200px;
+    // margin: 5px 10px;
   }
-  .el-button {
-    margin: 0px 10px;
-  }
-  .el-input.search {
-    max-width: 200px;
-    margin-bottom: 10px;
+.el-button {
+  // margin: 0px 10px;
+  max-width: 100px;
+}
+.el-input.search {
+  max-width: 200px;
+  // margin-bottom: 10px;
 
-    .el-input__inner{
-        border-radius: 0.5rem;
-    }
+  .el-input__inner{
+      border-radius: 0.5rem;
   }
+}
+}

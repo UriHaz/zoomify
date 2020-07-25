@@ -1,5 +1,5 @@
 <template>
-  <section >
+  <section class="search-bar">
 
     <el-input
       class="search"
@@ -8,25 +8,32 @@
       placeholder="Search events ..."
       v-model="filterBy.txt"
     ></el-input>
-    <!-- <el-button type="primary" @click="clearAll">Clear All</el-button> -->
-    <br />
+    <!-- <br /> -->
 
-    <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
+    <el-select v-model="filterBy.sort" @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
-      <el-option label="sort by: price" value="price"></el-option>
-      <el-option label="sort by: creator" value="creator.fullName"></el-option>
+      <el-option label="sort by: date" value="startDate"></el-option>
     </el-select>
 
-    <el-select v-model="filterBy.order" placeholder="Select" @change="filterOn">
+    <el-select v-model="filterBy.order"  @change="filterOn">
       <el-option label="Order: ascending" value="asc"></el-option>
       <el-option label="Order: descending" value="desc"></el-option>
     </el-select>
 
-    <el-select v-model="filterBy.tags" placeholder="Filter by category ..." @change="filterOn">
+    <el-select v-model="filterBy.tags"  @change="filterOn">
       <el-option label="Show all categories" value></el-option>
       <el-option label="technology" value="technology"></el-option>
       <el-option label="career" value="career"></el-option>
+      <el-option label="coding" value="coding"></el-option>
+      <el-option label="design" value="design"></el-option>
+      <el-option label="support" value="support"></el-option>
+      <el-option label="marketing" value="marketing"></el-option>
+      <el-option label="business" value="business"></el-option>
+      <el-option label="sales" value="sales"></el-option>
     </el-select>
+    <el-button  @click="clearAll">Clear all</el-button>
+ 
+
 
   </section>
 </template>
@@ -55,8 +62,9 @@ export default {
     },
     clearAll() {
       this.filterBy.txt = "";
-      this.filterBy.category = "";
+      this.filterBy.tags = "";
       this.filterBy.order = "asc";
+      this.filterBy.sort = "title";
       this.filterOn();
     }
   },

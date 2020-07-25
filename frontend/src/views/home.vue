@@ -9,8 +9,7 @@
           </h1>
      <div class="hp-link-filter">
          
-          <router-link to="/login" class="hp-btn">Explore › › ›</router-link> 
-          <evento-filter/>
+          <router-link to="/events" class="hp-btn">Explore › › ›</router-link> 
       </div>
 
         </div>
@@ -26,8 +25,8 @@
 <div class="hp-content">
       
 
-        </div>
-      </nav>
+        <!-- </div>
+      </nav> -->
 
 
 
@@ -75,13 +74,13 @@ export default {
       return this.$store.getters.eventos;
     },
     popularEventos() {
-      return this.$store.getters.eventos.filter(evento => evento.avgRating > 4.7)   
+      return this.$store.getters.eventos.filter(evento => evento.avgRating > 4.8).slice(0,4)  
     },
     technologyEventos() {
-      return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "technology"))   
+      return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "technology")).slice(0,4)     
     },
     upcomingEventos() {
-      return this.$store.getters.eventos.filter(evento => evento.startDate < "2020-07-30")   
+      return this.$store.getters.eventos.filter(evento => evento.startDate <= "2020-07-30").slice(0,4)  
     }
 
   },
