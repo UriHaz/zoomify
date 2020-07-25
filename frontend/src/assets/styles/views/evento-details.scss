@@ -5,16 +5,7 @@
 }
 
 
-.evento-details-hero {
-    background-color: #6c757d;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    grid-column-gap: 0.4rem;
-    
-    img {
-        width: 100%;
-    }
-}
+
 
 
 
@@ -174,6 +165,19 @@
 .start-btn{
     padding: 0.5rem 0.5rem;
 }
+
+
+.evento-details-hero {
+    // background-color: #6c757d;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-column-gap: 0.4rem;
+    
+    img {
+        width: 100%;
+    }
+}
+
 
 
 .reviews {
