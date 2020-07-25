@@ -80,7 +80,7 @@
             {{review.givenRating}}
             <i class="fas fa-star">
               </i> {{review.fullName}}</p>
-          <p>{{review.review}}</p>
+          <p>{{review.txt}}</p>
         
         </div>
       </div>
