@@ -135,35 +135,35 @@
                 "id": "r001",
                 "fullName": "Keniv Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
-                "review": "I asked too many questions and the event host was so patient, thank you!",
+                "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r002",
                 "fullName": "Lewis Gloman",
                 "imgUrl": "https://i.imgur.com/xDG5uW6.jpg",
-                "review": "I found it really hard to understand things during the lecture.",
+                "txt": "I found it really hard to understand things during the lecture.",
                 "givenRating": "3"
             },
             {
                 "id": "r003",
                 "fullName": "Ruth Rozenstein",
                 "imgUrl": "https://i.imgur.com/csFJf6Q.jpg",
-                "review": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
+                "txt": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r004",
                 "fullName": "Jess Williams",
                 "imgUrl": "https://i.imgur.com/mMVHpq6.jpg",
-                "review": "Probably one of the best lectures I had the chance to listen to.",
+                "txt": "Probably one of the best lectures I had the chance to listen to.",
                 "givenRating": "4"
             },
             {
                 "id": "r005",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/Ojd2OQA.jpg",
-                "review": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
+                "txt": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
                 "givenRating": "4"
             }
         ],
@@ -309,42 +309,42 @@
                 "id": "r006",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/fgyMYX2.jpg",
-                "review": "I really enjoyed listening to and being able to ask questions.",
+                "txt": "I really enjoyed listening to and being able to ask questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r007",
                 "fullName": "Daniel Zimmer",
                 "imgUrl": "https://i.imgur.com/reQpeUT.jpg",
-                "review": "I reached out to the host privately and got lots of help, thanks!",
+                "txt": "I reached out to the host privately and got lots of help, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r008",
                 "fullName": "Alex Moor",
                 "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
-                "review": "The host has some mistakes but other than that I was positively stunned.",
+                "txt": "The host has some mistakes but other than that I was positively stunned.",
                 "givenRating": "3"
             },
             {
                 "id": "r009",
                 "fullName": "Julio Kelton",
                 "imgUrl": "https://i.imgur.com/sQilDbF.jpg",
-                "review": "I really like the lecture, waiting for your next lecture, hopefully soon!",
+                "txt": "I really like the lecture, waiting for your next lecture, hopefully soon!",
                 "givenRating": "4"
             },
             {
                 "id": "r010",
                 "fullName": "Deborah Lumens",
                 "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
-                "review": "I was one of the firsts to join this lecture... enjoyed every minute.",
+                "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
                 "givenRating": "4"
             },
             {
                 "id": "r011",
                 "fullName": "Evan West",
                 "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
-                "review": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
+                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
                 "givenRating": "5"
             }
         ],
@@ -489,35 +489,35 @@
                 "id": "r012",
                 "fullName": "Ronn Turis",
                 "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
-                "review": "I asked the host to talk about a specific topic and so he did! thank you!",
+                "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r013",
                 "fullName": "Robert Laton",
                 "imgUrl": "https://i.imgur.com/iyp1PLl.jpg",
-                "review": "The host was so pleasant in explaining everything I didn't understand.",
+                "txt": "The host was so pleasant in explaining everything I didn't understand.",
                 "givenRating": "5"
             },
             {
                 "id": "r014",
                 "fullName": "Cameron Verizman",
                 "imgUrl": "https://i.imgur.com/psxedWd.jpg",
-                "review": "I'm so happy I took this lecture, I learned a lot!",
+                "txt": "I'm so happy I took this lecture, I learned a lot!",
                 "givenRating": "4"
             },
             {
                 "id": "r015",
                 "fullName": "Cody Hanlon",
                 "imgUrl": "https://i.imgur.com/YDp1MXj.jpg",
-                "review": "This is my second lecture with this host, highly recommended!",
+                "txt": "This is my second lecture with this host, highly recommended!",
                 "givenRating": "5"
             },
             {
                 "id": "r016",
                 "fullName": "Denis Rivera",
                 "imgUrl": "https://i.imgur.com/WPIoPkT.jpg",
-                "review": "Just starting to plan my career and this was so helpful, thanks!",
+                "txt": "Just starting to plan my career and this was so helpful, thanks!",
                 "givenRating": "4"
             }
         ],
@@ -662,35 +662,35 @@
                 "id": "r017",
                 "fullName": "Silvera Kadis",
                 "imgUrl": "https://i.imgur.com/Y0bbkZw.jpg",
-                "review": "It was absolutely a fantastic lecture. Waiting for the next one!",
+                "txt": "It was absolutely a fantastic lecture. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r018",
                 "fullName": "Kisor Summ",
                 "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
-                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "txt": "I really enjoyed listening to the host and everyone's questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r019",
                 "fullName": "Vlad Kozilsky",
                 "imgUrl": "https://i.imgur.com/d7djmap.png",
-                "review": "The host was very nice and explained everything very well.",
+                "txt": "The host was very nice and explained everything very well.",
                 "givenRating": "3"
             },
             {
                 "id": "r020",
                 "fullName": "Silvio Raton",
                 "imgUrl": "https://i.imgur.com/1QaLpgO.jpg",
-                "review": "I never listened to a lecture in this field and I found it very interesting.",
+                "txt": "I never listened to a lecture in this field and I found it very interesting.",
                 "givenRating": "3"
             },
             {
                 "id": "r021",
                 "fullName": "Gilbert Carson",
                 "imgUrl": "https://i.imgur.com/ZkW7lPu.jpg",
-                "review": "Absolutely not what I expected, I would not recommend.",
+                "txt": "Absolutely not what I expected, I would not recommend.",
                 "givenRating": "2"
             }
         ],
@@ -830,35 +830,35 @@
                 "id": "r022",
                 "fullName": "Jenny Moren",
                 "imgUrl": "https://i.imgur.com/C8j5ne1.jpg",
-                "review": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
+                "txt": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
                 "givenRating": "2"
             },
             {
                 "id": "r023",
                 "fullName": "Wayne Jones",
                 "imgUrl": "https://i.imgur.com/Agglcgf.jpg",
-                "review": "Who's in charge of giving me back the time I wasted?",
+                "txt": "Who's in charge of giving me back the time I wasted?",
                 "givenRating": "1"
             },
             {
                 "id": "r024",
                 "fullName": "Chris Zoku",
                 "imgUrl": "https://i.imgur.com/n3BiawG.jpg",
-                "review": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
+                "txt": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
                 "givenRating": "2"
             },
             {
                 "id": "r025",
                 "fullName": "Stephen Connolly",
                 "imgUrl": "https://i.imgur.com/fTLyUYP.jpg",
-                "review": "I did not find the event particularly interesting.",
+                "txt": "I did not find the event particularly interesting.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r026",
                 "fullName": "Joe Narimer",
                 "imgUrl": "https://i.imgur.com/lRL9oNP.jpg",
-                "review": "I have attended other better events.",
+                "txt": "I have attended other better events.",
                 "givenRating": "2"
             }
         ],
@@ -1004,35 +1004,35 @@
                 "id": "r023",
                 "fullName": "Wayne Jones",
                 "imgUrl": "https://i.imgur.com/Agglcgf.jpg",
-                "review": "Who's in charge of giving me back the time I wasted?",
+                "txt": "Who's in charge of giving me back the time I wasted?",
                 "givenRating": "1"
             },
             {
                 "id": "r024",
                 "fullName": "Chris Zoku",
                 "imgUrl": "https://i.imgur.com/n3BiawG.jpg",
-                "review": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
+                "txt": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
                 "givenRating": "2"
             },
             {
                 "id": "r025",
                 "fullName": "Stephen Connolly",
                 "imgUrl": "https://i.imgur.com/fTLyUYP.jpg",
-                "review": "I did not find the event particularly interesting.",
+                "txt": "I did not find the event particularly interesting.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r026",
                 "fullName": "Joe Narimer",
                 "imgUrl": "https://i.imgur.com/lRL9oNP.jpg",
-                "review": "I have attended other better events.",
+                "txt": "I have attended other better events.",
                 "givenRating": "2"
             },
             {
                 "id": "r027",
                 "fullName": "Phil Willis",
                 "imgUrl": "https://i.imgur.com/Kpn5ksA.jpg",
-                "review": "The event was fine, I expected it to be a little more professional.",
+                "txt": "The event was fine, I expected it to be a little more professional.",
                 "givenRating": "3"
             }
         ],
@@ -1178,35 +1178,35 @@
                 "id": "r028",
                 "fullName": "Steven Leon",
                 "imgUrl": "https://i.imgur.com/BVD39Fw.jpg",
-                "review": "Seemed like everyone enjoyed it but me.",
+                "txt": "Seemed like everyone enjoyed it but me.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r029",
                 "fullName": "Sirush Nagoku",
                 "imgUrl": "https://i.imgur.com/C8o7znK.jpg",
-                "review": "The lecture was fine but I didn't learn anything new that I didn't know before",
+                "txt": "The lecture was fine but I didn't learn anything new that I didn't know before",
                 "givenRating": "3.5"
             },
             {
                 "id": "r001",
                 "fullName": "Keniv Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
-                "review": "I asked too many questions and the event host was so patient, thank you!",
+                "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r002",
                 "fullName": "Lewis Gloman",
                 "imgUrl": "https://i.imgur.com/xDG5uW6.jpg",
-                "review": "I found it really hard to understand things during the lecture.",
+                "txt": "I found it really hard to understand things during the lecture.",
                 "givenRating": "3"
             },
             {
                 "id": "r003",
                 "fullName": "Ruth Rozenstein",
                 "imgUrl": "https://i.imgur.com/csFJf6Q.jpg",
-                "review": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
+                "txt": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
                 "givenRating": "4"
             }
         ],
@@ -1351,28 +1351,28 @@
                 "id": "r004",
                 "fullName": "Jess Williams",
                 "imgUrl": "https://i.imgur.com/mMVHpq6.jpg",
-                "review": "Probably one of the best lectures I had the chance to listen to.",
+                "txt": "Probably one of the best lectures I had the chance to listen to.",
                 "givenRating": "4"
             },
             {
                 "id": "r005",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/Ojd2OQA.jpg",
-                "review": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
+                "txt": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r006",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/fgyMYX2.jpg",
-                "review": "I really enjoyed listening to and being able to ask questions.",
+                "txt": "I really enjoyed listening to and being able to ask questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r007",
                 "fullName": "Daniel Zimmer",
                 "imgUrl": "https://i.imgur.com/reQpeUT.jpg",
-                "review": "I reached out to the host privately and got lots of help, thanks!",
+                "txt": "I reached out to the host privately and got lots of help, thanks!",
                 "givenRating": "4"
             }
         ],
@@ -1517,35 +1517,35 @@
                 "id": "r008",
                 "fullName": "Alex Moor",
                 "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
-                "review": "The host has some mistakes but other than that I was positively stunned.",
+                "txt": "The host has some mistakes but other than that I was positively stunned.",
                 "givenRating": "3"
             },
             {
                 "id": "r009",
                 "fullName": "Julio Kelton",
                 "imgUrl": "https://i.imgur.com/sQilDbF.jpg",
-                "review": "I really like the lecture, waiting for your next lecture, hopefully soon!",
+                "txt": "I really like the lecture, waiting for your next lecture, hopefully soon!",
                 "givenRating": "4"
             },
             {
                 "id": "r010",
                 "fullName": "Deborah Lumens",
                 "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
-                "review": "I was one of the firsts to join this lecture... enjoyed every minute.",
+                "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
                 "givenRating": "4"
             },
             {
                 "id": "r011",
                 "fullName": "Evan West",
                 "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
-                "review": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
+                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
                 "givenRating": "5"
             },
             {
                 "id": "r012",
                 "fullName": "Ronn Turis",
                 "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
-                "review": "I asked the host to talk about a specific topic and so he did! thank you!",
+                "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
                 "givenRating": "4"
             }
         ],
@@ -1690,35 +1690,35 @@
                 "id": "r013",
                 "fullName": "Robert Laton",
                 "imgUrl": "https://i.imgur.com/iyp1PLl.jpg",
-                "review": "The host was so pleasant in explaining everything I didn't understand.",
+                "txt": "The host was so pleasant in explaining everything I didn't understand.",
                 "givenRating": "5"
             },
             {
                 "id": "r014",
                 "fullName": "Cameron Verizman",
                 "imgUrl": "https://i.imgur.com/psxedWd.jpg",
-                "review": "I'm so happy I took this lecture, I learned a lot!",
+                "txt": "I'm so happy I took this lecture, I learned a lot!",
                 "givenRating": "4"
             },
             {
                 "id": "r015",
                 "fullName": "Cody Hanlon",
                 "imgUrl": "https://i.imgur.com/YDp1MXj.jpg",
-                "review": "This is my second lecture with this host, highly recommended!",
+                "txt": "This is my second lecture with this host, highly recommended!",
                 "givenRating": "5"
             },
             {
                 "id": "r016",
                 "fullName": "Denis Rivera",
                 "imgUrl": "https://i.imgur.com/WPIoPkT.jpg",
-                "review": "Just starting to plan my career and this was so helpful, thanks!",
+                "txt": "Just starting to plan my career and this was so helpful, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r017",
                 "fullName": "Silvera Kadis",
                 "imgUrl": "https://i.imgur.com/Y0bbkZw.jpg",
-                "review": "It was absolutely a fantastic lecture. Waiting for the next one!",
+                "txt": "It was absolutely a fantastic lecture. Waiting for the next one!",
                 "givenRating": "4"
             }
         ],
@@ -1863,35 +1863,35 @@
                 "id": "r018",
                 "fullName": "Kisor Summ",
                 "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
-                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "txt": "I really enjoyed listening to the host and everyone's questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r019",
                 "fullName": "Vlad Kozilsky",
                 "imgUrl": "https://i.imgur.com/d7djmap.png",
-                "review": "The host was very nice and explained everything very well.",
+                "txt": "The host was very nice and explained everything very well.",
                 "givenRating": "3"
             },
             {
                 "id": "r020",
                 "fullName": "Silvio Raton",
                 "imgUrl": "https://i.imgur.com/1QaLpgO.jpg",
-                "review": "I never listened to a lecture in this field and I found it very interesting.",
+                "txt": "I never listened to a lecture in this field and I found it very interesting.",
                 "givenRating": "3"
             },
             {
                 "id": "r021",
                 "fullName": "Gilbert Carson",
                 "imgUrl": "https://i.imgur.com/ZkW7lPu.jpg",
-                "review": "Absolutely not what I expected, I would not recommend.",
+                "txt": "Absolutely not what I expected, I would not recommend.",
                 "givenRating": "2"
             },
             {
                 "id": "r022",
                 "fullName": "Jenny Moren",
                 "imgUrl": "https://i.imgur.com/C8j5ne1.jpg",
-                "review": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
+                "txt": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
                 "givenRating": "2"
             }
         ],
@@ -2036,35 +2036,35 @@
                 "id": "r023",
                 "fullName": "Wayne Jones",
                 "imgUrl": "https://i.imgur.com/Agglcgf.jpg",
-                "review": "Who's in charge of giving me back the time I wasted?",
+                "txt": "Who's in charge of giving me back the time I wasted?",
                 "givenRating": "1"
             },
             {
                 "id": "r024",
                 "fullName": "Chris Zoku",
                 "imgUrl": "https://i.imgur.com/n3BiawG.jpg",
-                "review": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
+                "txt": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
                 "givenRating": "2"
             },
             {
                 "id": "r025",
                 "fullName": "Stephen Connolly",
                 "imgUrl": "https://i.imgur.com/fTLyUYP.jpg",
-                "review": "I did not find the event particularly interesting.",
+                "txt": "I did not find the event particularly interesting.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r026",
                 "fullName": "Joe Narimer",
                 "imgUrl": "https://i.imgur.com/lRL9oNP.jpg",
-                "review": "I have attended other better events.",
+                "txt": "I have attended other better events.",
                 "givenRating": "2"
             },
             {
                 "id": "r027",
                 "fullName": "Phil Willis",
                 "imgUrl": "https://i.imgur.com/Kpn5ksA.jpg",
-                "review": "The event was fine, I expected it to be a little more professional.",
+                "txt": "The event was fine, I expected it to be a little more professional.",
                 "givenRating": "3"
             }
         ],
@@ -2209,35 +2209,35 @@
                 "id": "r028",
                 "fullName": "Steven Leon",
                 "imgUrl": "https://i.imgur.com/BVD39Fw.jpg",
-                "review": "Seemed like everyone enjoyed it but me.",
+                "txt": "Seemed like everyone enjoyed it but me.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r029",
                 "fullName": "Sirush Nagoku",
                 "imgUrl": "https://i.imgur.com/C8o7znK.jpg",
-                "review": "The lecture was fine but I didn't learn anything new that I didn't know before",
+                "txt": "The lecture was fine but I didn't learn anything new that I didn't know before",
                 "givenRating": "3.5"
             },
             {
                 "id": "r001",
                 "fullName": "Keniv Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
-                "review": "I asked too many questions and the event host was so patient, thank you!",
+                "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r002",
                 "fullName": "Lewis Gloman",
                 "imgUrl": "https://i.imgur.com/xDG5uW6.jpg",
-                "review": "I found it really hard to understand things during the lecture.",
+                "txt": "I found it really hard to understand things during the lecture.",
                 "givenRating": "3"
             },
             {
                 "id": "r003",
                 "fullName": "Ruth Rozenstein",
                 "imgUrl": "https://i.imgur.com/csFJf6Q.jpg",
-                "review": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
+                "txt": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
                 "givenRating": "4"
             }
         ],
@@ -2382,35 +2382,35 @@
                 "id": "r004",
                 "fullName": "Jess Williams",
                 "imgUrl": "https://i.imgur.com/mMVHpq6.jpg",
-                "review": "Probably one of the best lectures I had the chance to listen to.",
+                "txt": "Probably one of the best lectures I had the chance to listen to.",
                 "givenRating": "4"
             },
             {
                 "id": "r005",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/Ojd2OQA.jpg",
-                "review": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
+                "txt": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r006",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/fgyMYX2.jpg",
-                "review": "I really enjoyed listening to and being able to ask questions.",
+                "txt": "I really enjoyed listening to and being able to ask questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r007",
                 "fullName": "Daniel Zimmer",
                 "imgUrl": "https://i.imgur.com/reQpeUT.jpg",
-                "review": "I reached out to the host privately and got lots of help, thanks!",
+                "txt": "I reached out to the host privately and got lots of help, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r008",
                 "fullName": "Alex Moor",
                 "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
-                "review": "The host has some mistakes but other than that I was positively stunned.",
+                "txt": "The host has some mistakes but other than that I was positively stunned.",
                 "givenRating": "3"
             }
         ],
@@ -2556,28 +2556,28 @@
                 "id": "r009",
                 "fullName": "Julio Kelton",
                 "imgUrl": "https://i.imgur.com/sQilDbF.jpg",
-                "review": "I really like the lecture, waiting for your next lecture, hopefully soon!",
+                "txt": "I really like the lecture, waiting for your next lecture, hopefully soon!",
                 "givenRating": "4"
             },
             {
                 "id": "r010",
                 "fullName": "Deborah Lumens",
                 "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
-                "review": "I was one of the firsts to join this lecture... enjoyed every minute.",
+                "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
                 "givenRating": "4"
             },
             {
                 "id": "r011",
                 "fullName": "Evan West",
                 "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
-                "review": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
+                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
                 "givenRating": "5"
             },
             {
                 "id": "r012",
                 "fullName": "Ronn Turis",
                 "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
-                "review": "I asked the host to talk about a specific topic and so he did! thank you!",
+                "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
                 "givenRating": "4"
             }
         ],
@@ -2723,35 +2723,35 @@
                 "id": "r013",
                 "fullName": "Robert Laton",
                 "imgUrl": "https://i.imgur.com/iyp1PLl.jpg",
-                "review": "The host was so pleasant in explaining everything I didn't understand.",
+                "txt": "The host was so pleasant in explaining everything I didn't understand.",
                 "givenRating": "5"
             },
             {
                 "id": "r014",
                 "fullName": "Cameron Verizman",
                 "imgUrl": "https://i.imgur.com/psxedWd.jpg",
-                "review": "I'm so happy I took this lecture, I learned a lot!",
+                "txt": "I'm so happy I took this lecture, I learned a lot!",
                 "givenRating": "4"
             },
             {
                 "id": "r015",
                 "fullName": "Cody Hanlon",
                 "imgUrl": "https://i.imgur.com/YDp1MXj.jpg",
-                "review": "This is my second lecture with this host, highly recommended!",
+                "txt": "This is my second lecture with this host, highly recommended!",
                 "givenRating": "5"
             },
             {
                 "id": "r016",
                 "fullName": "Denis Rivera",
                 "imgUrl": "https://i.imgur.com/WPIoPkT.jpg",
-                "review": "Just starting to plan my career and this was so helpful, thanks!",
+                "txt": "Just starting to plan my career and this was so helpful, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r017",
                 "fullName": "Silvera Kadis",
                 "imgUrl": "https://i.imgur.com/Y0bbkZw.jpg",
-                "review": "It was absolutely a fantastic lecture. Waiting for the next one!",
+                "txt": "It was absolutely a fantastic lecture. Waiting for the next one!",
                 "givenRating": "4"
             }
         ],
@@ -2896,35 +2896,35 @@
                 "id": "r018",
                 "fullName": "Kisor Summ",
                 "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
-                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "txt": "I really enjoyed listening to the host and everyone's questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r019",
                 "fullName": "Vlad Kozilsky",
                 "imgUrl": "https://i.imgur.com/d7djmap.png",
-                "review": "The host was very nice and explained everything very well.",
+                "txt": "The host was very nice and explained everything very well.",
                 "givenRating": "3"
             },
             {
                 "id": "r020",
                 "fullName": "Silvio Raton",
                 "imgUrl": "https://i.imgur.com/1QaLpgO.jpg",
-                "review": "I never listened to a lecture in this field and I found it very interesting.",
+                "txt": "I never listened to a lecture in this field and I found it very interesting.",
                 "givenRating": "3"
             },
             {
                 "id": "r021",
                 "fullName": "Gilbert Carson",
                 "imgUrl": "https://i.imgur.com/ZkW7lPu.jpg",
-                "review": "Absolutely not what I expected, I would not recommend.",
+                "txt": "Absolutely not what I expected, I would not recommend.",
                 "givenRating": "2"
             },
             {
                 "id": "r022",
                 "fullName": "Jenny Moren",
                 "imgUrl": "https://i.imgur.com/C8j5ne1.jpg",
-                "review": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
+                "txt": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
                 "givenRating": "2"
             }
         ],
@@ -3069,35 +3069,35 @@
                 "id": "r023",
                 "fullName": "Wayne Jones",
                 "imgUrl": "https://i.imgur.com/Agglcgf.jpg",
-                "review": "Who's in charge of giving me back the time I wasted?",
+                "txt": "Who's in charge of giving me back the time I wasted?",
                 "givenRating": "1"
             },
             {
                 "id": "r024",
                 "fullName": "Chris Zoku",
                 "imgUrl": "https://i.imgur.com/n3BiawG.jpg",
-                "review": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
+                "txt": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
                 "givenRating": "2"
             },
             {
                 "id": "r025",
                 "fullName": "Stephen Connolly",
                 "imgUrl": "https://i.imgur.com/fTLyUYP.jpg",
-                "review": "I did not find the event particularly interesting.",
+                "txt": "I did not find the event particularly interesting.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r026",
                 "fullName": "Joe Narimer",
                 "imgUrl": "https://i.imgur.com/lRL9oNP.jpg",
-                "review": "I have attended other better events.",
+                "txt": "I have attended other better events.",
                 "givenRating": "2"
             },
             {
                 "id": "r027",
                 "fullName": "Phil Willis",
                 "imgUrl": "https://i.imgur.com/Kpn5ksA.jpg",
-                "review": "The event was fine, I expected it to be a little more professional.",
+                "txt": "The event was fine, I expected it to be a little more professional.",
                 "givenRating": "3"
             }
         ],
@@ -3237,35 +3237,35 @@
                 "id": "r028",
                 "fullName": "Steven Leon",
                 "imgUrl": "https://i.imgur.com/BVD39Fw.jpg",
-                "review": "Seemed like everyone enjoyed it but me.",
+                "txt": "Seemed like everyone enjoyed it but me.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r029",
                 "fullName": "Sirush Nagoku",
                 "imgUrl": "https://i.imgur.com/C8o7znK.jpg",
-                "review": "The lecture was fine but I didn't learn anything new that I didn't know before",
+                "txt": "The lecture was fine but I didn't learn anything new that I didn't know before",
                 "givenRating": "3.5"
             },
             {
                 "id": "r001",
                 "fullName": "Keniv Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
-                "review": "I asked too many questions and the event host was so patient, thank you!",
+                "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r002",
                 "fullName": "Lewis Gloman",
                 "imgUrl": "https://i.imgur.com/xDG5uW6.jpg",
-                "review": "I found it really hard to understand things during the lecture.",
+                "txt": "I found it really hard to understand things during the lecture.",
                 "givenRating": "3"
             },
             {
                 "id": "r003",
                 "fullName": "Ruth Rozenstein",
                 "imgUrl": "https://i.imgur.com/csFJf6Q.jpg",
-                "review": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
+                "txt": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
                 "givenRating": "4"
             }
         ],
@@ -3405,35 +3405,35 @@
                 "id": "r004",
                 "fullName": "Jess Williams",
                 "imgUrl": "https://i.imgur.com/mMVHpq6.jpg",
-                "review": "Probably one of the best lectures I had the chance to listen to.",
+                "txt": "Probably one of the best lectures I had the chance to listen to.",
                 "givenRating": "4"
             },
             {
                 "id": "r005",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/Ojd2OQA.jpg",
-                "review": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
+                "txt": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r006",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/fgyMYX2.jpg",
-                "review": "I really enjoyed listening to and being able to ask questions.",
+                "txt": "I really enjoyed listening to and being able to ask questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r007",
                 "fullName": "Daniel Zimmer",
                 "imgUrl": "https://i.imgur.com/reQpeUT.jpg",
-                "review": "I reached out to the host privately and got lots of help, thanks!",
+                "txt": "I reached out to the host privately and got lots of help, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r008",
                 "fullName": "Alex Moor",
                 "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
-                "review": "The host has some mistakes but other than that I was positively stunned.",
+                "txt": "The host has some mistakes but other than that I was positively stunned.",
                 "givenRating": "3"
             }
         ],
@@ -3574,35 +3574,35 @@
                 "id": "r009",
                 "fullName": "Julio Kelton",
                 "imgUrl": "https://i.imgur.com/sQilDbF.jpg",
-                "review": "I really like the lecture, waiting for your next lecture, hopefully soon!",
+                "txt": "I really like the lecture, waiting for your next lecture, hopefully soon!",
                 "givenRating": "4"
             },
             {
                 "id": "r010",
                 "fullName": "Deborah Lumens",
                 "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
-                "review": "I was one of the firsts to join this lecture... enjoyed every minute.",
+                "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
                 "givenRating": "4"
             },
             {
                 "id": "r011",
                 "fullName": "Evan West",
                 "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
-                "review": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
+                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
                 "givenRating": "5"
             },
             {
                 "id": "r012",
                 "fullName": "Ronn Turis",
                 "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
-                "review": "I asked the host to talk about a specific topic and so he did! thank you!",
+                "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r013",
                 "fullName": "Robert Laton",
                 "imgUrl": "https://i.imgur.com/iyp1PLl.jpg",
-                "review": "The host was so pleasant in explaining everything I didn't understand.",
+                "txt": "The host was so pleasant in explaining everything I didn't understand.",
                 "givenRating": "5"
             }
         ],
@@ -3742,35 +3742,35 @@
                 "id": "r014",
                 "fullName": "Cameron Verizman",
                 "imgUrl": "https://i.imgur.com/psxedWd.jpg",
-                "review": "I'm so happy I took this lecture, I learned a lot!",
+                "txt": "I'm so happy I took this lecture, I learned a lot!",
                 "givenRating": "4"
             },
             {
                 "id": "r015",
                 "fullName": "Cody Hanlon",
                 "imgUrl": "https://i.imgur.com/YDp1MXj.jpg",
-                "review": "This is my second lecture with this host, highly recommended!",
+                "txt": "This is my second lecture with this host, highly recommended!",
                 "givenRating": "5"
             },
             {
                 "id": "r016",
                 "fullName": "Denis Rivera",
                 "imgUrl": "https://i.imgur.com/WPIoPkT.jpg",
-                "review": "Just starting to plan my career and this was so helpful, thanks!",
+                "txt": "Just starting to plan my career and this was so helpful, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r017",
                 "fullName": "Silvera Kadis",
                 "imgUrl": "https://i.imgur.com/Y0bbkZw.jpg",
-                "review": "It was absolutely a fantastic lecture. Waiting for the next one!",
+                "txt": "It was absolutely a fantastic lecture. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r018",
                 "fullName": "Kisor Summ",
                 "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
-                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "txt": "I really enjoyed listening to the host and everyone's questions.",
                 "givenRating": "3"
             }
         ],
@@ -3911,35 +3911,35 @@
                 "id": "r019",
                 "fullName": "Vlad Kozilsky",
                 "imgUrl": "https://i.imgur.com/d7djmap.png",
-                "review": "The host was very nice and explained everything very well.",
+                "txt": "The host was very nice and explained everything very well.",
                 "givenRating": "3"
             },
             {
                 "id": "r020",
                 "fullName": "Silvio Raton",
                 "imgUrl": "https://i.imgur.com/1QaLpgO.jpg",
-                "review": "I never listened to a lecture in this field and I found it very interesting.",
+                "txt": "I never listened to a lecture in this field and I found it very interesting.",
                 "givenRating": "3"
             },
             {
                 "id": "r021",
                 "fullName": "Gilbert Carson",
                 "imgUrl": "https://i.imgur.com/ZkW7lPu.jpg",
-                "review": "Absolutely not what I expected, I would not recommend.",
+                "txt": "Absolutely not what I expected, I would not recommend.",
                 "givenRating": "2"
             },
             {
                 "id": "r022",
                 "fullName": "Jenny Moren",
                 "imgUrl": "https://i.imgur.com/C8j5ne1.jpg",
-                "review": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
+                "txt": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
                 "givenRating": "2"
             },
             {
                 "id": "r023",
                 "fullName": "Wayne Jones",
                 "imgUrl": "https://i.imgur.com/Agglcgf.jpg",
-                "review": "Who's in charge of giving me back the time I wasted?",
+                "txt": "Who's in charge of giving me back the time I wasted?",
                 "givenRating": "1"
             }
         ],
@@ -4079,35 +4079,35 @@
                 "id": "r024",
                 "fullName": "Chris Zoku",
                 "imgUrl": "https://i.imgur.com/n3BiawG.jpg",
-                "review": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
+                "txt": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
                 "givenRating": "2"
             },
             {
                 "id": "r025",
                 "fullName": "Stephen Connolly",
                 "imgUrl": "https://i.imgur.com/fTLyUYP.jpg",
-                "review": "I did not find the event particularly interesting.",
+                "txt": "I did not find the event particularly interesting.",
                 "givenRating": "3.5"
             },
             {
                 "id": "r026",
                 "fullName": "Joe Narimer",
                 "imgUrl": "https://i.imgur.com/lRL9oNP.jpg",
-                "review": "I have attended other better events.",
+                "txt": "I have attended other better events.",
                 "givenRating": "2"
             },
             {
                 "id": "r027",
                 "fullName": "Phil Willis",
                 "imgUrl": "https://i.imgur.com/Kpn5ksA.jpg",
-                "review": "The event was fine, I expected it to be a little more professional.",
+                "txt": "The event was fine, I expected it to be a little more professional.",
                 "givenRating": "3"
             },
             {
                 "id": "r028",
                 "fullName": "Steven Leon",
                 "imgUrl": "https://i.imgur.com/BVD39Fw.jpg",
-                "review": "Seemed like everyone enjoyed it but me.",
+                "txt": "Seemed like everyone enjoyed it but me.",
                 "givenRating": "3.5"
             }
         ],
@@ -4248,35 +4248,35 @@
                 "id": "r029",
                 "fullName": "Sirush Nagoku",
                 "imgUrl": "https://i.imgur.com/C8o7znK.jpg",
-                "review": "The lecture was fine but I didn't learn anything new that I didn't know before",
+                "txt": "The lecture was fine but I didn't learn anything new that I didn't know before",
                 "givenRating": "3.5"
             },
             {
                 "id": "r001",
                 "fullName": "Keniv Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
-                "review": "I asked too many questions and the event host was so patient, thank you!",
+                "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r002",
                 "fullName": "Lewis Gloman",
                 "imgUrl": "https://i.imgur.com/xDG5uW6.jpg",
-                "review": "I found it really hard to understand things during the lecture.",
+                "txt": "I found it really hard to understand things during the lecture.",
                 "givenRating": "3"
             },
             {
                 "id": "r003",
                 "fullName": "Ruth Rozenstein",
                 "imgUrl": "https://i.imgur.com/csFJf6Q.jpg",
-                "review": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
+                "txt": "Wow, I could listen for another 60 minutes! Amazin, thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r004",
                 "fullName": "Jess Williams",
                 "imgUrl": "https://i.imgur.com/mMVHpq6.jpg",
-                "review": "Probably one of the best lectures I had the chance to listen to.",
+                "txt": "Probably one of the best lectures I had the chance to listen to.",
                 "givenRating": "4"
             }
         ],
@@ -4416,35 +4416,35 @@
                 "id": "r005",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/Ojd2OQA.jpg",
-                "review": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
+                "txt": "OK, that was absolutely a mini-course I just took. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r006",
                 "fullName": "Rebecca Dorum",
                 "imgUrl": "https://i.imgur.com/fgyMYX2.jpg",
-                "review": "I really enjoyed listening to and being able to ask questions.",
+                "txt": "I really enjoyed listening to and being able to ask questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r007",
                 "fullName": "Daniel Zimmer",
                 "imgUrl": "https://i.imgur.com/reQpeUT.jpg",
-                "review": "I reached out to the host privately and got lots of help, thanks!",
+                "txt": "I reached out to the host privately and got lots of help, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r008",
                 "fullName": "Alex Moor",
                 "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
-                "review": "The host has some mistakes but other than that I was positively stunned.",
+                "txt": "The host has some mistakes but other than that I was positively stunned.",
                 "givenRating": "3"
             },
             {
                 "id": "r009",
                 "fullName": "Julio Kelton",
                 "imgUrl": "https://i.imgur.com/sQilDbF.jpg",
-                "review": "I really like the lecture, waiting for your next lecture, hopefully soon!",
+                "txt": "I really like the lecture, waiting for your next lecture, hopefully soon!",
                 "givenRating": "4"
             }
         ],
@@ -4584,35 +4584,35 @@
                 "id": "r010",
                 "fullName": "Deborah Lumens",
                 "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
-                "review": "I was one of the firsts to join this lecture... enjoyed every minute.",
+                "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
                 "givenRating": "4"
             },
             {
                 "id": "r011",
                 "fullName": "Evan West",
                 "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
-                "review": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
+                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
                 "givenRating": "5"
             },
             {
                 "id": "r012",
                 "fullName": "Ronn Turis",
                 "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
-                "review": "I asked the host to talk about a specific topic and so he did! thank you!",
+                "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
                 "givenRating": "4"
             },
             {
                 "id": "r013",
                 "fullName": "Robert Laton",
                 "imgUrl": "https://i.imgur.com/iyp1PLl.jpg",
-                "review": "The host was so pleasant in explaining everything I didn't understand.",
+                "txt": "The host was so pleasant in explaining everything I didn't understand.",
                 "givenRating": "5"
             },
             {
                 "id": "r014",
                 "fullName": "Cameron Verizman",
                 "imgUrl": "https://i.imgur.com/psxedWd.jpg",
-                "review": "I'm so happy I took this lecture, I learned a lot!",
+                "txt": "I'm so happy I took this lecture, I learned a lot!",
                 "givenRating": "4"
             }
         ],
@@ -4752,35 +4752,35 @@
                 "id": "r015",
                 "fullName": "Cody Hanlon",
                 "imgUrl": "https://i.imgur.com/YDp1MXj.jpg",
-                "review": "This is my second lecture with this host, highly recommended!",
+                "txt": "This is my second lecture with this host, highly recommended!",
                 "givenRating": "5"
             },
             {
                 "id": "r016",
                 "fullName": "Denis Rivera",
                 "imgUrl": "https://i.imgur.com/WPIoPkT.jpg",
-                "review": "Just starting to plan my career and this was so helpful, thanks!",
+                "txt": "Just starting to plan my career and this was so helpful, thanks!",
                 "givenRating": "4"
             },
             {
                 "id": "r017",
                 "fullName": "Silvera Kadis",
                 "imgUrl": "https://i.imgur.com/Y0bbkZw.jpg",
-                "review": "It was absolutely a fantastic lecture. Waiting for the next one!",
+                "txt": "It was absolutely a fantastic lecture. Waiting for the next one!",
                 "givenRating": "4"
             },
             {
                 "id": "r018",
                 "fullName": "Kisor Summ",
                 "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
-                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "txt": "I really enjoyed listening to the host and everyone's questions.",
                 "givenRating": "3"
             },
             {
                 "id": "r019",
                 "fullName": "Vlad Kozilsky",
                 "imgUrl": "https://i.imgur.com/d7djmap.png",
-                "review": "The host was very nice and explained everything very well.",
+                "txt": "The host was very nice and explained everything very well.",
                 "givenRating": "3"
             }
         ],

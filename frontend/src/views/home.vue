@@ -9,7 +9,7 @@
           </h1>
      <div class="hp-link-filter">
          
-          <router-link to="/login" class="hp-btn">Start Your Journey ›</router-link> 
+          <router-link to="/login" class="hp-btn">Explore › › ›</router-link> 
           <evento-filter/>
       </div>
 
@@ -26,11 +26,6 @@
 <div class="hp-content">
       
 
-      <nav class="sub-nav-bar">
-        <router-link to="/" class="hp-sub-link-1">Recommended events:</router-link>
-        <div class="hp-sub-link-2">
-          <router-link to="/events">All events ›</router-link>
-
         </div>
       </nav>
 
@@ -39,16 +34,18 @@
         <!-- <div class="eventos-line" v-for="evento in technologyEventos" :key="evento.id">
           <evento-preview :evento="evento" />                 
         </div> -->
-
+        <h3>Popular events <router-link to="/events">(Show all)</router-link></h3>
         <div class="eventos-line">
            <evento-list :eventos="popularEventos" />
+        <h3>Technology events <router-link to="/events">(Show all)</router-link></h3>
         </div>
         <div class="eventos-line">
            <evento-list :eventos="technologyEventos" />
         </div>
-        <!-- <div class="eventos-line">
-           <evento-list v-if="!isLoading" :eventos="upcomingEventos" />
-        </div> -->
+        <h3>Upcoming events <router-link to="/events">(Show all)</router-link></h3>
+        <div class="eventos-line">
+           <evento-list :eventos="upcomingEventos" />
+        </div>
 
  
     
@@ -77,14 +74,14 @@ export default {
     eventos() {
       return this.$store.getters.eventos;
     },
-      popularEventos() {
-        return this.$store.getters.eventos.filter(evento => evento.createdBy.rating > 4.7)   
-      },
+    popularEventos() {
+      return this.$store.getters.eventos.filter(evento => evento.avgRating > 4.7)   
+    },
     technologyEventos() {
       return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "technology"))   
     },
     upcomingEventos() {
-      return this.$store.getters.eventos.filter(evento => evento.startDate <= "2020-07-30")   
+      return this.$store.getters.eventos.filter(evento => evento.startDate < "2020-07-30")   
     }
 
   },

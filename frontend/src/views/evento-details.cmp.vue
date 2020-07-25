@@ -21,7 +21,7 @@
          
         
         <h4 class="evento-details-h4">
-        <i class="fas fa-plane"></i>
+        <i class="fas fa-map-marker-alt"></i>
           {{evento.country}}</h4>
       </div>
         
@@ -31,7 +31,7 @@
           {{evento.dur}} Minutes
         </p>
         <p>
-          <i class="fas fa-globe-europe"></i>
+          <i class="fas fa-globe-americas"></i>
           {{evento.lang}}
         </p>
         <p>
@@ -39,7 +39,7 @@
           Join from your computer, phone, or tablet
         </p>
         <p>
-          <i class="far fa-user"></i>
+          <i class="fas fa-users"></i>
           Up to {{evento.capacity}} pepole
         </p>
           <p>
@@ -74,18 +74,21 @@
 
         <h3>Reviews</h3>
     <div class="reviews">
-        <div v-for="block in evento.reviews" :key="block.id" >
-          <avatar :src="block.imgUrl"></avatar>
+        <div v-for="review in evento.reviews" :key=review.id>
+          <avatar :src="review.imgUrl"></avatar>
           <p class="review-title">
-            {{block.givenRating}}
+            {{review.givenRating}}
             <i class="fas fa-star">
-              </i> {{block.fullName}}</p>
-          <p>{{block.review}}</p>
+              </i> {{review.fullName}}</p>
+          <p>{{review.txt}}</p>
         
         </div>
       </div>
 
         <h3>Related lectures</h3>
+          <div class="eventos-line">
+           <evento-list :eventos="relatedEventos" />
+        </div>
       </div>
       <div class="evento-join">
         
@@ -113,7 +116,7 @@
         <h3>Event Members</h3>
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
-        <el-tooltip  content='member' placement="top-start" effect="dark">
+        <el-tooltip  :content="member.fullName" placement="top-start" effect="dark">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
         </el-tooltip>
@@ -143,7 +146,8 @@
 <script>
 import { eventoService } from "../services/evento.service.js";
 import Avatar from 'vue-avatar'
-import  socketService from '../services/socket.service.js'
+import socketService from '../services/socket.service.js'
+import eventoList from '../components/evento-list.cmp'
 
 
 export default {
@@ -165,6 +169,9 @@ export default {
   },
 
   computed:{
+     relatedEventos() {
+    return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "related"))   
+  },
   loggedInUser() {
    return this.$store.getters.loggedInUser;
 
@@ -256,9 +263,13 @@ export default {
   destroyed() {
     socketService.off('chat addMsg', this.addMsg)
     socketService.terminate();
+    this.$store.dispatch({ type: "loadEventos"});
+    
   },
+ 
   components: {
-    Avatar
+    Avatar,
+    eventoList
   },
   watch: {
     // "msg.txt"() {
