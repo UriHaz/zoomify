@@ -172,7 +172,7 @@ export default {
     },
 
      open() {
-        this.$confirm(`Your acoount will be charged by $${this.evento.price}`,'Book', {
+        this.$confirm(`Your account will be charged by $${this.evento.price}`,'Book', {
           confirmButtonText: 'OK',
           cancelButtonText: 'Cancel',
         }).then(() => {
