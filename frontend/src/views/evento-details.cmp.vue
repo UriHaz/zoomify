@@ -158,7 +158,7 @@ export default {
       join: false,
       guestToAdd:{},
       countDownSeconds : 59,
-      countDownMinutes : 55,
+      countDownMinutes : 14,
       msg: {from: 'Me', txt: ''},
       msgs: [],
       txt : 'is typing...',

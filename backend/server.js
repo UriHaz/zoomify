@@ -35,7 +35,7 @@ const reviewRoutes = require('./api/review/review.routes')
 const connectSockets = require('./api/socket/socket.routes')
 
 // routes
-app.use('/evento', eventoRoutes)
+app.use('/api/evento', eventoRoutes)
 app.use('/auth', authRoutes)
 app.use('/user', userRoutes)
 app.use('/review', reviewRoutes)
@@ -44,7 +44,8 @@ connectSockets(io)
 // Logging
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 3000;
-http.listen(port, () => {
+app.listen(port, () => {
     logger.info('Server is running on port: ' + 'http://localhost:'+port)
     console.log('Server is running on port: ' + 'http://localhost:'+port)
+    console.log ( `App listening on port ${ port } !`)
 });
