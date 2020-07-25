@@ -21,7 +21,7 @@
          
         
         <h4 class="evento-details-h4">
-        <i class="fas fa-plane"></i>
+        <i class="fas fa-map-marker-alt"></i>
           {{evento.country}}</h4>
       </div>
         
