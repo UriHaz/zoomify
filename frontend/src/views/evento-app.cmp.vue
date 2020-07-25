@@ -17,7 +17,7 @@
 
   </div>
 
-  <div>
+  <div class="evento-list">
     <evento-list v-if="!isLoading" :eventos="eventos" />
   </div>
 </section>

@@ -1,10 +1,21 @@
 .home {
 
-  .hp-content {
-    margin: 0 5% 0 5%;
-  }
+  .eventos-line{
+    margin: 3rem 7.3rem ;
+    h3:first-child {
+      border-bottom: 1px solid  rgb(224, 224, 224);
 
+    }
+
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
 }
+ 
 
 
 .centered-header {
