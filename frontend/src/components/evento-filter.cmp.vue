@@ -1,5 +1,5 @@
 <template>
-  <section >
+  <section class="search-bar">
 
     <el-input
       class="search"
@@ -8,8 +8,7 @@
       placeholder="Search events ..."
       v-model="filterBy.txt"
     ></el-input>
-    <!-- <el-button type="primary" @click="clearAll">Clear All</el-button> -->
-    <br />
+    <!-- <br /> -->
 
     <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
@@ -32,6 +31,8 @@
       <el-option label="business" value="business"></el-option>
       <el-option label="sales" value="sales"></el-option>
     </el-select>
+    <el-button  @click="clearAll">Clear all</el-button>
+
 
   </section>
 </template>
@@ -60,8 +61,9 @@ export default {
     },
     clearAll() {
       this.filterBy.txt = "";
-      this.filterBy.category = "";
+      this.filterBy.tags = "";
       this.filterBy.order = "asc";
+      this.filterBy.sort = "title";
       this.filterOn();
     }
   },
