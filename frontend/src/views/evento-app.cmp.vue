@@ -4,7 +4,11 @@
 
   <div class="details-hero">
     <h1 class="list-h1">All Events</h1>
-    <img src="../assets/imgs/hero-list.jpg" class="hero-list-img" />
+    <!-- <img src="../assets/imgs/hero-list.jpg" class="hero-list-img" /> -->
+    <img src="../assets/imgs/list-cover.jpg" class="hero-list-img" />
+    <!-- <img src="../assets/imgs/1.jpg" class="hero-list-img" /> -->
+    <!-- <img src="../assets/imgs/2.jpg" class="hero-list-img" /> -->
+    <!-- <img src="../assets/imgs/list-hero2.jpg" class="hero-list-img" /> -->
   
 
   <div class="list-filter">
