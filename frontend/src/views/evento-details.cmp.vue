@@ -39,7 +39,7 @@
           Join from your computer, phone, or tablet
         </p>
         <p>
-          <i class="far fa-user"></i>
+          <i class="fas fa-users"></i>
           Up to {{evento.capacity}} pepole
         </p>
           <p>
