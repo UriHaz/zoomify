@@ -22,33 +22,24 @@
         <img src="../assets/imgs/hero2.jpeg" class="home-hero" />
 
 
-<div class="hp-content">
+  <section class="hp-content">
+    <div >
       
-
-        <!-- </div>
-      </nav> -->
-
-
-
-        <!-- <div class="eventos-line" v-for="evento in technologyEventos" :key="evento.id">
-          <evento-preview :evento="evento" />                 
-        </div> -->
-        <h3>Popular events <router-link to="/events">(Show all)</router-link></h3>
         <div class="eventos-line">
+        <h3>Popular events <router-link to="/events">/ Show all events</router-link></h3>
            <evento-list :eventos="popularEventos" />
-        <h3>Technology events <router-link to="/events">(Show all)</router-link></h3>
         </div>
         <div class="eventos-line">
+        <h3> Technologic events <router-link to="/events">/ Show all events</router-link></h3>
            <evento-list :eventos="technologyEventos" />
         </div>
-        <h3>Upcoming events <router-link to="/events">(Show all)</router-link></h3>
         <div class="eventos-line">
+        <h3>Upcoming events <router-link to="/events">/ Show all events</router-link></h3>
            <evento-list :eventos="upcomingEventos" />
         </div>
 
- 
-    
     </div>
+  </section>
     </section>
 
      <!-- eventos.tags.includes('technology') -->
