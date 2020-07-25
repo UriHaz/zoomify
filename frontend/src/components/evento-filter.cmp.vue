@@ -13,7 +13,7 @@
 
     <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
-      <el-option label="sort by: date" value="creator.fullName"></el-option>
+      <el-option label="sort by: date" value="startDate"></el-option>
     </el-select>
 
     <el-select v-model="filterBy.order" placeholder="Select" @change="filterOn">
@@ -25,6 +25,12 @@
       <el-option label="Show all categories" value></el-option>
       <el-option label="technology" value="technology"></el-option>
       <el-option label="career" value="career"></el-option>
+      <el-option label="coding" value="coding"></el-option>
+      <el-option label="design" value="design"></el-option>
+      <el-option label="support" value="support"></el-option>
+      <el-option label="marketing" value="marketing"></el-option>
+      <el-option label="business" value="business"></el-option>
+      <el-option label="sales" value="sales"></el-option>
     </el-select>
 
   </section>
