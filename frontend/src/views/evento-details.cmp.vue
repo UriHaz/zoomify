@@ -137,8 +137,11 @@
         </div>
       </div>
     </div>
+    
   </section>
 </template>
+
+
 
 
 <script>
@@ -173,6 +176,8 @@ export default {
   loggedInUser() {
    return this.$store.getters.loggedInUser;
 
+
+
     },
     timerOn(){
      return this.timer = setInterval( this.timeDown(), 1000);
@@ -183,7 +188,7 @@ export default {
   methods: {
 
 modal() {
-        this.$alert('<iframe width="390" height="200" class="evento-modal" src="https://www.youtube.com/embed/wBdDbQxIodU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 'The event will start soon...', {
+        this.$alert(' <iframe width="390" height="200"  src="https://www.youtube.com/embed/wBdDbQxIodU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 'The event will start soon...', {
           dangerouslyUseHTMLString: true
         });
       },

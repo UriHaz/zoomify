@@ -10,17 +10,17 @@
     ></el-input>
     <!-- <br /> -->
 
-    <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
+    <el-select v-model="filterBy.sort" @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
       <el-option label="sort by: date" value="startDate"></el-option>
     </el-select>
 
-    <el-select v-model="filterBy.order" placeholder="Select" @change="filterOn">
+    <el-select v-model="filterBy.order"  @change="filterOn">
       <el-option label="Order: ascending" value="asc"></el-option>
       <el-option label="Order: descending" value="desc"></el-option>
     </el-select>
 
-    <el-select v-model="filterBy.tags" placeholder="Filter by category ..." @change="filterOn">
+    <el-select v-model="filterBy.tags"  @change="filterOn">
       <el-option label="Show all categories" value></el-option>
       <el-option label="technology" value="technology"></el-option>
       <el-option label="career" value="career"></el-option>
@@ -32,6 +32,7 @@
       <el-option label="sales" value="sales"></el-option>
     </el-select>
     <el-button  @click="clearAll">Clear all</el-button>
+ 
 
 
   </section>
