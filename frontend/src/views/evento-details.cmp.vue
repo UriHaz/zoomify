@@ -84,12 +84,10 @@
         
         </div>
       </div>
-
-
-
-
-
         <h3>Related lectures</h3>
+          <div class="eventos-line">
+           <evento-list :eventos="relatedEventos" />
+        </div>
       </div>
       <div class="evento-join">
         
@@ -133,6 +131,7 @@
 <script>
 import { eventoService } from "../services/evento.service.js";
 import Avatar from 'vue-avatar'
+import eventoList from '../components/evento-list.cmp'
 
 
 export default {
@@ -148,6 +147,9 @@ export default {
   },
 
   computed:{
+     relatedEventos() {
+    return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "related"))   
+  },
   loggedInUser() {
     return this.$store.getters.loggedInUser;
     },
@@ -211,9 +213,13 @@ export default {
   },
   created() {
     this.loadEvento();
+    this.$store.dispatch({ type: "loadEventos"});
+    
   },
+ 
   components: {
-    Avatar
+    Avatar,
+    eventoList
   },
 }
 </script>
