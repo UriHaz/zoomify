@@ -6,13 +6,10 @@
 
 
 .evento-details-hero {
+    background-color: black;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    height: 17rem;
-    grid-column-gap: 0.5rem;
-
-
-
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-column-gap: 0.4rem;
     
     img {
         width: 100%;
@@ -25,7 +22,7 @@
 .top-desc {
     padding-right: 5%;
     width: 70%;
-    // margin-left: 100px;
+    margin-left: 1rem;
     border-right: 1px solid rgb(211, 211, 211);
 }
 
@@ -54,7 +51,7 @@
     color: $clr3;
 }
 
-.evento-info{
+.evento-info {
     border-top: solid rgb(211, 211, 211) 1px;
     border-bottom: solid rgb(211, 211, 211) 1px;
     display: grid;
@@ -62,7 +59,7 @@
     grid-gap: 5px;
     color: $clr3;
 
-    i{
+    i {
         font-size: 1.5rem;
     }
 
