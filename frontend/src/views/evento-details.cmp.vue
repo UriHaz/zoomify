@@ -74,13 +74,13 @@
 
         <h3>Reviews</h3>
     <div class="reviews">
-        <div v-for="block in evento.reviews">
-          <avatar :src="block.imgUrl"></avatar>
+        <div v-for="review in evento.reviews" :key=review.id>
+          <avatar :src="review.imgUrl"></avatar>
           <p class="review-title">
-            {{block.givenRating}}
+            {{review.givenRating}}
             <i class="fas fa-star">
-              </i> {{block.fullName}}</p>
-          <p>{{block.review}}</p>
+              </i> {{review.fullName}}</p>
+          <p>{{review.review}}</p>
         
         </div>
       </div>
