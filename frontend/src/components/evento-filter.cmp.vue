@@ -11,7 +11,7 @@
     <!-- <el-button type="primary" @click="clearAll">Clear All</el-button> -->
     <br />
 
-    <!-- <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
+    <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
       <el-option label="sort by: price" value="price"></el-option>
       <el-option label="sort by: creator" value="creator.fullName"></el-option>
@@ -22,11 +22,11 @@
       <el-option label="Order: descending" value="desc"></el-option>
     </el-select>
 
-    <el-select v-model="filterBy.type" placeholder="Filter by category ..." @change="filterOn">
+    <el-select v-model="filterBy.tags" placeholder="Filter by category ..." @change="filterOn">
       <el-option label="Show all categories" value></el-option>
-      <el-option label="Funny" value="Funny"></el-option>
-      <el-option label="Educational" value="Educational"></el-option>
-    </el-select> -->
+      <el-option label="technology" value="technology"></el-option>
+      <el-option label="career" value="career"></el-option>
+    </el-select>
 
   </section>
 </template>
