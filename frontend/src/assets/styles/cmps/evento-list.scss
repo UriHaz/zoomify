@@ -1,8 +1,9 @@
 .list-container {
   // margin-top: 2.8rem;
      display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
-    // grid-gap: 1px;
+    // grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
 
   a {
     text-decoration: none;
