@@ -1,9 +1,18 @@
 
 <template>
 <section>
-  <div>
+
+  <div class="details-hero">
+    <h1 class="list-h1">All Events</h1>
+    <img src="../assets/imgs/hero-list.jpg" class="hero-list-img" />
+  
+
+  <div class="list-filter">
     <evento-filter @setFilter="setFilter()" />
   </div>
+
+  </div>
+
   <div>
     <evento-list v-if="!isLoading" :eventos="eventos" />
   </div>
