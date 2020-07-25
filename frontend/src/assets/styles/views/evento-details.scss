@@ -4,12 +4,6 @@
     }
 }
 
-
-
-
-
-
-
 .top-desc {
     padding-right: 5%;
     width: 70%;
@@ -79,9 +73,6 @@
     padding: 1rem;
 }
 
-
-
-
 .evento-start{
     margin-bottom: 100px;
     margin-top: 10px;
@@ -145,7 +136,6 @@
 .join-btn {
     display: block;
     background-color: $clr1;
-    // background-color: $clr9;
     color: #fff;
     margin-top: 50%;
     font-size: 1rem;
@@ -162,13 +152,66 @@
     cursor: pointer;
 }
 
+.chat-body{
+    height: 25rem;
+    position: relative;
+    background-color: $clr8;
+
+    input{
+        outline: none;
+        border: none;
+        padding: 0.2rem 0rem;
+        margin-right: 0.5rem;
+    }
+
+    ::placeholder{
+        color: $clr7;
+    }
+
+
+    ul{
+        list-style: none;
+        padding-top: 0.5rem;
+    }
+
+    li{
+      background: #0084ff;
+      padding: 8px;
+      height: fit-content;
+      width: fit-content;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .chat-input{
+        position: absolute;
+        left: 1rem;
+        top: 22.6rem;
+    }
+
+    button{
+        display: inline;
+        color: $clr5;
+        background-color:$clr1;
+        // margin-top: 50%;
+        font-size: 0.9rem;
+        text-decoration: none;
+        padding: 0.1rem 0.5rem;
+        outline: none;
+        border: none;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        // margin: 2rem auto;
+        cursor: pointer;
+    }
+}
+
 .start-btn{
     padding: 0.5rem 0.5rem;
 }
 
 
 .evento-details-hero {
-    // background-color: #6c757d;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-column-gap: 0.4rem;

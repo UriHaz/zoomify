@@ -74,7 +74,7 @@
 
         <h3>Reviews</h3>
     <div class="reviews">
-        <div v-for="block in evento.reviews">
+        <div v-for="block in evento.reviews" :key="block.id" >
           <avatar :src="block.imgUrl"></avatar>
           <p class="review-title">
             {{block.givenRating}}
@@ -84,10 +84,6 @@
         
         </div>
       </div>
-
-
-
-
 
         <h3>Related lectures</h3>
       </div>
@@ -108,7 +104,7 @@
 
           <div class="evento-start-txt">
         <h3 >Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
-</div>
+       </div>
         <button class="join-btn">
           Start event!
         </button>
@@ -124,6 +120,20 @@
          </div>
         </div>
 
+        <h3>Chat</h3>
+        <!-- <i v-if="isTyping">{{userName}} {{txt}}</i> -->
+        <div class="chat-body">
+          <ul>
+        <li v-for="(msg, idx) in msgs" :key="idx">
+        {{msg.txt}}
+       </li>
+        </ul>
+        
+      <form class="chat-input" @submit.prevent="sendMsg">
+      <input type="text" v-model="msg.txt" placeholder="Type your massege" />
+      <button>Send</button>
+      </form>
+        </div>
       </div>
     </div>
   </section>
@@ -133,6 +143,7 @@
 <script>
 import { eventoService } from "../services/evento.service.js";
 import Avatar from 'vue-avatar'
+import  socketService from '../services/socket.service.js'
 
 
 export default {
@@ -143,13 +154,20 @@ export default {
       join: false,
       guestToAdd:{},
       countDownSeconds : 59,
-      countDownMinutes : 55
+      countDownMinutes : 55,
+      msg: {from: 'Me', txt: ''},
+      msgs: [],
+      txt : 'is typing...',
+      userName: '',
+      isTyping: false,
+      whoType: ""
     };
   },
 
   computed:{
   loggedInUser() {
-    return this.$store.getters.loggedInUser;
+   return this.$store.getters.loggedInUser;
+
     },
     timerOn(){
      return this.timer = setInterval( this.timeDown(), 1000);
@@ -207,13 +225,48 @@ export default {
         this.evento.members.push(this.guestToAdd)
       }
       this.$store.dispatch({ type: "saveEvento", evento: this.evento });
+    },
+     addMsg(msg) {
+      this.msgs.push(msg)
+      
+    },
+    sendMsg() {
+      console.log('Sending', this.msg);
+      socketService.emit('chat newMsg', this.msg)
+      this.msg = {from: 'Me', txt: ''};
+    },
+    userTyping(userName, txt){
+      if (txt) {
+        this.isTyping = true;
+        this.userName = this.loggedInUser.fullName;
+        
+      } else {
+        this.isTyping = false;
+      }
+      console.log(this.userName, this.txt);
+      socketService.emit('typing user',{userName: this.userName ,txt: this.txt})
     }
   },
   created() {
     this.loadEvento();
+    socketService.setup();
+    socketService.on('chat addMsg', this.addMsg)
+    // socketService.on('show Typing', this.addMsg)
+  },
+  destroyed() {
+    socketService.off('chat addMsg', this.addMsg)
+    socketService.terminate();
   },
   components: {
     Avatar
   },
-}
+  watch: {
+    // "msg.txt"() {
+    //   socketService.emit("typing user", {
+    //     userName: this.msg.from,
+    //     txt: this.msg.txt
+    //   });
+    // }
+  }
+  }
 </script>
