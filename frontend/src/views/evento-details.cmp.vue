@@ -115,7 +115,7 @@
         <h3>Event Members</h3>
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
-        <el-tooltip  content='member' placement="top-start" effect="dark">
+        <el-tooltip  :content="member.fullName" placement="top-start" effect="dark">
           <avatar v-if="!member.imgUrl" :username="member.fullName"></avatar>
           <avatar v-else :src="member.imgUrl"></avatar>
         </el-tooltip>
