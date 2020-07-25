@@ -35,10 +35,10 @@ const reviewRoutes = require('./api/review/review.routes')
 const connectSockets = require('./api/socket/socket.routes')
 
 // routes
-app.use('/evento', eventoRoutes)
-app.use('/auth', authRoutes)
-app.use('/user', userRoutes)
-app.use('/review', reviewRoutes)
+app.use('/api/evento', eventoRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
+app.use('/api/review', reviewRoutes)
 connectSockets(io)
 
 // Logging

@@ -153,25 +153,43 @@
 }
 
 .chat-body{
+
     height: 25rem;
     position: relative;
-    background-color: $clr8;
+    background-color: #F2F5F8;
+
+    .chat-header{
+        border: black solid 1px;
+        height: 3rem;
+        background-color: $clr1;
+        color: $clr5;
+
+        p{
+            text-align: center;
+        }
+    }
+   
 
     input{
         outline: none;
-        border: none;
+        // border: none;
         padding: 0.2rem 0rem;
-        margin-right: 0.5rem;
+        margin-right: 0.3rem;
+        min-width: 14rem;
+        max-width: 15rem;
     }
 
     ::placeholder{
-        color: $clr7;
+        color: $clr3;
     }
 
 
     ul{
         list-style: none;
         padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        
+        
     }
 
     li{
@@ -181,27 +199,32 @@
       width: fit-content;
       margin-bottom: 1rem;
       margin-top: 1rem;
+      border-radius: 1rem;
+      color: $clr5;
+      text-align: left;
+      font-size: 0.8rem;
+
+      span{
+          font-weight: bold;
+      }
     }
 
     .chat-input{
         position: absolute;
-        left: 1rem;
+        left: 2rem;
         top: 22.6rem;
     }
 
     button{
-        display: inline;
         color: $clr5;
         background-color:$clr1;
-        // margin-top: 50%;
         font-size: 0.9rem;
         text-decoration: none;
-        padding: 0.1rem 0.5rem;
+        padding: 0.36rem 0.5rem;
         outline: none;
         border: none;
         border-radius: 0.2rem;
         text-decoration: none;
-        // margin: 2rem auto;
         cursor: pointer;
     }
 }
