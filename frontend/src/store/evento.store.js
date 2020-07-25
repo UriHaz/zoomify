@@ -44,7 +44,6 @@ export const eventoStore = {
 			state.eventos.unshift(savedEvento);
 		},
 		updateEvento(state, { savedEvento }) {
-			console.log(savedEvento);
 			const idx = state.eventos.findIndex(
 				(evento) => evento._id === savedEvento._id
 			);
@@ -57,7 +56,6 @@ export const eventoStore = {
 			const eventos = await eventoService.query(state.filterBy);
 			commit({ type: "setEventos", eventos });
 			commit({ type: "setIsLoading", isLoading: false });
-			console.log("eventos:", eventos);
 			return eventos;
 		},
 
@@ -78,20 +76,16 @@ export const eventoStore = {
 		},
 
 		async saveEvento({ commit }, { evento }) {
-			console.log(evento);
 			const type = evento._id ? "updateEvento" : "addEvento";
 			const savedEvento = await eventoService.save(evento);
 			commit({ type, savedEvento });
 			return savedEvento;
 		},
 		async addMember(context, { evento }) {
-			console.log(evento);
 			const loggedInUser = context.getters.loggedInUser;
 			const userToSave = _.cloneDeep(loggedInUser);
-			console.log(userToSave);
 			evento.members.push(userToSave);
 			const savedEvento = await eventoService.save(evento);
-			console.log(savedEvento);
 			context.commit({ type: "updateEvento", savedEvento });
 		},
 	},
