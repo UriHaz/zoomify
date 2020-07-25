@@ -9,8 +9,11 @@ function connectSockets(io) {
             // emits only to sockets in the same room
             // io.to(socket.myTopic).emit('chat addMsg', msg)
         })
-        socket.on("typing user", ({userName, txt}) => {
-            io.emit('show Typing', userName,txt)
+        socket.on("typing user", (msg) => {
+            console.log('name and txt in socket');
+            console.log(msg.from);
+            console.log(msg.txt);
+            io.emit('show Typing', msg)
           });
     })
 }

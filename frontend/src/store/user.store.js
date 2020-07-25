@@ -13,7 +13,7 @@ export const userStore = {
 		loggedInUser: {
 			_id: "5f16cdd6edfffbaab19a5352",
 			fullName : "Arthur Read",
-			// imgUrl : "https://api.adorable.io/avatars/285/abxcfxvvcott@adorable.png",
+			// imgUrl : "https://i.imgur.com/glxWil9.jpg",
 			eventos :[]
 		},
 		users: [],
