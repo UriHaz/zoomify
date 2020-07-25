@@ -105,7 +105,10 @@
           Book Event (${{evento.price}})
         </button>
         <div class="evento-start" v-else>
-        <h3>Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
+
+          <div class="evento-start-txt">
+        <h3 >Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
+</div>
         <button class="join-btn">
           Start event!
         </button>

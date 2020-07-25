@@ -88,9 +88,21 @@
     padding: 1rem;
 }
 
+
+
+
 .evento-start{
     margin-bottom: 100px;
     margin-top: 10px;
+   
+    border-width: 0.4rem;
+    border-color: #03dd27;
+    border-radius: 0.5rem;
+    border-style: solid;
+
+    .evento-start-txt{
+        padding-left: 3rem;
+    }
 }
 
 .members-container{
@@ -153,7 +165,7 @@
     border-style: solid;
     border-color: $clr1;
     border-radius: 0.2rem;
-    width: 16rem;
+    width: 14rem;
     text-decoration: none;
     margin: 2rem auto;
     cursor: pointer;
