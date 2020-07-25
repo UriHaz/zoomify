@@ -1,6 +1,12 @@
 
 <template>
 <section>
+
+  <div class="details-hero">
+    <h1 class="list-h1">All Events</h1>
+    <img src="../assets/imgs/hero-list.jpg" class="hero-list-img" />
+  </div>
+
   <div>
     <evento-filter @setFilter="setFilter()" />
   </div>
