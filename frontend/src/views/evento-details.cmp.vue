@@ -107,7 +107,7 @@
         <h3 >Event starts in:</h3> <i> {{countDownMinutes}}:<i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes</i>
        </div>
 <button type="text" @click="modal" class="join-btn">Start event!</button>
-        </div>
+        
 
         <h3>Event Members</h3>
         <div class="members-container">
@@ -120,7 +120,7 @@
         </div>
 
         <h3>Chat</h3>
-        <div class="chat-body" v-if="!join">
+        <div class="chat-body" v-if="join">
           <div class="chat-header">
             <p v-if="isTyping" v-show="(msg.from === loggedInUser.fullName)" class="typing">{{whoType}} is typing...</p>
             </div>
