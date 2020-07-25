@@ -122,8 +122,8 @@
           <avatar v-else :src="member.imgUrl"></avatar>
         </el-tooltip>
          </div>
-
         </div>
+
       </div>
     </div>
   </section>

@@ -11,6 +11,9 @@
     height: 17rem;
     grid-column-gap: 0.5rem;
 
+
+
+    
     img {
         width: 100%;
     }
@@ -176,15 +179,12 @@
 }
 
 
-
-
 .reviews {
-    font-size: 0.8rem;
-    margin-bottom: 12em;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    height: 17rem;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     grid-column-gap: 0.5rem;
+    font-size: 0.8rem;
+    height: 16rem;
 
     img {
         width: 100%;
