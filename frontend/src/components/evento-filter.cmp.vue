@@ -13,8 +13,7 @@
 
     <el-select v-model="filterBy.sort" placeholder="Sort by ..." @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
-      <el-option label="sort by: price" value="price"></el-option>
-      <el-option label="sort by: creator" value="creator.fullName"></el-option>
+      <el-option label="sort by: date" value="creator.fullName"></el-option>
     </el-select>
 
     <el-select v-model="filterBy.order" placeholder="Select" @change="filterOn">
