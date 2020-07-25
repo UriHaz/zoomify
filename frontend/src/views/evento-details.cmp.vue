@@ -111,7 +111,7 @@
         </button>
         </div>
        
-        <h3>Members</h3>
+        <h3>Event Members</h3>
         <div class="members-container">
         <div class="evento-members" v-for="member in evento.members" :key="member.id">
         <el-tooltip  content='member' placement="top-start" effect="dark">
