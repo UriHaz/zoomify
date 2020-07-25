@@ -9,7 +9,7 @@
           </h1>
      <div class="hp-link-filter">
          
-          <router-link to="/login" class="hp-btn">Explore › › ›</router-link> 
+          <router-link to="/events" class="hp-btn">Explore › › ›</router-link> 
       </div>
 
         </div>

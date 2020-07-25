@@ -34,8 +34,8 @@ function _buildCriteria(filterBy) {
         criteria.title = {$regex:new RegExp(filterBy.txt,'i')}
     }
  
-    if (filterBy.tag) {
-        criteria.tag = filterBy.tag_like
+    if (filterBy.tags_like) {
+        criteria.tags = filterBy.tags_like
     }
     if (filterBy.minBalance) {
         criteria.balance = {$gte : +filterBy.minBalance}
