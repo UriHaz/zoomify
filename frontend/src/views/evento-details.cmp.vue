@@ -71,7 +71,23 @@
           {{evento.about}}
         </p>
         </div>
+
         <h3>Reviews</h3>
+    <div class="reviews">
+        <div v-for="block in evento.reviews">
+          <avatar :src="block.imgUrl"></avatar>
+          <p class="review-title">
+            {{block.givenRating}}
+            <i class="fas fa-star">
+              </i> {{block.fullName}}</p>
+          <p>{{block.review}}</p>
+        
+        </div>
+      </div>
+
+
+
+
 
         <h3>Related lectures</h3>
       </div>

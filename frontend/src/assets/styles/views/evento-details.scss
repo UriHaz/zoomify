@@ -167,4 +167,22 @@
 
 
 
+.reviews {
+    font-size: 0.8rem;
+    margin-bottom: 12em;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 17rem;
+    grid-column-gap: 0.5rem;
 
+    img {
+        width: 100%;
+        display: flex;
+    }
+    .review-title {
+        font-weight: bold;
+    }
+}
+        .fa-star{
+            color: #ffbf00;
+        }
