@@ -31,7 +31,7 @@
           {{evento.dur}} Minutes
         </p>
         <p>
-          <i class="fas fa-globe-europe"></i>
+          <i class="fas fa-globe-americas"></i>
           {{evento.lang}}
         </p>
         <p>
