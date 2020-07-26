@@ -55,7 +55,7 @@
        
         </div>
         <div class="evento-description">
-        <h3>Agenda of event</h3>
+        <h3>About the event</h3>
         <p>
           {{evento.desc}}
         </p>
@@ -173,7 +173,7 @@ export default {
 
   computed:{
      relatedEventos() {
-    return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "related"))   
+    return this.$store.getters.eventos.slice(0,3)  
   },
   loggedInUser() {
    return this.$store.getters.loggedInUser;
