@@ -54,8 +54,17 @@
           </p>
         </div>
         <div class="evento-description">
-          <h3>Agenda of event</h3>
-          <p>{{evento.desc}}</p>
+        <h3>About the event</h3>
+        <p>
+          {{evento.desc}}
+        </p>
+        </div>
+        <div class="about-creator" >
+        <div class="about-creator-title flex align-center">
+        <avatar :src="evento.createdBy.imgUrl"></avatar>
+        <h3>
+        Meet your host, {{evento.createdBy.fullName}}
+        </h3>
         </div>
         <div class="about-creator">
           <div class="about-creator-title flex align-center">
@@ -141,18 +150,17 @@ export default {
     };
   },
 
-  computed: {
-    relatedEventos() {
-      return this.$store.getters.eventos.filter((evento) =>
-        evento.tags.find((tag) => tag === "related")
-      );
-    },
-    loggedInUser() {
-      return this.$store.getters.loggedInUser;
-    },
-    timerOn() {
+  computed:{
+     relatedEventos() {
+    return this.$store.getters.eventos.slice(0,3)  
+  },
+  loggedInUser() {
+   return this.$store.getters.loggedInUser;
+  },
+     timerOn() {
       return (this.timer = setInterval(this.timeDown(), 1000));
     },
+
   },
 
   methods: {
