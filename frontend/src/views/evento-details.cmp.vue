@@ -47,30 +47,15 @@
           {{evento.startDate}} {{evento.startTime}}
         </p>
           <p>
-<<<<<<< HEAD
-            <i class="fas fa-users"></i>
-            Up to {{evento.capacity}} pepole
-          </p>
-          <p>
-            <i class="far fa-calendar-alt"></i>
-            {{evento.startDate}} {{evento.startTime}}
-          </p>
-          <p>
-            <i class="fas fa-tag"></i>
-            <!-- ${{evento.price}} -->
-            Free of charge
-          </p>
-=======
           <i class="fas fa-tag"></i>
           <!-- ${{evento.price}}  -->
           Free of charge
         </p>
           
        
->>>>>>> 29f23d1a2bb02fd95422498a561070b56c4b2a86
         </div>
         <div class="evento-description">
-        <h3>About the event</h3>
+        <h3>Agenda of event</h3>
         <p>
           {{evento.desc}}
         </p>
@@ -116,15 +101,10 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-<<<<<<< HEAD
-        <!-- <button v-if="!join" @click="open" class="join-btn">Book Event (${{evento.price}})</button> -->
-        <button v-if="!join" @click="open" class="join-btn">Book Event (Free)</button>
-=======
         <button v-if="!join" @click="open" class="join-btn">
           <!-- Book Event (${{evento.price}}) -->
           Book Event (Free)
         </button>
->>>>>>> 29f23d1a2bb02fd95422498a561070b56c4b2a86
         <div class="evento-start" v-else>
 
           <div class="evento-start-txt">
@@ -193,7 +173,7 @@ export default {
 
   computed:{
      relatedEventos() {
-    return this.$store.getters.eventos.slice(0,3)  
+    return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "related"))   
   },
   loggedInUser() {
    return this.$store.getters.loggedInUser;
@@ -230,26 +210,12 @@ modal() {
         }
     },
 
-<<<<<<< HEAD
-    open() {
-      this.$confirm(
-        // `Your account will be charged by $${this.evento.price}`,
-        `Your account will not be charged by charged`,
-        "Book",
-        {
-          confirmButtonText: "OK",
-          cancelButtonText: "Cancel",
-        }
-      )
-        .then(() => {
-=======
      open() {
         // this.$confirm(`Your account will be charged by $${this.evento.price}`,'Book', {
         this.$confirm(`Free event, your account will not be charged.`,'Book', {
           confirmButtonText: 'OK',
           cancelButtonText: 'Cancel',
         }).then(() => {
->>>>>>> 29f23d1a2bb02fd95422498a561070b56c4b2a86
           this.$message({
             type: 'success',
             message: 'Book completed!'
