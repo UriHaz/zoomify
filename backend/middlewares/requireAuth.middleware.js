@@ -10,7 +10,6 @@ async function requireAuth(req, res, next) {
 
 async function requireAdmin(req, res, next) {
   const user = req.session.user;
-  console.log('user:', user)
   if (!user.isAdmin) {
     res.status(403).end('You are not admin, Only Admin can do this action');
     return;

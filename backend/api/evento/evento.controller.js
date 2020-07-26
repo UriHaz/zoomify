@@ -22,7 +22,6 @@ async function deleteEvento(req, res) {
 
 async function updateEvento(req, res) {
     const evento = req.body;
-    console.log('updating in controller', evento);
     await eventoService.update(evento)
     res.send(evento)
 }
