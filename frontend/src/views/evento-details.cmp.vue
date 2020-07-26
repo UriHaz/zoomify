@@ -119,7 +119,7 @@
           </div>
         </div>
 
-        <h3 class="chat-title">Chat</h3>
+        <h3>Chat</h3>
         <div class="chat-body" v-if="join">
           <div class="chat-header">
             <p v-if="isTyping" v-show="(msg.from === loggedInUser.fullName)" class="typing">{{whoType}} is typing...</p>
