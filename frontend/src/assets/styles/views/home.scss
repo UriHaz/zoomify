@@ -37,9 +37,11 @@
 
 .hp-h1{
   color: $clr5;
-  font-size: 30px;
-  margin-left: 1rem;
-  margin-bottom: 4rem;
+  font-size: 3rem;
+  margin-left: 4rem;
+  margin-top: 4em;
+  // margin-bottom: 4rem;
+  // text-align: center;
 }
 
 
@@ -51,19 +53,19 @@
 
  
 .hp-btn {
-  color: $clr6;
-  background-color: $clr8;
+  color: $clr5;
+  background-color: $clr9;
   margin: 0 0  0 1rem;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.5rem 0.7rem;
   outline: none;
   border-style: solid;
-  border-color: $clr8;
+  border-color: $clr9;
   border-radius: 0.5rem;
-  width: 10rem;
+  // width: 10rem;
   text-decoration: none;
-  
+  margin-left: 4rem;
   cursor: pointer;
 
 }
