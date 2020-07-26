@@ -71,7 +71,10 @@ export default {
   created() {
     const filter = this.$store.getters.filterBy;
     this.filterBy = { ...filter };
-  }
+  },
+  destroyed() {
+    this.clearAll()
+}
 };
 </script>
 
