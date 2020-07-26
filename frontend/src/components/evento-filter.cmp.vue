@@ -66,12 +66,19 @@ export default {
       this.filterBy.order = "asc";
       this.filterBy.sort = "title";
       this.filterOn();
+    },
+    destroyed() {
+      this.clearAll();
+      this.$store.dispatch({ type: "loadEventos" });
+     
+  
     }
   },
   created() {
     const filter = this.$store.getters.filterBy;
     this.filterBy = { ...filter };
   }
+
 };
 </script>
 
