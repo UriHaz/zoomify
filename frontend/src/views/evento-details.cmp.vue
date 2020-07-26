@@ -178,7 +178,7 @@ export default {
 
     open() {
       this.$confirm(
-        `Your account will be charged by $${this.evento.price}`,
+        `You are about to join "${this.evento.title}"`,
         "Book",
         {
           confirmButtonText: "OK",
