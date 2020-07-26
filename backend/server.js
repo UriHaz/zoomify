@@ -42,7 +42,7 @@ app.use('/api/review', reviewRoutes)
 connectSockets(io)
 
 // Logging
-const logger = require('./services/logger.service')
+// const logger = require('./services/logger.service')
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     logger.info('Server is running on port: ' + 'http://localhost:'+port)
