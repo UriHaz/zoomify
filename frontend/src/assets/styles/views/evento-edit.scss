@@ -32,13 +32,21 @@
             background-color: #4f15c4;
        }
    }
-    h1 {
+   h1 {
+       text-shadow: 2px 2px 2px black;
+        position: absolute;
+        color: white;
         text-align: center;
+        margin: 6% 0 0 36%;
         font-size: 3rem;
+        display: inline;
+
    }
     h2 {
+        position: absolute;
         text-align: center;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
+        margin-left: 35%;
    }
     h3 {
         text-align: center;
@@ -98,3 +106,12 @@
     width: 9rem;
     margin-left: 1rem;
 }
+
+
+.hero-edit-img {
+    width: 100%;
+}
+
+// .edit-hero {
+//     text-align: center;
+// }

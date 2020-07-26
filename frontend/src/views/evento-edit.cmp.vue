@@ -1,12 +1,22 @@
 
 <template>
-   <section class="evento-edit main-layout">
+   <section class="evento-edit">
 
+ <div class="edit-hero">
     <h1>{{ (eventoToEdit._id) ? 'Edit' : 'Add New' }} Event</h1>
-    <h2>We will share it with others</h2>
+    <!-- <h2>We will share it with others</h2> -->
+
+    <img src="../assets/imgs/1.jpg" class="hero-edit-img" />
+    <!-- <img src="../assets/imgs/hero-list.jpg" class="hero-edit-img" /> -->
+    <!-- <img src="../assets/imgs/2.jpg" class="hero-edit-img" /> -->
+    <!-- <img src="../assets/imgs/list-hero2.jpg" class="hero-edit-img" /> -->
+</div>
+
+
+
+
     <form class="flex column" v-if="eventoToEdit" @submit.prevent="saveEvento">
       
-
       <div class="justify-center flex">
       <label>
         <h3>My event is about:</h3>
