@@ -15,7 +15,7 @@
       <div class="top-desc">
         <div class="evento-details-title">
         <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}} </span>
-        <i class="far fa-star"></i> {{evento.createdBy.rating}} ({{evento.raters}})
+        <i class="fas fa-star"></i> {{evento.createdBy.rating}} ({{evento.raters}})
         <h1 class="evento-details-h1">{{evento.title}}</h1>
         <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2> 
          
