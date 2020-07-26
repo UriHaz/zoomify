@@ -1,5 +1,5 @@
 .evento-footer {
-    height: 7rem;
+    height: 4rem;
     background-color: rgba(218, 210, 210, 0.247);
     // padding-bottom: 3rem;
     border-top: 1px solid  rgb(224, 224, 224);
@@ -10,8 +10,13 @@
 
     
     .logo-img{
-        width: 9rem;
+        width: 5rem;
   }
 
+
+  .footer-container {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
 
 }

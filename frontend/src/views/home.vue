@@ -13,13 +13,13 @@
       </div>
 
         </div>
+
+        <img src="../assets/imgs/hp-hero5.gif" class="home-hero" />
         <!-- <img src="../assets/imgs/hero-gif3.gif" class="home-hero" /> -->
         <!-- <img src="../assets/imgs/hero-gif1.gif" class="home-hero" /> -->
-
         <!-- <img src="../assets/imgs/home-vector.svg" class="home-vector" /> -->
-        <!-- <img src="../assets/imgs/hero2.mp4" class="home-vector" /> -->
       </div>
-        <img src="../assets/imgs/hero2.jpeg" class="home-hero" />
+        <!-- <img src="../assets/imgs/hero2.jpeg" class="home-hero" /> -->
 
 
   <section class="hp-content">
