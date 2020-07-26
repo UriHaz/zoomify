@@ -58,7 +58,8 @@ export default {
     },
 
     showUserTyping(msg) {
-      this.msg.from = this.$store.getters.loggedInUser.fullName;
+      // this.msg.from = this.$store.getters.loggedInUser.fullName;
+      this.msg.from = "Na'ama";
       this.isTyping = true;
 
       setTimeout(this.stopTyping, 2000);
