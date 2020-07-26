@@ -183,6 +183,7 @@ export default {
         {
           confirmButtonText: "OK",
           cancelButtonText: "Cancel",
+          customClass: "join-modal"
         }
       )
         .then(() => {
