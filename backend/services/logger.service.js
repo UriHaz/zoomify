@@ -12,6 +12,7 @@ function getTime() {
 }
 
 function doLog(line, level='Debug') {
+    return
     if (typeof line !== 'string') line = JSON.stringify(line)
     line = `${getTime()} - ${level} - ${line}\n` 
     // console.log(line);
