@@ -101,7 +101,8 @@
           </p>
         </form>
         <button v-if="!join" @click="open" class="join-btn">
-          Book Event (${{evento.price}})
+          <!-- Book Event (${{evento.price}}) -->
+          Book Event (Free)
         </button>
         <div class="evento-start" v-else>
 
@@ -209,7 +210,8 @@ modal() {
     },
 
      open() {
-        this.$confirm(`Your account will be charged by $${this.evento.price}`,'Book', {
+        // this.$confirm(`Your account will be charged by $${this.evento.price}`,'Book', {
+        this.$confirm(`Free event, your account will not be charged.`,'Book', {
           confirmButtonText: 'OK',
           cancelButtonText: 'Cancel',
         }).then(() => {
