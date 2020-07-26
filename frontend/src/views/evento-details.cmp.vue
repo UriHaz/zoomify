@@ -121,8 +121,6 @@
 </template>
 
 
-
-
 <script>
 import { eventoService } from "../services/evento.service.js";
 import Avatar from "vue-avatar";
