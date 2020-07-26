@@ -16,7 +16,7 @@
       <div class="top-desc">
         <div class="evento-details-title">
           <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}}</span>
-          <i class="far fa-star"></i>
+          <i class="fas fa-star"></i>
           {{evento.createdBy.rating}} ({{evento.raters}})
           <h1 class="evento-details-h1">{{evento.title}}</h1>
           <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2>
@@ -50,7 +50,7 @@
           </p>
           <p>
             <i class="fas fa-tag"></i>
-            ${{evento.price}}
+            Free
           </p>
         </div>
         <div class="evento-description">
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="evento-join">
-        <form @submit.prevent="addGuest" v-if="!loggedInUser & !join" class="guest-sign">
+        <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
           <p>
             <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
           </p>
@@ -93,7 +93,7 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!join" @click="open" class="join-btn">Book Event (${{evento.price}})</button>
+        <button v-if="!join" @click="open" class="join-btn">Book Event</button>
         <div class="evento-start" v-else>
           <div class="evento-start-txt">
             <h3>Event starts in:</h3>
