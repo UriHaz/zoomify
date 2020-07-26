@@ -48,7 +48,8 @@
         </p>
           <p>
           <i class="fas fa-tag"></i>
-          ${{evento.price}} 
+          <!-- ${{evento.price}}  -->
+          Free of charge
         </p>
           
        
