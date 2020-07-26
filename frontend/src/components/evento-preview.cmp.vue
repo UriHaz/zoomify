@@ -12,8 +12,6 @@
         <h4 class="card-h4">By {{evento.createdBy.fullName}},<br>{{evento.country}}</h4>
       </div>
       <h3 class="card-h3">{{ evento.title }}</h3>
-
-      <p class="prev-price-tag"><i class="fas fa-tag"></i> Free of charge</p>
       
       <div class="event-star-date">
       <div class="star">

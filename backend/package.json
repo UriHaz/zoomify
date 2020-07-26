@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server:dev": "SET NODE_ENV=development && nodemon server.js",
-    "server:prod": "node app.js",
+    "server:prod": "node server.js",
     "start": "node server.js"
   },
   "keywords": [],

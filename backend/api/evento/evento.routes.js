@@ -7,7 +7,6 @@ const router = express.Router()
 router.get('/', getEventos)
 router.get('/:_id', getEvento)
 router.post('/', addEvento)
-// router.post('/',requireAdmin, addEvento)
 router.put('/:_id',updateEvento)
 router.delete('/:_id',requireAdmin, deleteEvento)
 
