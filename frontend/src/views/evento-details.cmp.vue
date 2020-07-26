@@ -50,7 +50,8 @@
           </p>
           <p>
             <i class="fas fa-tag"></i>
-            ${{evento.price}}
+            <!-- ${{evento.price}} -->
+            Free of charge
           </p>
         </div>
         <div class="evento-description">
@@ -93,7 +94,8 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!join" @click="open" class="join-btn">Book Event (${{evento.price}})</button>
+        <!-- <button v-if="!join" @click="open" class="join-btn">Book Event (${{evento.price}})</button> -->
+        <button v-if="!join" @click="open" class="join-btn">Book Event (Free)</button>
         <div class="evento-start" v-else>
           <div class="evento-start-txt">
             <h3>Event starts in:</h3>
@@ -182,7 +184,8 @@ export default {
 
     open() {
       this.$confirm(
-        `Your account will be charged by $${this.evento.price}`,
+        // `Your account will be charged by $${this.evento.price}`,
+        `Your account will not be charged by charged`,
         "Book",
         {
           confirmButtonText: "OK",
