@@ -1,22 +1,24 @@
 .evento-footer {
-    height: 4rem;
     background-color: rgba(218, 210, 210, 0.247);
-    // padding-bottom: 3rem;
     border-top: 1px solid  rgb(224, 224, 224);
     margin-top: 3rem;
-    display: flex;
+    text-align: center;
+    padding-top: 1rem;
     justify-content: center;
     align-items: center;
-
+    
+    p {
+      padding-bottom: 1rem;
+    }
     
     .logo-img{
         width: 5rem;
   }
 
 
-  .footer-container {
-    display: inline-flex;
-    justify-content: space-evenly;
-  }
+  // .footer-container {
+  //   display: inline-flex;
+  //   justify-content: space-evenly;
+  // }
 
 }
