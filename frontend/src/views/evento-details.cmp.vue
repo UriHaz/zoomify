@@ -80,9 +80,15 @@
         </div>
 
         <h3>Related lectures</h3>
-        <div class="eventos-line">
+
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel-item >
+            <evento-list :eventos="relatedEventos"/>
+        </el-carousel-item>
+        </el-carousel>
+        <!-- <div class="eventos-line">
           <evento-list :eventos="relatedEventos" />
-        </div>
+        </div> -->
       </div>
       <div class="evento-join">
         <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
@@ -140,9 +146,13 @@ export default {
   },
 
   computed: {
+     eventos() {
+      return this.$store.getters.eventos;
+    },
     relatedEventos() {
-      return this.$store.getters.eventos.slice(0,3)
-      
+      // return this.$store.getters.eventos.filter()
+      return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => this.evento.tags.find(taag => taag === tag)) && evento._id !== this.evento._id)     
+
     },
     loggedInUser() {
       return this.$store.getters.loggedInUser;
@@ -219,7 +229,9 @@ export default {
   
   },
   created() {
+    this.$store.dispatch({ type: "loadEventos"});
     this.loadEvento();
+    
   },
   // destroyed() {
   //   // this.$store.dispatch({ type: "loadEventos" });
