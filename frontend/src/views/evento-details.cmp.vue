@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="evento-join">
-        <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
+        <form @submit.prevent="addGuest" v-if="!loggedInUser & !join" class="guest-sign">
           <p>
             <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
           </p>
@@ -99,8 +99,7 @@
             <h3>Event starts in:</h3>
             <i>
               {{countDownMinutes}}:
-              <i v-if="(countDownSeconds < 10)">0</i>
-              {{countDownSeconds}} Minutes
+              <i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes
             </i>
           </div>
           <button type="text" @click="modal" class="join-btn">Start event!</button>
