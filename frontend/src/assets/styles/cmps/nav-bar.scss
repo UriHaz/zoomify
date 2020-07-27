@@ -22,15 +22,15 @@
     font-weight: bold;
     color: $clr3;
     background-color: $clr7;
-    // padding: 5px 12px;
+    padding: 5px 12px;
     border-radius: 1.5rem;
     border: none;
-    transition: background-color&color 1s ease-in;
+    transition: background-color&color 0.25s ease-in;
     // transition: color 0.25s ease-in;
 
     &:hover {
       
-      background-color: #77b5f393;
+      background-color: $clr1;
       color: $clr5;
   }
   }
@@ -51,7 +51,7 @@
       text-decoration: none;
       transition: color 0.25s ease-in;
       &:hover {
-        color: #409EFF;
+        color: $clr1;
     }
 
     // @media (max-width:710px) {

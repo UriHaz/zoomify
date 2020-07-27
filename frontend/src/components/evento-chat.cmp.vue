@@ -1,7 +1,7 @@
 <template>
   <section>
     <h3>Chat</h3>
-    <div class="chat-body">
+    <div class="evento-chat">
       <div class="chat-header">
         <p
           v-if="isTyping & whoType !== loggedInUser.fullName"
@@ -9,15 +9,17 @@
         >{{whoType}} is typing...</p>
         <p v-else> Online </p>
       </div>
+      <div class="chat-body">
       <ul>
         <li v-for="(msg, idx) in msgs" :key="idx">{{msg.from}}: {{msg.txt}}</li>
       </ul>
-
+      </div>
+      
       <form class="chat-input" @submit.prevent="sendMsg">
         <input @input="userTyping" type="text" v-model="msg.txt" placeholder="Type your massege" />
-        <button>Send</button>
+        <button class="send-btn">Send</button>
       </form>
-    </div>
+      </div>
   </section>
 </template>
 

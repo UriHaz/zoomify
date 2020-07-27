@@ -4,16 +4,15 @@ module.exports = connectSockets
 function connectSockets(io) {
     console.log('connect');
     io.on('connection', socket => {
-        console.log('connected');
-        socket.on('chat newMsg', msg=>{
+        socket.on('chat newMsg', msg => {
             io.emit('chat addMsg', msg)
         })
         socket.on("user typing", (userName) => {
             io.emit('show typing', userName)
-          }); 
+        });
         socket.on("new member", (member) => {
             io.emit('show member', member)
-          }); 
+        });
     })
 }
 

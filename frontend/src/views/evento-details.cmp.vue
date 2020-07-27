@@ -1,6 +1,6 @@
 <template>
   <section v-if="evento" class="evento-details main-layout">
-    <div  class="evento-details-hero">
+    <div class="evento-details-hero">
       <div>
         <img :src="evento.imgUrls.img2" />
       </div>
@@ -11,8 +11,6 @@
         <img :src="evento.imgUrls.img1" />
       </div>
     </div>
-
-    
 
     <div v-if="!isLoading" class="evento-content flex">
       <div class="top-desc">
@@ -33,7 +31,7 @@
         <div class="evento-info">
           <p>
             <i class="far fa-clock"></i>
-             {{evento.dur}} Minutes
+            {{evento.dur}} Minutes
           </p>
           <p>
             <i class="fas fa-globe-americas"></i>
@@ -79,44 +77,41 @@
             </p>
             <p>{{review.txt}}</p>
           </div>
-        </div> -->
+        </div>-->
 
         <section class="reviews-container">
-        <div class="flex space-between">
-        <h3>Reviews</h3>
-        <h4>Show all</h4>
-        </div>
-
-        <el-carousel :interval="0" indicator-position="none" arrow="never" height=260px>
-        <el-carousel-item >
-        <div class="reviews">
-          <div class="review" v-for="review in evento.reviews" :key="review.id">
-            <avatar :src="review.imgUrl"></avatar>
-            <p class="review-title">{{review.fullName}}</p> 
-              <p>{{review.givenRating}} <i class="fas fa-star"></i></p>
-            
-            <p>{{review.txt}}</p>
+          <div class="flex space-between">
+            <h3>Reviews</h3>
+            <h4>Show all</h4>
           </div>
-        </div>
 
-        </el-carousel-item>
-        </el-carousel>
+          <el-carousel :interval="0" indicator-position="none" arrow="never" height="260px">
+            <el-carousel-item>
+              <div class="reviews">
+                <div class="review" v-for="review in evento.reviews" :key="review.id">
+                  <avatar :src="review.imgUrl"></avatar>
+                  <p class="review-title">{{review.fullName}}</p>
+                  <p>
+                    {{review.givenRating}}
+                    <i class="fas fa-star"></i>
+                  </p>
 
+                  <p>{{review.txt}}</p>
+                </div>
+              </div>
+            </el-carousel-item>
+          </el-carousel>
         </section>
-
 
         <section class="related-lectures-container">
-
           <h3>Related lectures</h3>
 
-          <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
-          <el-carousel-item >
-              <evento-list :eventos="relatedEventos"/>
-          </el-carousel-item>
+          <el-carousel :interval="0" indicator-position="none" arrow="never" height="380px">
+            <el-carousel-item>
+              <evento-list :eventos="relatedEventos" />
+            </el-carousel-item>
           </el-carousel>
-
         </section>
-        
       </div>
       <div class="evento-join">
         <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
@@ -133,7 +128,8 @@
             <h3>Event starts in:</h3>
             <i>
               {{countDownMinutes}}:
-              <i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes
+              <i v-if="(countDownSeconds < 10)">0</i>
+              {{countDownSeconds}} Minutes
             </i>
           </div>
           <button type="text" @click="modal" class="join-btn">Start event!</button>
@@ -152,8 +148,8 @@
       </div>
     </div>
     <div v-else class="isLoading">
-  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...">
-  </div>
+      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading..." />
+    </div>
   </section>
 </template>
 
@@ -172,20 +168,23 @@ export default {
       evento: null,
       isJoined: false, //is jonind
       guestToAdd: {},
-      memberToAdd:null,
+      memberToAdd: null,
       countDownSeconds: 59,
       countDownMinutes: 14,
     };
   },
 
   computed: {
-     eventos() {
+    eventos() {
       return this.$store.getters.eventos;
     },
     relatedEventos() {
-      return this.$store.getters.eventos.filter
-      (evento => evento.tags.find(tag => this.evento.tags.find(taag => taag === tag)) && evento._id !== this.evento._id)     
-
+      return this.$store.getters.eventos.filter(
+        (evento) =>
+          evento.tags.find((tag) =>
+            this.evento.tags.find((taag) => taag === tag)
+          ) && evento._id !== this.evento._id
+      );
     },
     loggedInUser() {
       return this.$store.getters.loggedInUser;
@@ -193,9 +192,9 @@ export default {
     timerOn() {
       return (this.timer = setInterval(this.timeDown(), 1000));
     },
-     isLoading() {
-      return this.$store.getters.isLoading
-    }
+    isLoading() {
+      return this.$store.getters.isLoading;
+    },
   },
 
   methods: {
@@ -223,15 +222,11 @@ export default {
     },
 
     open() {
-      this.$confirm(
-        `You are about to join "${this.evento.title}"`,
-        "Book",
-        {
-          confirmButtonText: "OK",
-          cancelButtonText: "Cancel",
-          customClass: "join-modal"
-        }
-      )
+      this.$confirm(`You are about to join "${this.evento.title}"`, "Book", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
+        customClass: "join-modal",
+      })
         .then(() => {
           this.$message({
             type: "success",
@@ -254,34 +249,31 @@ export default {
     },
     async joinEvent() {
       this.isJoined = true;
-      // var member ='';
       if (this.loggedInUser) {
-         this.memberToAdd = this.loggedInUser;
+        this.memberToAdd = this.loggedInUser;
       } else {
         this.memberToAdd = this.guestToAdd;
       }
-      socketService.emit("new member", this.memberToAdd);
-      // this.$store.dispatch({ type: "saveEvento", evento: this.evento });
+      const member = this.memberToAdd
+      socketService.emit("new member", member);
     },
 
-    showMember(member){
+    showMember(member) {
       this.evento.members.push(member);
       this.$store.dispatch({ type: "saveEvento", evento: this.evento });
-    }
-  
+    },
   },
   created() {
-    this.$store.dispatch({ type: "loadEventos"});
-    this.loadEvento();
     socketService.setup();
     socketService.on("show member", this.showMember);
+    this.$store.dispatch({ type: "loadEventos" });
+    this.loadEvento();
   },
-
 
   components: {
     Avatar,
     eventoList,
-    eventoChat
-  }
+    eventoChat,
+  },
 };
 </script>

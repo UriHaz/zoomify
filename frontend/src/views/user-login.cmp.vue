@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       loginCred: {
-        email: 'arthur@read.com',
-        password: 'red'
+        email: 'yyy',
+        password: 'yyy'
       },
       signupCred: {},
       msg: '',

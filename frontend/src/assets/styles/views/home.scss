@@ -69,14 +69,14 @@
  
 .hp-btn {
   color: $clr5;
-  background-color: #40a0ff4d;
+  background-color: $clr6;
   margin: 0 0  0 1rem;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 3rem;
-  border: solid;
-  border-color: rgba(255, 255, 255, 0.808);
+  // border: solid;
+  // border-color: rgba(255, 255, 255, 0.808);
   border-radius: 0.5rem;
   // width: 15rem;
   text-decoration: none;
@@ -84,7 +84,7 @@
   cursor: pointer;
 
   &:hover{
-    background-color: #669fd8b7;
+    background-color: $clr3;
   }
 }
 
