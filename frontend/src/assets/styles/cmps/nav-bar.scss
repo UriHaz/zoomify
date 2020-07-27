@@ -4,7 +4,6 @@
   font-size: 1.5rem;
   border-bottom: 1px solid  rgb(224, 224, 224);
   background-repeat: no-repeat;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,15 +21,15 @@
     font-weight: bold;
     color: $clr2;
     background-color: $clr7;
-    padding: 5px 12px;
+    // padding: 5px 12px;
     border-radius: 1.5rem;
     border: none;
-    margin-right: 1rem;
     transition: background-color&color 1s ease-in;
     // transition: color 0.25s ease-in;
 
     &:hover {
-      background-color: $clr6;
+      
+      background-color: #bfafca93;
       color: $clr5;
   }
   }
@@ -44,7 +43,8 @@
     a {
       color: $clr2;
       font-size: 1rem;
-      padding: 1rem 1rem 1rem 1rem;
+      margin-right: 2rem;
+      // padding: 1rem 1rem 1rem 1rem;
       font-weight: bold;
       text-decoration: none;
       transition: color 0.25s ease-in;
