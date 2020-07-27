@@ -38,7 +38,7 @@
           </p>
           <p>
             <i class="fas fa-desktop"></i>
-            Join from any media
+            Join from any device
           </p>
           <p>
             <i class="fas fa-users"></i>
@@ -151,7 +151,8 @@ export default {
     },
     relatedEventos() {
       // return this.$store.getters.eventos.filter()
-      return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => this.evento.tags.find(taag => taag === tag)) && evento._id !== this.evento._id)     
+      return this.$store.getters.eventos.filter
+      (evento => evento.tags.find(tag => this.evento.tags.find(taag => taag === tag)) && evento._id !== this.evento._id)     
 
     },
     loggedInUser() {
