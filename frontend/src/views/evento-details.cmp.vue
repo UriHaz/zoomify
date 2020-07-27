@@ -125,17 +125,7 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form> -->
-        <!-- <button v-if="!join" @click="open" class="join-btn">Join Event</button>
-        <div class="evento-start" v-else>
-          <div class="evento-start-txt">
-            <h3>Event starts in:</h3>
-            <i>
-              {{countDownMinutes}}:
-              <i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} Minutes
-            </i>
-          </div>
-          <button type="text" @click="modal" class="join-btn">Start event!</button>
-        </div> -->
+     
         <section class="action-container">
         <button v-if="!join" @click="open" class="join-btn">Join Event</button>
         <div class="evento-start" v-else>
