@@ -2,14 +2,10 @@
   <section>
 
     <el-row class="el-row flex space-between">
-    <el-badge type="primary" :value=3 class="item">
     <el-button plain v-model="filterBy.tags" value="technology" @click="filterOn">Technology</el-button>
-    </el-badge>
     <el-button plain  v-model="filterBy.tags" value="career" @click="filterOn">Career</el-button>
     <el-button plain  v-model="filterBy.tags" value="coding" @click="filterOn">Coding</el-button>
-    <el-badge type="primary" :value=4 class="item">
-      <el-button plain  v-model="filterBy.tags" value="design" @click="filterOn">Design</el-button>
-    </el-badge>
+    <el-button plain  v-model="filterBy.tags" value="design" @click="filterOn">Design</el-button>
     <el-button plain  v-model="filterBy.tags" value="support" @click="filterOn">Support</el-button>
     <el-button plain  v-model="filterBy.tags" value="marketing" @click="filterOn">Marketing</el-button>
     <el-button plain  v-model="filterBy.tags" value="business" @click="filterOn">Business</el-button>

@@ -66,8 +66,7 @@
           <p>{{evento.about}}</p>
         </div>
 
-        <h3>Reviews</h3>
-        <div class="reviews">
+        <!-- <div class="reviews">
           <div v-for="review in evento.reviews" :key="review.id">
             <avatar :src="review.imgUrl"></avatar>
             <p class="review-title">
@@ -77,18 +76,46 @@
             </p>
             <p>{{review.txt}}</p>
           </div>
+        </div> -->
+
+        <section class="reviews-container">
+        <div class="flex space-between">
+        <h3>Reviews</h3>
+        <h4>Show all</h4>
         </div>
 
-        <h3>Related lectures</h3>
-
-        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=240px>
         <el-carousel-item >
-            <evento-list :eventos="relatedEventos"/>
+        <div class="reviews">
+          <div class="review" v-for="review in evento.reviews" :key="review.id">
+            <avatar :src="review.imgUrl"></avatar>
+            <p class="review-title">
+              {{review.fullName}} <br/>
+              {{review.givenRating}}
+              <i class="fas fa-star"></i>
+            </p>
+            <p>{{review.txt}}</p>
+          </div>
+        </div>
+
         </el-carousel-item>
         </el-carousel>
-        <!-- <div class="eventos-line">
-          <evento-list :eventos="relatedEventos" />
-        </div> -->
+
+        </section>
+
+
+        <section class="related-lectures-container">
+
+          <h3>Related lectures</h3>
+
+          <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+          <el-carousel-item >
+              <evento-list :eventos="relatedEventos"/>
+          </el-carousel-item>
+          </el-carousel>
+
+        </section>
+        
       </div>
       <div class="evento-join">
         <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
