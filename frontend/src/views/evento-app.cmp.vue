@@ -1,10 +1,8 @@
-
 <template>
 <section>
 
   <div class="details-hero">
     <h1 class="list-h1">All Events</h1>
-    <!-- <h1 class="list-h1" </h1> -->
     <!-- <img src="../assets/imgs/hero-list.jpg" class="hero-list-img" /> -->
     <img src="../assets/imgs/list-cover.jpg" class="hero-list-img" />
     <!-- <img src="../assets/imgs/1.jpg" class="hero-list-img" /> -->
@@ -25,16 +23,9 @@
   <div v-else class="isLoading">
   <img src="https://i.pinimg.com/originals/58/4b/60/584b607f5c2ff075429dc0e7b8d142ef.gif" alt="Loading...">
   </div>
-  <section class="evento-app-content">
-    <div class="list-filter">
-      <evento-filter @setFilter="setFilter()" />
-    </div>
-    <div class="evento-list">
-      <evento-list v-if="!isLoading" :eventos="eventos" />
-    </div>
-  </section>
 </section>
 </template>
+
 
 
 <script>
