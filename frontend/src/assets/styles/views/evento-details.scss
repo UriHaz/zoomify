@@ -119,20 +119,25 @@
     font-weight: bold;
 }
 
+.action-container {
+    // background-color: yellow;
+    border-bottom: 1px solid  rgb(209, 209, 209);
+}
+
 .evento-join{
     width: 30%;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .evento-start{
     // background-color: #5e17eb;
-    margin-bottom: 100px;
-    margin-top: 10px;
+    // margin-bottom: 100px;
+    // margin-top: 10px;
    
-    border-width: 1rem;
-    border-color: #5e17eb;
-    border-radius: 0.5rem;
-    border-style: solid;
+    // border-width: 1rem;
+    // border-color: #5e17eb;
+    // border-radius: 0.5rem;
+    // border-style: solid;
 
     .evento-start-txt {
         padding-left: 3rem;
@@ -189,26 +194,57 @@
 
 .join-btn {
     display: block;
-    background-color: $clr1;
+    background-color: #5e29819d;
     color: #fff;
-    margin-top: 50%;
-    font-size: 1rem;
+    // margin-top: 50%;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-    padding: 0.5rem 0.5rem;
+    padding: 0.6rem 0.5rem;
     outline: none;
     border-style: solid;
-    border-color: $clr1;
-    border-radius: 0.2rem;
+    border-color: rgba(100, 69, 69, 0.288);
+    border-radius: 0.3rem;
     width: 14rem;
     text-decoration: none;
-    margin: 2rem auto;
+    margin: 4.9rem auto;
     cursor: pointer;
+
+    &:hover {
+         background-color: #5e2981b6;
+    }
+
+
+}
+.start-btn {
+    display: block;
+    background-color: #5e29819d;
+    color: #fff;
+    // margin-top: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.6rem 0.5rem;
+    outline: none;
+    border-style: solid;
+    border-color: rgba(100, 69, 69, 0.288);
+    border-radius: 0.3rem;
+    width: 14rem;
+    text-decoration: none;
+    margin: 2.5rem auto 5rem auto;
+    cursor: pointer;
+
+    &:hover {
+         background-color: #5e2981b6;
+    }
+
+
 }
 
 .chat-body{
 
     height: 25rem;
+    margin-top: 4rem;
     position: relative;
     background-color: #F2F5F8;
 

@@ -117,15 +117,15 @@
         
       </div>
       <div class="evento-join">
-        <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
+        <!-- <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
           <p>
             <input v-model="guestToAdd.fullName" type="text" placeholder="Type your name" />
           </p>
           <p>
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
-        </form>
-        <button v-if="!join" @click="open" class="join-btn">Join Event</button>
+        </form> -->
+        <!-- <button v-if="!join" @click="open" class="join-btn">Join Event</button>
         <div class="evento-start" v-else>
           <div class="evento-start-txt">
             <h3>Event starts in:</h3>
@@ -135,7 +135,20 @@
             </i>
           </div>
           <button type="text" @click="modal" class="join-btn">Start event!</button>
+        </div> -->
+        <section class="action-container">
+        <button v-if="!join" @click="open" class="join-btn">Join Event</button>
+        <div class="evento-start" v-else>
+          <div class="evento-start-txt">
+            <h4>Event starts in <i>
+              {{countDownMinutes}}:
+              <i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} minutes
+            </i></h4>
+            
+          </div>
+          <button type="text" @click="modal" class="start-btn">Start event !</button>
         </div>
+        </section>
 
         <h3>Event Members</h3>
         <div class="members-container">
@@ -166,8 +179,8 @@ export default {
       evento: null,
       join: false, //is jonind
       guestToAdd: {},
-      countDownSeconds: 59,
-      countDownMinutes: 14,
+      countDownSeconds: 31,
+      countDownMinutes: 4,
     };
   },
 

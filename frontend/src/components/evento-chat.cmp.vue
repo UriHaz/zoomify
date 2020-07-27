@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Chat</h3>
+    <!-- <h3>Chat</h3> -->
     <div class="chat-body">
       <div class="chat-header">
         <p
