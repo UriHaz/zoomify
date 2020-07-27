@@ -10,17 +10,15 @@
     <!-- <img src="../assets/imgs/1.jpg" class="hero-list-img" /> -->
     <!-- <img src="../assets/imgs/2.jpg" class="hero-list-img" /> -->
     <!-- <img src="../assets/imgs/list-hero2.jpg" class="hero-list-img" /> -->
-  
-
-  <div class="list-filter">
-    <evento-filter @setFilter="setFilter()" />
   </div>
-
-  </div>
-
-  <div class="evento-list">
-    <evento-list v-if="!isLoading" :eventos="eventos" />
-  </div>
+  <section class="evento-app-content">
+    <div class="list-filter">
+      <evento-filter @setFilter="setFilter()" />
+    </div>
+    <div class="evento-list">
+      <evento-list v-if="!isLoading" :eventos="eventos" />
+    </div>
+  </section>
 </section>
 </template>
 

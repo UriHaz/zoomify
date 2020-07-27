@@ -1,8 +1,8 @@
 <template>
   <section>
 
-    <el-row class="el-row flex space-between">
-    <el-button plain v-model="filterBy.tags" value="technology" @click="filterOn">Technology</el-button>
+    <el-row class="el-row">
+    <el-button class="el-button" plain v-model="filterBy.tags" value="technology" @click="filterOn">Technology</el-button>
     <el-button plain  v-model="filterBy.tags" value="career" @click="filterOn">Career</el-button>
     <el-button plain  v-model="filterBy.tags" value="coding" @click="filterOn">Coding</el-button>
     <el-button plain  v-model="filterBy.tags" value="design" @click="filterOn">Design</el-button>

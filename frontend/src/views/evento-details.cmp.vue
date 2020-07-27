@@ -107,7 +107,7 @@
 
           <h3>Related lectures</h3>
 
-          <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+          <el-carousel :interval="0" indicator-position="none" arrow="never" height=400px>
           <el-carousel-item >
               <evento-list :eventos="relatedEventos"/>
           </el-carousel-item>
