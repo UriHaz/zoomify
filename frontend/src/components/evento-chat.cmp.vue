@@ -4,9 +4,9 @@
     <div class="chat-body">
       <div class="chat-header">
         <p
-          v-if="isTyping"
+          v-if="isTyping & whoType !== loggedInUser.fullName"
           class="typing"
-        >{{msg.from}} is typing...</p>
+        >{{whoType}} is typing...</p>
         <p v-else> Online </p>
       </div>
       <ul>
@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       evento: null,
-      msg: { from: "Na'ama", txt: "" },
+      msg: { from: "me", txt: "" },
       msgs: [],
       txt: "is typing...",
       isTyping: false,
@@ -53,26 +53,29 @@ export default {
       this.msgs.push(msg);
     },
     sendMsg() {
+      this.msg.from = this.$store.getters.loggedInUser.fullName;
       socketService.emit("chat newMsg", this.msg);
       this.msg = { from: "Me", txt: "" };
     },
 
-    showUserTyping(msg) {
-      // this.msg.from = this.$store.getters.loggedInUser.fullName;
-      this.msg.from = "Na'ama";
+     userTyping() {
+      const userName= this.loggedInUser.fullName
+      socketService.emit("user typing", userName);
+    },
+
+    showUserTyping(userName) {
+      this.whoType = userName;
       this.isTyping = true;
 
       setTimeout(this.stopTyping, 2000);
     },
-    userTyping(msg) {
-      socketService.emit("typing user", this.msg);
-    },
+   
   },
 
   created() {
     socketService.setup();
     socketService.on("chat addMsg", this.addMsg);
-    socketService.on("show Typing", this.showUserTyping);
+    socketService.on("show typing", this.showUserTyping);
   },
   destroyed() {
     socketService.off("chat addMsg", this.addMsg);

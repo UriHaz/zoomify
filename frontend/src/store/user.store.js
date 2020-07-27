@@ -11,11 +11,11 @@ export const userStore = {
 	strict: true,
 	state: {
 		loggedInUser: null,
-			// _id: "5f16cdd6edfffbaab19a5352",
-			// fullName : "Arthur Read",
-			// // imgUrl : "https://i.imgur.com/glxWil9.jpg",
-			// eventos :[]
-		
+		// 	_id: "5f16cdd6edfffbaab19a5352",
+		// 	fullName : "Arthur Read",
+		// 	// imgUrl : "https://i.imgur.com/glxWil9.jpg",
+		// 	eventos :[]
+
 		users: [],
 	},
 	getters: {
@@ -32,6 +32,7 @@ export const userStore = {
 	},
 	mutations: {
 		setUser(state, { user }) {
+			console.log('user in setUser', user);
 			state.loggedInUser = user;
 		},
 		setUsers(state, { users }) {
@@ -49,8 +50,7 @@ export const userStore = {
 	},
 	actions: {
 		async login(context, {userCred}) {
-			console.log('adding user in store', userCred);
-            const user = await userService.login(userCred);
+			const user = await userService.login(userCred);
             context.commit({type: 'setUser', user})
             return user;
 		},

@@ -5,9 +5,53 @@
 }
 // ככה מעצבים אלמנט
 .join-modal {
-
-    // background-color: red;
+    background-color: white;
 }
+
+.join-modal-confirm-btn {
+    background-color: #19D1A3;
+    border: none;
+    &:hover {
+        background-color: #00b185;
+    }
+
+}
+
+.join-modal-cancel-btn {
+    background-color: #ff8888;
+    border: none;
+    color: white;
+
+    &:hover {
+        background-color: #fc6868;
+        color: white;
+    }
+}
+
+
+
+.video-modal{
+    // width: 620px;
+    // height: 510px;
+    width: 39rem;
+    height: 31.5rem;
+
+    .video-modal-confirm-btn {
+    // display: hidden;
+    border: none;
+    background-color: white;
+    color: grey;
+
+    &:hover {
+        color: white;
+        background-color: $clr1;
+    }
+
+}
+}
+
+
+
 
 .top-desc {
     padding-right: 5%;
