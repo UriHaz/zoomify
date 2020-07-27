@@ -4,7 +4,7 @@
       <div>
         <div class="centered-header">
           <h1 class="hp-h1">
-            Join Live Events
+            Join Live Tech Events
             <br />from Around the World
           </h1>
      <div class="hp-link-filter">
