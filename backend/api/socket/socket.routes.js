@@ -8,8 +8,13 @@ function connectSockets(io) {
         socket.on('chat newMsg', msg=>{
             io.emit('chat addMsg', msg)
         })
-        socket.on("typing user", (msg) => {
-            io.emit('show Typing', msg)
-          });
+        socket.on("user typing", (userName) => {
+            io.emit('show typing', userName)
+          }); 
+        socket.on("new member", (member) => {
+            io.emit('show member', member)
+          }); 
     })
 }
+
+

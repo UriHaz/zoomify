@@ -23,75 +23,18 @@ function update(user) {
 }
 
 async function login(userCred) {
-    console.log('user in service:', userCred);
-    await httpService.post('auth/login', userCred)
-    // return _handleLogin(user)
+    return httpService.post('auth/login', userCred)
+
 }
 
-async function signup(userCred) {
-    await httpService.post('auth/signup', userCred)
-    // return _handleLogin(user)
+function signup(userCred) {
+    return httpService.post('auth/signup', userCred)
+   
 }
-async function logout() {
-    await httpService.post('auth/logout');
-    sessionStorage.clear();
+function logout() {
+    return httpService.post('auth/logout');
 }
 
 function query() {
     return httpService.get('user')
 }
-
-// function _handleLogin(user) {
-//     sessionStorage.setItem('user', JSON.stringify(user))
-//     return user;
-// }
-
-//
-
-
-
-
-
-
-
-
-// const axios = require('axios');
-// export const userService = {
-//     query,
-//     remove,
-//     save,
-//     getById,
-// }
-
-// function _getUrl(id = '') {
-//     const BASE_URL = (process.env.NODE_ENV !== 'development') ? '/api/user' : '//localhost:3000/api/user';
-//     return `${BASE_URL}/${id}`;
-// }
-
-// function query() {
-//     return axios.get(_getUrl())
-//         .then(res => res.data)
-// }
-
-// function getById(id) {
-//     return axios.get(_getUrl(id))
-//         .then(res => res.data)
-// }
-
-// function remove(id) {
-//     return axios.delete(_getUrl(id))
-// }
-
-// function save(user) {
-//     return (user.id) ? _update(user) : _add(user)
-// }
-
-// function _update(user) {
-//     return axios.put(_getUrl(), user)
-//         .then(res => res.data)
-// }
-
-// function _add(user) {
-//     return axios.post(_getUrl(id), user)
-//         .then(res => res.data)
-// }
