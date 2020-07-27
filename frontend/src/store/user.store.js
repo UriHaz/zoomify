@@ -10,12 +10,12 @@ Vue.use(Vuex);
 export const userStore = {
 	strict: true,
 	state: {
-		loggedInUser: {
-			_id: "5f16cdd6edfffbaab19a5352",
-			fullName : "Arthur Read",
-			// imgUrl : "https://i.imgur.com/glxWil9.jpg",
-			eventos :[]
-		},
+		loggedInUser: null,
+			// _id: "5f16cdd6edfffbaab19a5352",
+			// fullName : "Arthur Read",
+			// // imgUrl : "https://i.imgur.com/glxWil9.jpg",
+			// eventos :[]
+		
 		users: [],
 	},
 	getters: {
@@ -40,9 +40,6 @@ export const userStore = {
 		removeUser(state, { userId }) {
 			state.users = state.users.filter((user) => user._id !== userId);
 		},
-		addUser(state, { savedUser }){
-			state.users.unshift(savedUser)
-		},
 		updateUser(state, { savedUser }) {
 			const idx = state.users.findIndex(
 				(user) => user.id === savedUser.id
@@ -51,28 +48,20 @@ export const userStore = {
 		},
 	},
 	actions: {
-		async loadUsers({ commit, state }) {
-			const users = await eventoService.query()
-			commit({ type: "setUsers", users });
-			return users;
+		async login(context, {userCred}) {
+			console.log('adding user in store', userCred);
+            const user = await userService.login(userCred);
+            context.commit({type: 'setUser', user})
+            return user;
 		},
-		async login(context, { userCred }) {
-			const users = await userService.query();
-			context.commit({ type: "setUsers", users });
-			const checkIfUser = users.find(user => user.password === userCred.password & user.email === userCred.email)
-			const user = checkIfUser;
-			context.commit({ type: "setUser", user });
-			return user;
-		},
-		async signup ({commit}, {user}) {
-			console.log('adding user in store', user);
-			const savedUser = await userService.signUp(user)
-			commit({ type: "addUser", savedUser });
-			return savedUser;
+		
+		async signup(context, {userCred}) {
+            const user = await userService.signup(userCred)
+            context.commit({type: 'setUser', user})
+            return user;
 		},
 		async logout(context) {
 			await userService.logout();
-			context.commit({ type: "setUsers", users: [] });
 			context.commit({ type: "setUser", user: null });
 		},
 		async loadUsers(context) {

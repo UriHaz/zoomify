@@ -9,9 +9,6 @@ function connectSockets(io) {
             io.emit('chat addMsg', msg)
         })
         socket.on("typing user", (msg) => {
-            console.log('name and txt in socket');
-            console.log(msg.from);
-            console.log(msg.txt);
             io.emit('show Typing', msg)
           });
     })

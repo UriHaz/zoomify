@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       loginCred: {
-        email: 'john@doe.com',
-        password: 'rocair'
+        email: 'arthur@read.com',
+        password: 'red'
       },
       signupCred: {},
       msg: '',
@@ -58,14 +58,12 @@ export default {
 
     }
   },
-  created() {
-    
-  },
   methods: {
     async doLogin() {
       const cred = this.loginCred
       if(!cred.email || !cred.password) return this.msg = 'Please enter user/password'
-      await this.$store.dispatch({type :'login', userCred: this.loginCred})
+      console.log('login in cmp', cred);
+      await this.$store.dispatch({type :'login', userCred: cred})
       this.loginCred = {};
       
     },   
@@ -88,11 +86,6 @@ export default {
     doLogout() {
       this.$store.dispatch({ type: "logout" });
     },
-  },
-  computed:{
-    loggedInUser() {
-      return this.$store.getters.loggedInUser;
-    }
 },
   watch : {
     loggedInUser() {
@@ -100,8 +93,7 @@ export default {
     }
   },
   created() {
-    this.loggedInUser
-    console.log("this.loggedinUser", this.loggedInUser);
+    
   }  
 }
 </script>
