@@ -16,8 +16,9 @@
       <div class="top-desc">
         <div class="evento-details-title">
           <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}}</span>
+          {{evento.avgRating}}
           <i class="fas fa-star"></i>
-          {{evento.createdBy.rating}} ({{evento.raters}})
+          ({{evento.raters}})
           <h1 class="evento-details-h1">{{evento.title}}</h1>
           <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2>
 
@@ -84,16 +85,14 @@
         <h4>Show all</h4>
         </div>
 
-        <el-carousel :interval="0" indicator-position="none" arrow="never" height=240px>
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=260px>
         <el-carousel-item >
         <div class="reviews">
           <div class="review" v-for="review in evento.reviews" :key="review.id">
             <avatar :src="review.imgUrl"></avatar>
-            <p class="review-title">
-              {{review.fullName}} <br/>
-              {{review.givenRating}}
-              <i class="fas fa-star"></i>
-            </p>
+            <p class="review-title">{{review.fullName}}</p> 
+              <p>{{review.givenRating}} <i class="fas fa-star"></i></p>
+            
             <p>{{review.txt}}</p>
           </div>
         </div>
