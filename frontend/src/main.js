@@ -3,7 +3,6 @@ import app from './app.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store/store.js'
-// דרסנו את הסאס שלנו עם הסאס של אלמנט
 import "element-ui/lib/theme-chalk/index.css";
 import "./assets/styles/main.scss";
 import ElementUI from "element-ui";
