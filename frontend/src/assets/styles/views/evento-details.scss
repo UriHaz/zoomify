@@ -125,16 +125,19 @@
 }
 
 .evento-start{
+    // background-color: #5e17eb;
     margin-bottom: 100px;
     margin-top: 10px;
    
-    border-width: 0.1rem;
-    border-color: #4b4d4b;
+    border-width: 1rem;
+    border-color: #5e17eb;
     border-radius: 0.5rem;
     border-style: solid;
 
     .evento-start-txt {
         padding-left: 3rem;
+        text-align: center;
+        margin-right: 3.5rem;
     }
 }
 
