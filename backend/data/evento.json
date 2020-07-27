@@ -15,7 +15,7 @@
             "img2": "https://i.imgur.com/bAeAnyU.jpg"
         },
         "link": "https://us02web.zoom.us/j/7568815336",
-        "startDate": "2020-07-29",
+        "startDate": "2020-08-02",
         "startTime": "20:00",
         "dur": 60,
         "capacity": 55,
@@ -189,7 +189,7 @@
             "img2": "https://i.imgur.com/ks6U3GM.jpg"
         },
         "link": "https://us02web.zoom.us/j/7568815336",
-        "startDate": "2020-07-30",
+        "startDate": "2020-08-17",
         "startTime": "23:00",
         "dur": 60,
         "capacity": 55,
@@ -696,7 +696,7 @@
     {
         "title": "Copy, Micro-Copy and Your Content Strategy",
         "imgUrl": "https://i.imgur.com/uIiG0XW.jpg",
-        "avgRating": 4.4,
+        "avgRating": 4.9,
         "raters": 81,
         "createdBy": {
             "id": "h005",
@@ -864,7 +864,7 @@
     {
         "title": "Creating Organization Leadership Program",
         "imgUrl": "https://i.imgur.com/5Ly8Du5.jpg",
-        "avgRating": 4.4,
+        "avgRating": 4.7,
         "raters": 81,
         "createdBy": {
             "id": "h006",
@@ -1212,7 +1212,7 @@
     {
         "title": "How SEO & PPC Supports Each Other",
         "imgUrl": "https://i.imgur.com/GbptbIO.jpg",
-        "avgRating": 5,
+        "avgRating": 4.7,
         "raters": 100,
         "createdBy": {
             "id": "h008",
@@ -1385,7 +1385,7 @@
     {
         "title": "How to Build Manager Self-Awareness",
         "imgUrl": "https://i.imgur.com/OUf88S7.jpg",
-        "avgRating": 4.9,
+        "avgRating": 4.8,
         "raters": 86,
         "createdBy": {
             "id": "h009",
@@ -1398,8 +1398,8 @@
             "img2": "https://i.imgur.com/VbvM3Wc.jpg"
         },
         "link": "https://us02web.zoom.us/j/7568815336",
-        "startDate": "2020-09-03",
-        "startTime": "20:00",
+        "startDate": "2020-07-28",
+        "startTime": "13:00",
         "dur": 60,
         "capacity": 55,
         "tags": [
@@ -1518,7 +1518,7 @@
                 "fullName": "Alex Moor",
                 "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
                 "txt": "The host has some mistakes but other than that I was positively stunned.",
-                "givenRating": "3"
+                "givenRating": "5"
             },
             {
                 "id": "r009",
@@ -1551,8 +1551,8 @@
         ],
         "country": "England",
         "lang": "English",
-        "desc": "For most of us, it’s an ongoing process. Whether you’re a seasoned manager or relatively new to the ranks, you may have learned the hard way that the skills that helped you move up the ladder aren’t necessarily the skills you need for successful leadership. It's not unusual to see new managers stumble early on as they stretch beyond their previous roles. Perhaps stellar technical skills helped you get a promotion to team lead, but in a managerial role you'll be relying much more heavily on interpersonal communication skills. In this lecture, we will talk about your ability to affect change and how it is ultimately dependent on relationships and networks.",
-        "about": "Dr. James Davis,  55 years old from London England, is an experienced Psychologist who wrote a full series of books about Business decision making and is considered one of the most appreciated psychologists in the field in London.",
+        "desc": "Even though interviewing for a tech job feels intimidating (with whiteboard challenges, remote coding challenges, and even full days of onsite interviews sometimes), it’s a lot easier when you know what to expect and you are well-prepared. In this special event, you will get an epic and comprehensive guide on how to nail tech job interviews for new techies. In the guide, you'll learn how to ace a technical interview for the Tech industry, even if it’s your first one! Join the event to get better prepared for your first steps on getting a new Tech job.",
+        "about": "Dr. James Davis,  55 years old from London England, is an experienced Psychologist who wrote a full series of books about 'Successful Job Interviews'. He is considered one of the most appreciated psychologists in the field in London.",
         "price": 20
     },
     {
@@ -1571,7 +1571,7 @@
             "img2": "https://i.imgur.com/pYgADUB.jpg"
         },
         "link": "https://us02web.zoom.us/j/7568815336",
-        "startDate": "2020-08-16",
+        "startDate": "2020-07-29",
         "startTime": "20:30",
         "dur": 60,
         "capacity": 55,
@@ -1724,7 +1724,7 @@
         ],
         "country": "England",
         "lang": "English",
-        "desc": "Ever wondered how the world's biggest SaaS B2B businesses are acting on their social media marketing plans? What are the most known SaaS businesses doing? As a B2B business, in order to build an effective social media marketing plan, you should ask yourself a few fundamental questions before you start doing anything. Many beginner B2B business owners rush into doing their marketing and forget about really understanding what their core business value is, their position on the market, and what problem they are actually trying to solve. In this lecture, we are going to see how things can be done differently by analyzing the top trends in SaaS Social Media Marketing for your business!",
+        "desc": "B business, in order to build an effective social media marketing plan, you should ask yourself a few fundamental questions before you start doing anything. Many beginner B2B business owners rush into doing their marketing and forget about really understanding what their core business value is, their position on the market, and what problem they are actually trying to solve. In this lecture, we are going to see how things can be done differently by analyzing the top trends in SaaS Social Media Marketing for your business!",
         "about": "Simon Collison, 36 years old from San Francisco California, is an experienced Social Media Marketing Manager who created a full series of lessons about how to do Social Media Marketing for scaling startups as well as enterprises in the Tech industry and is considered one of the best in the field in London.",
         "price": 20
     },
@@ -1904,7 +1904,7 @@
     {
         "title": "How to Successfully Manage your Manager",
         "imgUrl": "https://i.imgur.com/xWtv8N5.jpg",
-        "avgRating": 3.2,
+        "avgRating": 4.9,
         "raters": 71,
         "createdBy": {
             "id": "h012",
@@ -2037,28 +2037,28 @@
                 "fullName": "Wayne Jones",
                 "imgUrl": "https://i.imgur.com/Agglcgf.jpg",
                 "txt": "Who's in charge of giving me back the time I wasted?",
-                "givenRating": "1"
+                "givenRating": "3.9"
             },
             {
                 "id": "r024",
                 "fullName": "Chris Zoku",
                 "imgUrl": "https://i.imgur.com/n3BiawG.jpg",
                 "txt": "I thought I'd be able to connect to the topic of the lecture but I didn't enjoy it.",
-                "givenRating": "2"
+                "givenRating": "4"
             },
             {
                 "id": "r025",
                 "fullName": "Stephen Connolly",
                 "imgUrl": "https://i.imgur.com/fTLyUYP.jpg",
                 "txt": "I did not find the event particularly interesting.",
-                "givenRating": "3.5"
+                "givenRating": "4"
             },
             {
                 "id": "r026",
                 "fullName": "Joe Narimer",
                 "imgUrl": "https://i.imgur.com/lRL9oNP.jpg",
                 "txt": "I have attended other better events.",
-                "givenRating": "2"
+                "givenRating": "4"
             },
             {
                 "id": "r027",
@@ -2077,8 +2077,8 @@
     {
         "title": "How to Deal with a Problematic Customer",
         "imgUrl": "https://i.imgur.com/ayWq0vl.jpg",
-        "avgRating": 3.3,
-        "raters": 58,
+        "avgRating": 4.9,
+        "raters": 78,
         "createdBy": {
             "id": "h013",
             "fullName": "Sheila Moore",
@@ -2263,7 +2263,7 @@
             "img2": "https://i.imgur.com/s77j5do.jpg"
         },
         "link": "https://us02web.zoom.us/j/7568815336",
-        "startDate": "2020-08-23",
+        "startDate": "2020-07-29",
         "startTime": "18:30",
         "dur": 60,
         "capacity": 55,
@@ -3635,7 +3635,7 @@
             "img2": "https://i.imgur.com/GYsaBK7.jpg"
         },
         "link": "https://us02web.zoom.us/j/7568815336",
-        "startDate": "2020-10-06",
+        "startDate": "2020-07-30",
         "startTime": "19:30",
         "dur": 60,
         "capacity": 55,
@@ -3959,7 +3959,7 @@
     {
         "title": "Why Diversity is a Real Organization Power",
         "imgUrl": "https://i.imgur.com/ZAvTOWZ.jpg",
-        "avgRating": 4.4,
+        "avgRating": 4.9,
         "raters": 99,
         "createdBy": {
             "id": "h024",
@@ -4296,7 +4296,7 @@
     {
         "title": "How to Prepare Yourself for a Sales Career",
         "imgUrl": "https://i.imgur.com/I56UXuX.jpg",
-        "avgRating": 3.9,
+        "avgRating": 4.9,
         "raters": 48,
         "createdBy": {
             "id": "h026",
@@ -4462,9 +4462,9 @@
         "price": 20
     },
     {
-        "title": "How to Overcome Sales Objections the Smart Way",
+        "title": "How to Smartly Overcome Sales Objections",
         "imgUrl": "https://i.imgur.com/lKqlP6H.jpg",
-        "avgRating": 4.3,
+        "avgRating": 4.9,
         "raters": 94,
         "createdBy": {
             "id": "e027",
@@ -4795,6 +4795,599 @@
         "lang": "Deutsch",
         "desc": "Being online is a must for product sellers. 69% of people prefer to make their purchases online, and online retailers will be the first research preference for 66% of buyers. That being said, introducing yourself to e-commerce is not a fast and easy task, but an adventure that must be constantly improved, paying attention to changes, trends and patterns of users’ online behavior. What’s the solution to a low number of online visits and purchases, a high number of product returns or shopping  cart abandonment? Join the lecture to hear all about it.",
         "about": "Gretel Zigler,  35 years old from Berlin Germany, is an experienced Project Manager and a talented UX Expert in the eCommerce field who created a full series of lessons about User Experience best practices for scaling startups and is considered one of the best in the field in Berlin.",
+        "price": 20
+    },
+    {
+        "title": "How to Build Manager Self-Awareness",
+        "imgUrl": "https://i.imgur.com/nl7IXW8.jpg",
+        "avgRating": 4.6,
+        "raters": 64,
+        "createdBy": {
+            "id": "h029",
+            "fullName": "George Herren",
+            "imgUrl": "https://i.imgur.com/39v6Q2s.jpg"
+        },
+        "videoUrls": "",
+        "imgUrls": {
+            "img1": "https://i.imgur.com/COD2HLe.jpg",
+            "img2": "https://i.imgur.com/lv2uecn.jpg"
+        },
+        "link": "https://us02web.zoom.us/j/7568815336",
+        "startDate": "2020-09-03",
+        "startTime": "20:00",
+        "dur": 60,
+        "capacity": 55,
+        "tags": [
+            "career"
+        ],
+        "members": [
+            {
+                "id": "h010",
+                "fullName": "Simon Collison",
+                "imgUrl": "https://i.imgur.com/XQEQHVT.jpg"
+            },
+            {
+                "id": "h011",
+                "fullName": "Cameron Mollins",
+                "imgUrl": "https://i.imgur.com/fmAuJQp.jpg"
+            },
+            {
+                "id": "h012",
+                "fullName": "Tim Posner",
+                "imgUrl": "https://i.imgur.com/s4SDkXH.jpg"
+            },
+            {
+                "id": "h013",
+                "fullName": "Sheila Moore",
+                "imgUrl": "https://i.imgur.com/MwYeHV5.jpg"
+            },
+            {
+                "id": "h014",
+                "fullName": "Brenda Seligman",
+                "imgUrl": "https://i.imgur.com/VQxG2S5.jpg"
+            },
+            {
+                "id": "h015",
+                "fullName": "Gilka Mesker",
+                "imgUrl": "https://i.imgur.com/Xx8LloT.jpg"
+            },
+            {
+                "id": "h016",
+                "fullName": "Miles Thompson",
+                "imgUrl": "https://i.imgur.com/C3o9cXD.jpg"
+            },
+            {
+                "id": "h017",
+                "fullName": "Ethan Marcotte",
+                "imgUrl": "https://i.imgur.com/MwYeHV5.jpg"
+            },
+            {
+                "id": "h018",
+                "fullName": "Evan You",
+                "imgUrl": "https://i.imgur.com/Hyt68vT.jpg"
+            },
+            {
+                "id": "h019",
+                "fullName": "Martin Pinker",
+                "imgUrl": "https://i.imgur.com/bjkkNcs.jpg"
+            },
+            {
+                "id": "h020",
+                "fullName": "Phillip Schiller",
+                "imgUrl": "https://i.imgur.com/jI0h1Jx.jpg"
+            },
+            {
+                "id": "h021",
+                "fullName": "Samer Ahmed",
+                "imgUrl": "https://i.imgur.com/1tiXpP5.jpg"
+            },
+            {
+                "id": "h022",
+                "fullName": "Mikkel Svane",
+                "imgUrl": "https://i.imgur.com/xwr0rs3.jpg"
+            },
+            {
+                "id": "h023",
+                "fullName": "Chris Coyier",
+                "imgUrl": "https://i.imgur.com/uS6hY6M.jpg"
+            },
+            {
+                "id": "h024",
+                "fullName": "Steven Huang",
+                "imgUrl": "https://i.imgur.com/NinZtCI.jpg"
+            },
+            {
+                "id": "h025",
+                "fullName": "Rachel Andrew",
+                "imgUrl": "https://i.imgur.com/MU554vI.jpg"
+            },
+            {
+                "id": "h026",
+                "fullName": "Maria Pedro",
+                "imgUrl": "https://i.imgur.com/7ubtvjb.jpg"
+            },
+            {
+                "id": "h027",
+                "fullName": "Albert Muller",
+                "imgUrl": "https://i.imgur.com/bLE4Ofm.jpg"
+            },
+            {
+                "id": "h028",
+                "fullName": "Gretel Zigler",
+                "imgUrl": "https://i.imgur.com/X1syyzf.jpg"
+            },
+            {
+                "id": "h001",
+                "fullName": "Misko Hevery",
+                "imgUrl": "https://i.imgur.com/s85nzVj.jpg"
+            },
+            {
+                "id": "h002",
+                "fullName": "Denis Robbins",
+                "imgUrl": "https://i.imgur.com/SXtojjP.jpg"
+            }
+        ],
+        "reviews": [
+            {
+                "id": "r008",
+                "fullName": "Alex Moor",
+                "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
+                "txt": "The host has some mistakes but other than that I was positively stunned.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r009",
+                "fullName": "Julio Kelton",
+                "imgUrl": "https://i.imgur.com/sQilDbF.jpg",
+                "txt": "I really like the lecture, waiting for your next lecture, hopefully soon!",
+                "givenRating": "4"
+            },
+            {
+                "id": "r010",
+                "fullName": "Deborah Lumens",
+                "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
+                "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
+                "givenRating": "4"
+            },
+            {
+                "id": "r011",
+                "fullName": "Evan West",
+                "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
+                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
+                "givenRating": "5"
+            },
+            {
+                "id": "r012",
+                "fullName": "Ronn Turis",
+                "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
+                "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
+                "givenRating": "4"
+            }
+        ],
+        "country": "United States",
+        "lang": "English",
+        "desc": "For most of us, it’s an ongoing process. Whether you’re a seasoned manager or relatively new to the ranks, you may have learned the hard way that the skills that helped you move up the ladder aren’t necessarily the skills you need for successful leadership. It's not unusual to see new managers stumble early on as they stretch beyond their previous roles. Perhaps stellar technical skills helped you get a promotion to team lead, but in a managerial role you'll be relying much more heavily on interpersonal communication skills. In this lecture, we will talk about your ability to affect change and how it is ultimately dependent on relationships and networks.",
+        "about": "George Herren, 43 years old from Los Angeles California, is an experienced Career Coach who wrote a full series of books about 'Being a Successful Manager'. He is considered one of the most appreciated Career Coachers in the field in Los Angeles.",
+        "price": 20
+    },
+    {
+        "title": "Successfully Manage Remote Employees",
+        "imgUrl": "https://i.imgur.com/2z3rxFK.jpg",
+        "avgRating": 4.2,
+        "raters": 59,
+        "createdBy": {
+            "id": "h030",
+            "fullName": "Michelle Darres",
+            "imgUrl": "https://i.imgur.com/ABUONt2.jpg"
+        },
+        "videoUrls": "",
+        "imgUrls": {
+            "img1": "https://i.imgur.com/WP19I00.jpg",
+            "img2": "https://i.imgur.com/mkajtBU.jpg"
+        },
+        "link": "https://us02web.zoom.us/j/7568815336",
+        "startDate": "2020-09-02",
+        "startTime": "20:00",
+        "dur": 60,
+        "capacity": 55,
+        "tags": [
+            "career",
+            "business"
+        ],
+        "members": [
+            {
+                "id": "h001",
+                "fullName": "Misko Hevery",
+                "imgUrl": "https://i.imgur.com/s85nzVj.jpg"
+            },
+            {
+                "id": "h002",
+                "fullName": "Denis Robbins",
+                "imgUrl": "https://i.imgur.com/SXtojjP.jpg"
+            },
+            {
+                "id": "h003",
+                "fullName": "Amber McCarthy",
+                "imgUrl": "https://i.imgur.com/4pWJA7E.jpg"
+            },
+            {
+                "id": "h004",
+                "fullName": "John Armis",
+                "imgUrl": "https://i.imgur.com/3RuI4yD.png"
+            },
+            {
+                "id": "h005",
+                "fullName": "Sarah Parmon",
+                "imgUrl": "https://i.imgur.com/cavkVjv.jpg"
+            },
+            {
+                "id": "h006",
+                "fullName": "Richard Cooper",
+        
+                "imgUrl": "https://i.imgur.com/gBh4UzH.jpg"
+            },
+            {
+                "id": "h007",
+                "fullName": "Karen McGrine",
+                "imgUrl": "https://i.imgur.com/kibZjnt.jpg"
+            },
+            {
+                "id": "h008",
+                "fullName": "Neil Dosson",
+                "imgUrl": "https://i.imgur.com/8hus19V.jpg"
+            },
+            {
+                "id": "h009",
+                "fullName": "James Davis",
+                "imgUrl": "https://i.imgur.com/B9QGAPR.jpg"
+            },
+            {
+                "id": "h010",
+                "fullName": "Simon Collison",
+                "imgUrl": "https://i.imgur.com/XQEQHVT.jpg"
+            },
+            {
+                "id": "h011",
+                "fullName": "Cameron Mollins",
+                "imgUrl": "https://i.imgur.com/fmAuJQp.jpg"
+            },
+            {
+                "id": "h012",
+                "fullName": "Tim Posner",
+                "imgUrl": "https://i.imgur.com/s4SDkXH.jpg"
+            },
+            {
+                "id": "h013",
+                "fullName": "Sheila Moore",
+                "imgUrl": "https://i.imgur.com/MwYeHV5.jpg"
+            },
+            {
+                "id": "h014",
+                "fullName": "Brenda Seligman",
+                "imgUrl": "https://i.imgur.com/VQxG2S5.jpg"
+            },
+            {
+                "id": "h015",
+                "fullName": "Gilka Mesker",
+                "imgUrl": "https://i.imgur.com/Xx8LloT.jpg"
+            },
+            {
+                "id": "h016",
+                "fullName": "Miles Thompson",
+                "imgUrl": "https://i.imgur.com/C3o9cXD.jpg"
+            },
+            {
+                "id": "h017",
+                "fullName": "Ethan Marcotte",
+                "imgUrl": "https://i.imgur.com/MwYeHV5.jpg"
+            },
+            {
+                "id": "h018",
+                "fullName": "Evan You",
+                "imgUrl": "https://i.imgur.com/Hyt68vT.jpg"
+            },
+            {
+                "id": "h019",
+                "fullName": "Martin Pinker",
+                "imgUrl": "https://i.imgur.com/bjkkNcs.jpg"
+            },
+            {
+                "id": "h020",
+                "fullName": "Phillip Schiller",
+                "imgUrl": "https://i.imgur.com/jI0h1Jx.jpg"
+            },
+            {
+                "id": "h021",
+                "fullName": "Samer Ahmed",
+                "imgUrl": "https://i.imgur.com/1tiXpP5.jpg"
+            },
+            {
+                "id": "h022",
+                "fullName": "Mikkel Svane",
+                "imgUrl": "https://i.imgur.com/xwr0rs3.jpg"
+            },
+            {
+                "id": "h023",
+                "fullName": "Chris Coyier",
+                "imgUrl": "https://i.imgur.com/uS6hY6M.jpg"
+            },
+            {
+                "id": "h024",
+                "fullName": "Steven Huang",
+                "imgUrl": "https://i.imgur.com/NinZtCI.jpg"
+            },
+            {
+                "id": "h025",
+                "fullName": "Rachel Andrew",
+                "imgUrl": "https://i.imgur.com/MU554vI.jpg"
+            },
+            {
+                "id": "h026",
+                "fullName": "Maria Pedro",
+                "imgUrl": "https://i.imgur.com/7ubtvjb.jpg"
+            },
+            {
+                "id": "h027",
+                "fullName": "Albert Muller",
+                "imgUrl": "https://i.imgur.com/bLE4Ofm.jpg"
+            },
+            {
+                "id": "h028",
+                "fullName": "Gretel Zigler",
+                "imgUrl": "https://i.imgur.com/X1syyzf.jpg"
+            }
+        ],
+        "reviews": [
+            {
+                "id": "r018",
+                "fullName": "Kisor Summ",
+                "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
+                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r019",
+                "fullName": "Vlad Kozilsky",
+                "imgUrl": "https://i.imgur.com/d7djmap.png",
+                "review": "The host was very nice and explained everything very well.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r020",
+                "fullName": "Silvio Raton",
+                "imgUrl": "https://i.imgur.com/1QaLpgO.jpg",
+                "review": "I never listened to a lecture in this field and I found it very interesting.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r021",
+                "fullName": "Gilbert Carson",
+                "imgUrl": "https://i.imgur.com/ZkW7lPu.jpg",
+                "review": "Absolutely not what I expected, I would not recommend.",
+                "givenRating": "2"
+            },
+            {
+                "id": "r022",
+                "fullName": "Jenny Moren",
+                "imgUrl": "https://i.imgur.com/C8j5ne1.jpg",
+                "review": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
+                "givenRating": "2"
+            }
+        ],
+        "country": "United States",
+        "lang": "English",
+        "desc": "Vast numbers of employees now work remotely, and it’s too late to develop a set of remote-work policies if you didn’t already have one. But there are ways to make the remote-work experience productive and engaging for employees and the organization. At most organizations, scenario planning focuses on the necessary operational responses to ensure business continuity. Few of these plans address the ability or bandwidth of employees to focus on their work. HR should help managers with specific activities to ensure employees get the requisite support to tackle the emotional roller coaster of this crisis to help employees be productive and engaged.",
+        "about": "Michelle Darres, 40 years old from Los Angeles California, is an experienced Career Coach who wrote a full series of books about 'Organize Workspace for Better results'. She is considered one of the most appreciated Career Coachers in the field in Los Angeles.",
+        "price": 20
+    },
+    {
+        "title": "The Huge Importance of Work-Life Balance",
+        "imgUrl": "https://i.imgur.com/HMuBK3u.jpg",
+        "avgRating": 4.3,
+        "raters": 62,
+        "createdBy": {
+            "id": "h031",
+            "fullName": "Michelle Darres",
+            "imgUrl": "https://i.imgur.com/lLvx1Wb.jpg"
+        },
+        "videoUrls": "",
+        "imgUrls": {
+            "img1": "https://i.imgur.com/ZBynysL.jpg",
+            "img2": "https://i.imgur.com/o3eNSFf.jpg"
+        },
+        "link": "https://us02web.zoom.us/j/7568815336",
+        "startDate": "2020-09-02",
+        "startTime": "20:00",
+        "dur": 60,
+        "capacity": 55,
+        "tags": [
+            "career",
+            "business"
+        ],
+        "members": [
+            {
+                "id": "h001",
+                "fullName": "Misko Hevery",
+                "imgUrl": "https://i.imgur.com/s85nzVj.jpg"
+            },
+            {
+                "id": "h002",
+                "fullName": "Denis Robbins",
+                "imgUrl": "https://i.imgur.com/SXtojjP.jpg"
+            },
+            {
+                "id": "h003",
+                "fullName": "Amber McCarthy",
+                "imgUrl": "https://i.imgur.com/4pWJA7E.jpg"
+            },
+            {
+                "id": "h004",
+                "fullName": "John Armis",
+                "imgUrl": "https://i.imgur.com/3RuI4yD.png"
+            },
+            {
+                "id": "h005",
+                "fullName": "Sarah Parmon",
+                "imgUrl": "https://i.imgur.com/cavkVjv.jpg"
+            },
+            {
+                "id": "h006",
+                "fullName": "Richard Cooper",
+        
+                "imgUrl": "https://i.imgur.com/gBh4UzH.jpg"
+            },
+            {
+                "id": "h007",
+                "fullName": "Karen McGrine",
+                "imgUrl": "https://i.imgur.com/kibZjnt.jpg"
+            },
+            {
+                "id": "h008",
+                "fullName": "Neil Dosson",
+                "imgUrl": "https://i.imgur.com/8hus19V.jpg"
+            },
+            {
+                "id": "h009",
+                "fullName": "James Davis",
+                "imgUrl": "https://i.imgur.com/B9QGAPR.jpg"
+            },
+            {
+                "id": "h010",
+                "fullName": "Simon Collison",
+                "imgUrl": "https://i.imgur.com/XQEQHVT.jpg"
+            },
+            {
+                "id": "h011",
+                "fullName": "Cameron Mollins",
+                "imgUrl": "https://i.imgur.com/fmAuJQp.jpg"
+            },
+            {
+                "id": "h012",
+                "fullName": "Tim Posner",
+                "imgUrl": "https://i.imgur.com/s4SDkXH.jpg"
+            },
+            {
+                "id": "h013",
+                "fullName": "Sheila Moore",
+                "imgUrl": "https://i.imgur.com/MwYeHV5.jpg"
+            },
+            {
+                "id": "h014",
+                "fullName": "Brenda Seligman",
+                "imgUrl": "https://i.imgur.com/VQxG2S5.jpg"
+            },
+            {
+                "id": "h015",
+                "fullName": "Gilka Mesker",
+                "imgUrl": "https://i.imgur.com/Xx8LloT.jpg"
+            },
+            {
+                "id": "h016",
+                "fullName": "Miles Thompson",
+                "imgUrl": "https://i.imgur.com/C3o9cXD.jpg"
+            },
+            {
+                "id": "h017",
+                "fullName": "Ethan Marcotte",
+                "imgUrl": "https://i.imgur.com/MwYeHV5.jpg"
+            },
+            {
+                "id": "h018",
+                "fullName": "Evan You",
+                "imgUrl": "https://i.imgur.com/Hyt68vT.jpg"
+            },
+            {
+                "id": "h019",
+                "fullName": "Martin Pinker",
+                "imgUrl": "https://i.imgur.com/bjkkNcs.jpg"
+            },
+            {
+                "id": "h020",
+                "fullName": "Phillip Schiller",
+                "imgUrl": "https://i.imgur.com/jI0h1Jx.jpg"
+            },
+            {
+                "id": "h021",
+                "fullName": "Samer Ahmed",
+                "imgUrl": "https://i.imgur.com/1tiXpP5.jpg"
+            },
+            {
+                "id": "h022",
+                "fullName": "Mikkel Svane",
+                "imgUrl": "https://i.imgur.com/xwr0rs3.jpg"
+            },
+            {
+                "id": "h023",
+                "fullName": "Chris Coyier",
+                "imgUrl": "https://i.imgur.com/uS6hY6M.jpg"
+            },
+            {
+                "id": "h024",
+                "fullName": "Steven Huang",
+                "imgUrl": "https://i.imgur.com/NinZtCI.jpg"
+            },
+            {
+                "id": "h025",
+                "fullName": "Rachel Andrew",
+                "imgUrl": "https://i.imgur.com/MU554vI.jpg"
+            },
+            {
+                "id": "h026",
+                "fullName": "Maria Pedro",
+                "imgUrl": "https://i.imgur.com/7ubtvjb.jpg"
+            },
+            {
+                "id": "h027",
+                "fullName": "Albert Muller",
+                "imgUrl": "https://i.imgur.com/bLE4Ofm.jpg"
+            },
+            {
+                "id": "h028",
+                "fullName": "Gretel Zigler",
+                "imgUrl": "https://i.imgur.com/X1syyzf.jpg"
+            }
+        ],
+        "reviews": [
+            {
+                "id": "r018",
+                "fullName": "Kisor Summ",
+                "imgUrl": "https://i.imgur.com/mjsK0zB.jpg",
+                "review": "I really enjoyed listening to the host and everyone's questions.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r019",
+                "fullName": "Vlad Kozilsky",
+                "imgUrl": "https://i.imgur.com/d7djmap.png",
+                "review": "The host was very nice and explained everything very well.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r020",
+                "fullName": "Silvio Raton",
+                "imgUrl": "https://i.imgur.com/1QaLpgO.jpg",
+                "review": "I never listened to a lecture in this field and I found it very interesting.",
+                "givenRating": "3"
+            },
+            {
+                "id": "r021",
+                "fullName": "Gilbert Carson",
+                "imgUrl": "https://i.imgur.com/ZkW7lPu.jpg",
+                "review": "Absolutely not what I expected, I would not recommend.",
+                "givenRating": "2"
+            },
+            {
+                "id": "r022",
+                "fullName": "Jenny Moren",
+                "imgUrl": "https://i.imgur.com/C8j5ne1.jpg",
+                "review": "Impossible to talk about such a big topic in 60 minutes, I was expecting more.",
+                "givenRating": "2"
+            }
+        ],
+        "country": "United States",
+        "lang": "English",
+        "desc": "Work plays a significant part in all our lives. It's not an easy task to achieve work-life balance in today’s unpredictable and fast-paced business world. As we grow increasingly more connected through technology and social media, it is becoming more and more difficult to separate work from our personal lives. It is commonplace to check emails at all hours, take business calls at the dinner table and work on our laptops on weekends. How has this become acceptable? Employers expect more from their people, which leads to them feeling more pressure to achieve greater results. Consequently, this leads to longer working hours, and less time spent at home. Join the event to learn how to better provide your employees' a proper work-life balance.",
+        "about": "Linda Branson, 36 years old from Los Angeles California, is an experienced Career Coach who wrote a full series of books about 'Organize Workspace for Better results'. She is considered one of the most appreciated Career Coachers in the field in Los Angeles.",
         "price": 20
     }
 ]
