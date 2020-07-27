@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div v-if="!isLoading" class="evento-content flex">
+    <div class="evento-content flex">
       <div class="top-desc">
         <div class="evento-details-title">
           <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}}</span>
@@ -106,10 +106,10 @@
         <section class="related-lectures-container">
           <h3>Related lectures</h3>
 
-          <el-carousel :interval="0" indicator-position="none" arrow="never" height="380px">
-            <el-carousel-item>
-              <evento-list :eventos="relatedEventos" />
-            </el-carousel-item>
+          <el-carousel :interval="0" indicator-position="none" arrow="never" height=400px>
+          <el-carousel-item >
+              <evento-list :eventos="relatedEventos"/>
+          </el-carousel-item>
           </el-carousel>
         </section>
       </div>
@@ -122,18 +122,20 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!isJoined" @click="open" class="join-btn">Book Event</button>
+     
+        <section class="action-container">
+        <button v-if="!isJoined" @click="open" class="join-btn">Join Event</button>
         <div class="evento-start" v-else>
           <div class="evento-start-txt">
-            <h3>Event starts in:</h3>
-            <i>
+            <h4>Event starts in <i>
               {{countDownMinutes}}:
-              <i v-if="(countDownSeconds < 10)">0</i>
-              {{countDownSeconds}} Minutes
-            </i>
+              <i v-if="(countDownSeconds < 10)">0</i>{{countDownSeconds}} minutes
+            </i></h4>
+            
           </div>
-          <button type="text" @click="modal" class="join-btn">Start event!</button>
+          <button type="text" @click="modal" class="start-btn">Start event !</button>
         </div>
+        </section>
 
         <h3>Event Members</h3>
         <div class="members-container">
@@ -147,16 +149,13 @@
         <evento-chat v-if="isJoined"></evento-chat>
       </div>
     </div>
-    <div v-else class="isLoading">
-      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading..." />
-    </div>
   </section>
 </template>
 
 
 <script>
-import { eventoService } from "../services/evento.service.js";
 import socketService from "../services/socket.service.js";
+import { eventoService } from "../services/evento.service.js";
 import Avatar from "vue-avatar";
 import eventoList from "../components/evento-list.cmp";
 import eventoChat from "../components/evento-chat.cmp";
@@ -166,11 +165,11 @@ export default {
   data() {
     return {
       evento: null,
-      isJoined: false, //is jonind
+      isJoined: false, 
       guestToAdd: {},
       memberToAdd: null,
-      countDownSeconds: 59,
-      countDownMinutes: 14,
+      countDownSeconds: 31,
+      countDownMinutes: 4,
     };
   },
 
@@ -179,12 +178,10 @@ export default {
       return this.$store.getters.eventos;
     },
     relatedEventos() {
-      return this.$store.getters.eventos.filter(
-        (evento) =>
-          evento.tags.find((tag) =>
-            this.evento.tags.find((taag) => taag === tag)
-          ) && evento._id !== this.evento._id
-      );
+      // return this.$store.getters.eventos.filter()
+      return this.$store.getters.eventos.filter
+      (evento => evento.tags.find(tag => this.evento.tags.find(taag => taag === tag)) && evento._id !== this.evento._id)     
+
     },
     loggedInUser() {
       return this.$store.getters.loggedInUser;
@@ -192,18 +189,20 @@ export default {
     timerOn() {
       return (this.timer = setInterval(this.timeDown(), 1000));
     },
-    isLoading() {
-      return this.$store.getters.isLoading;
-    },
   },
 
   methods: {
     modal() {
       this.$alert(
-        '<iframe width="390" height="200" src="https://www.youtube.com/embed/T7hCMAckRdg?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<iframe width="590" height="390" src="https://www.youtube.com/embed/T7hCMAckRdg?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         "The event will start soon...",
         {
           dangerouslyUseHTMLString: true,
+          customClass: "video-modal",
+          confirmButtonText: "Hide",
+          confirmButtonClass: "video-modal-confirm-btn",
+          // cancelButtonText: "Cancel",
+          cancelButtonClass: "video-modal-cancel-btn"
         }
       );
     },
@@ -222,15 +221,21 @@ export default {
     },
 
     open() {
-      this.$confirm(`You are about to join "${this.evento.title}"`, "Book", {
-        confirmButtonText: "OK",
-        cancelButtonText: "Cancel",
-        customClass: "join-modal",
-      })
+      this.$confirm(
+        `You are about to join "${this.evento.title}"`,
+        "Join Event",
+        {
+          customClass: "join-modal",
+          confirmButtonText: "OK",
+          confirmButtonClass: "join-modal-confirm-btn",
+          cancelButtonText: "Cancel",
+          cancelButtonClass: "join-modal-cancel-btn"
+        }
+      )
         .then(() => {
           this.$message({
             type: "success",
-            message: "Book completed!",
+            message: "Completed! You can start the event",
           });
           this.joinEvent();
           this.countDownTimer();
@@ -252,7 +257,7 @@ export default {
       if (this.loggedInUser) {
         this.memberToAdd = this.loggedInUser;
       } else {
-        this.memberToAdd = this.guestToAdd;
+        this.evento.members.push(this.guestToAdd);
       }
       const member = this.memberToAdd
       socketService.emit("new member", member);

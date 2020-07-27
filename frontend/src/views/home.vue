@@ -30,7 +30,7 @@
           <h3>Popular </h3>
           <h3><router-link to="/events">Show all</router-link></h3>
         </div>
-        <el-carousel :initial-index="4" :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel :initial-index="4" :interval="0" indicator-position="none" arrow="never" height=400px>
           
         <el-carousel-item >
             <evento-list :eventos="popularEventos" />
@@ -41,7 +41,7 @@
           <h3>Technology </h3>
           <h3><router-link to="/events">Show all</router-link></h3>
         </div>
-        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=400px>
         <el-carousel-item >
             <evento-list :eventos="technologyEventos" />
         </el-carousel-item>
@@ -52,7 +52,7 @@
           <h3><router-link to="/events">Show all</router-link></h3>
         </div>
 
-        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=400px>
         <el-carousel-item >
             <evento-list :eventos="upcomingEventos" />
         </el-carousel-item>

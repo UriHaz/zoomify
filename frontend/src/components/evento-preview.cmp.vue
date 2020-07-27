@@ -20,7 +20,7 @@
         <p class="fas fa-star">{{evento.avgRating}}</p>
         <span class="raters"> ({{evento.raters}}) </span>
       </div>
-      <p class="event-date">{{eventoDate}}</p>
+      <p class="event-date">{{eventoDate.toLocaleString()}}</p>
       </div>
       </div>
 

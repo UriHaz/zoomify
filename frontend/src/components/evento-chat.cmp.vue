@@ -14,7 +14,7 @@
         <li v-for="(msg, idx) in msgs" :key="idx">{{msg.from}}: {{msg.txt}}</li>
       </ul>
       </div>
-      
+
       <form class="chat-input" @submit.prevent="sendMsg">
         <input @input="userTyping" type="text" v-model="msg.txt" placeholder="Type your massege" />
         <button class="send-btn">Send</button>

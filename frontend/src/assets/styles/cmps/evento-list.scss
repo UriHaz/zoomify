@@ -1,8 +1,11 @@
 .list-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
-    row-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // justify-items: auto;
+    row-gap: 3.5rem;
+    column-gap: 2rem;
     // margin-top: 1rem;
 
 

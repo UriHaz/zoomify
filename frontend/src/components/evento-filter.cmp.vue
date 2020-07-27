@@ -2,7 +2,8 @@
   <section class="search-bar">
 
     <el-input
-      class="search"
+
+      class="el-input search"
       prefix-icon="el-icon-search"
       @input="filterOn"
       placeholder="Search events ..."
@@ -10,7 +11,7 @@
     ></el-input>
     <!-- <br /> -->
 
-    <el-select v-model="filterBy.sort" @change="filterOn">
+    <el-select class="el-select" v-model="filterBy.sort" @change="filterOn">
       <el-option label="sort by: title" value="title"></el-option>
       <el-option label="sort by: date" value="startDate"></el-option>
     </el-select>
@@ -31,7 +32,7 @@
       <el-option label="business" value="business"></el-option>
       <el-option label="sales" value="sales"></el-option>
     </el-select>
-    <el-button  @click="clearAll">Clear all</el-button>
+    <el-button class="el-button" @click="clearAll">Clear all</el-button>
  
 
 
