@@ -1,27 +1,25 @@
+
 .home {
-
-  .eventos-line{
-    margin: 3rem 7.3rem ;
-    h3:first-child {
-      border-bottom: 1px solid  rgb(224, 224, 224);
-
-    }
-
+  
+  .el-row {
+        margin-top: 1rem;
+      }
     
-  }
+    .carousel-h3{
 
-  el-carousel-item {
-    margin: 100px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
+      margin: 1rem 4.5rem 1rem 4.5rem;
+      border-top: 1px solid  rgb(209, 209, 209);
+      border-bottom: 1px solid  rgb(209, 209, 209);
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $clr6;
+      }
+    }
 }
  
-
-
 .centered-header {
   
     color: white;

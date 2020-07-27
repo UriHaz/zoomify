@@ -24,7 +24,12 @@
 
     <section class="hp-content">
 
-        <h3>Popular events <router-link to="/events">/ Show all events</router-link></h3>
+      <evento-tags></evento-tags>
+
+        <div class="carousel-h3">
+          <h3>Popular events </h3>
+          <h3><router-link to="/events">Show all events</router-link></h3>
+        </div>
         <el-carousel :initial-index="4" :interval="0" indicator-position="none" arrow="never" height=380px>
           
         <el-carousel-item >
@@ -32,14 +37,21 @@
         </el-carousel-item>
         </el-carousel>
 
-        <h3> Technologic events <router-link to="/events">/ Show all events</router-link></h3>
+        <div class="carousel-h3">
+          <h3>Technologic events </h3>
+          <h3><router-link to="/events">Show all events</router-link></h3>
+        </div>
         <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
         <el-carousel-item >
             <evento-list :eventos="technologyEventos" />
         </el-carousel-item>
         </el-carousel>
 
-        <h3>Upcoming events <router-link to="/events">/ Show all events</router-link></h3>
+        <div class="carousel-h3">
+          <h3>Upcoming events </h3>
+          <h3><router-link to="/events">Show all events</router-link></h3>
+        </div>
+
         <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
         <el-carousel-item >
             <evento-list :eventos="upcomingEventos" />
@@ -71,6 +83,7 @@
 import eventoPreview from "../components/evento-preview.cmp";
 import eventoList from "../components/evento-list.cmp";
 import eventoFilter from "../components/evento-filter.cmp";
+import eventoTags from "../components/evento-tags.cmp";
 
 export default {
   name: "home",
@@ -119,7 +132,8 @@ export default {
   components: {
     eventoList,
     eventoFilter,
-    eventoPreview
+    eventoPreview,
+    eventoTags
   }
 };
 </script>
