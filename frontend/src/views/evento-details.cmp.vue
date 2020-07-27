@@ -165,7 +165,7 @@ export default {
   methods: {
     modal() {
       this.$alert(
-        '<iframe width="390" height="200" src="https://www.youtube.com/embed/ncXwjkm563w?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<iframe width="390" height="200" src="https://www.youtube.com/embed/T7hCMAckRdg?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         "The event will start soon...",
         {
           dangerouslyUseHTMLString: true,
