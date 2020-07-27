@@ -1,6 +1,6 @@
 .nav-bar {
   padding: 1rem 1rem 0 1rem;
-  color: rgb(59, 59, 59);
+  color: $clr3;
   font-size: 1.5rem;
   border-bottom: 1px solid  rgb(224, 224, 224);
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: $clr2;
+    color: $clr3;
     background-color: $clr7;
     // padding: 5px 12px;
     border-radius: 1.5rem;
@@ -41,7 +41,7 @@
     height: 52px;
 
     a {
-      color: $clr2;
+      color: $clr3;
       font-size: 1rem;
       margin-right: 2rem;
       // padding: 1rem 1rem 1rem 1rem;

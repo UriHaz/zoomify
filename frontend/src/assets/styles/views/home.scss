@@ -13,12 +13,16 @@
       display: flex;
       justify-content: space-between;
 
+      h3 {
+        color: $clr3;
+      }
+
       a {
         text-decoration: none;
-        color: $clr6;
+        color: #705285e0;
 
           &:hover{
-         color: #3480cc;
+         color: #3480ccad;
          }
 
       }
@@ -62,14 +66,14 @@
  
 .hp-btn {
   color: $clr5;
-  background-color: #40a0ff6b;
+  background-color: #40a0ff4d;
   margin: 0 0  0 1rem;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 3rem;
   border: solid;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.808);
   border-radius: 0.5rem;
   // width: 15rem;
   text-decoration: none;
