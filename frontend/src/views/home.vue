@@ -27,8 +27,8 @@
       <evento-tags></evento-tags>
 
         <div class="carousel-h3">
-          <h3>Popular events </h3>
-          <h3><router-link to="/events">Show all events</router-link></h3>
+          <h3>Popular </h3>
+          <h3><router-link to="/events">Show all</router-link></h3>
         </div>
         <el-carousel :initial-index="4" :interval="0" indicator-position="none" arrow="never" height=380px>
           
@@ -38,8 +38,8 @@
         </el-carousel>
 
         <div class="carousel-h3">
-          <h3>Technologic events </h3>
-          <h3><router-link to="/events">Show all events</router-link></h3>
+          <h3>Technology </h3>
+          <h3><router-link to="/events">Show all</router-link></h3>
         </div>
         <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
         <el-carousel-item >
@@ -48,8 +48,8 @@
         </el-carousel>
 
         <div class="carousel-h3">
-          <h3>Upcoming events </h3>
-          <h3><router-link to="/events">Show all events</router-link></h3>
+          <h3>Upcoming </h3>
+          <h3><router-link to="/events">Show all</router-link></h3>
         </div>
 
         <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
