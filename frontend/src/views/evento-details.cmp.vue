@@ -125,7 +125,7 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!join" @click="open" class="join-btn">Book Event</button>
+        <button v-if="!join" @click="open" class="join-btn">Join Event</button>
         <div class="evento-start" v-else>
           <div class="evento-start-txt">
             <h3>Event starts in:</h3>
@@ -192,10 +192,15 @@ export default {
   methods: {
     modal() {
       this.$alert(
-        '<iframe width="390" height="200" src="https://www.youtube.com/embed/T7hCMAckRdg?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<iframe width="590" height="390" src="https://www.youtube.com/embed/T7hCMAckRdg?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         "The event will start soon...",
         {
           dangerouslyUseHTMLString: true,
+          customClass: "video-modal",
+          confirmButtonText: "Hide",
+          confirmButtonClass: "video-modal-confirm-btn",
+          // cancelButtonText: "Cancel",
+          cancelButtonClass: "video-modal-cancel-btn"
         }
       );
     },
@@ -216,17 +221,19 @@ export default {
     open() {
       this.$confirm(
         `You are about to join "${this.evento.title}"`,
-        "Book",
+        "Join Event",
         {
+          customClass: "join-modal",
           confirmButtonText: "OK",
+          confirmButtonClass: "join-modal-confirm-btn",
           cancelButtonText: "Cancel",
-          customClass: "join-modal"
+          cancelButtonClass: "join-modal-cancel-btn"
         }
       )
         .then(() => {
           this.$message({
             type: "success",
-            message: "Book completed!",
+            message: "Completed! You can start the event",
           });
           this.joinEvent();
           this.countDownTimer();
