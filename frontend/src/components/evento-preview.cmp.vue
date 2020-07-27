@@ -1,6 +1,6 @@
 <template>
-  <router-link :to="'/event/details/' + evento._id">
-    <div class="evento-preview">
+  <router-link :to="'/event/details/' + this.evento._id">
+    <div class="evento-preview" >
       <!-- <img v-if="evento.imgUrls" :src="evento.imgUrls"> -->
       <!-- <img class="evento-img" v-else :src="`https://www.jeffbullas.com/wp-content/uploads/2017/06/Why-Live-Events-Should-Be-At-The-Center-Of-Your-Marketing-Strategy.jpg`"> -->
       <img class="evento-img" :src="evento.imgUrl" />

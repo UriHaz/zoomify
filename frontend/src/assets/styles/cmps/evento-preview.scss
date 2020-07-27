@@ -40,17 +40,12 @@
             display: flex;
             justify-content: center;
        }
-   }
-    .evento-preview:hover {
-        transform: scale(1.025);
-   }
+   
     .card-h3 {
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         font-size: 0.9rem;
-        &:hover {
-            color: #5e17eb;
-       }
+     
    }
     .card-h4 {
         font-family: 'Open Sans', sans-serif;
@@ -80,4 +75,11 @@
   }
 
   }
+
+  }
+    .evento-preview:hover {
+        // transform: scale(1.025);
+        background-color: rgba(248, 244, 244, 0.685);
+
+   }
   

@@ -1,10 +1,10 @@
 .about {
-  color: #5e17eb;
+  color: #978d8df6;
   text-align: center;
 
   .about-h1 {
     font-size: 3.5rem;
-    color: #5e17eb;;
+    color: #978d8df6;;
     }
   
     .about-h2 {
@@ -18,10 +18,13 @@
       font-weight: lighter;
       font-size: 1.2rem;
       font-weight: bold;
+            color: #646161f6;
+
     }
     
     .about-card-h4 {
       font-weight: lighter;
+      
     }
 
 
@@ -36,8 +39,8 @@
     page-break-inside: avoid;
     width: 15.2rem;
     height: 23rem;
-    border: 1rem;
-    border-width: 0.2rem;
+    // border: 1rem;
+    // border-width: 0.2rem;
     border-color: #e5e5e5;
     border-radius: 0.5rem;
     border-style: solid;
@@ -59,22 +62,22 @@
   .contact-btn {
     margin: 1rem 5.5rem;
     color: white;
-    background-color: #5e17eb;
+    background-color: #906ed4;
     width: 4rem;
     font-size: 0.8rem;
     font-weight: lighter;
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     outline: none;
-    border-style: solid;
-    border-color: #5e17eb;
+    // border-style: solid;
+    // border-color: #d7d5da;
     border-radius: 0.5rem;
     cursor: pointer;
 
     &:hover{
       // font-weight: bold;
-      color: #5e17eb;
-      background-color: #e5e5e5;
+      // color: #5e17eb;
+      background-color: #bbb9c0;
     // background-image: linear-gradient(120deg, #ff6600 0%, #ffe600 100%);
     }
   }

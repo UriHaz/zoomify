@@ -4,7 +4,7 @@
       <div>
         <div class="centered-header">
           <h1 class="hp-h1">
-            Join Live Events
+            Join Live Tech Events
             <br />from Around the World
           </h1>
      <div class="hp-link-filter">
@@ -22,25 +22,58 @@
         <!-- <img src="../assets/imgs/hero2.jpeg" class="home-hero" /> -->
 
 
-  <section class="hp-content">
-    <div >
-      
-        <div class="eventos-line">
-        <h3>Popular events <router-link to="/events">/ Show all events</router-link></h3>
-           <evento-list :eventos="popularEventos" />
+    <section class="hp-content">
+
+      <evento-tags></evento-tags>
+
+        <div class="carousel-h3">
+          <h3>Popular </h3>
+          <h3><router-link to="/events">Show all</router-link></h3>
         </div>
-        <div class="eventos-line">
-        <h3> Technologic events <router-link to="/events">/ Show all events</router-link></h3>
-           <evento-list :eventos="technologyEventos" />
+        <el-carousel :initial-index="4" :interval="0" indicator-position="none" arrow="never" height=380px>
+          
+        <el-carousel-item >
+            <evento-list :eventos="popularEventos" />
+        </el-carousel-item>
+        </el-carousel>
+
+        <div class="carousel-h3">
+          <h3>Technology </h3>
+          <h3><router-link to="/events">Show all</router-link></h3>
         </div>
-        <div class="eventos-line">
-        <h3>Upcoming events <router-link to="/events">/ Show all events</router-link></h3>
-           <evento-list :eventos="upcomingEventos" />
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel-item >
+            <evento-list :eventos="technologyEventos" />
+        </el-carousel-item>
+        </el-carousel>
+
+        <div class="carousel-h3">
+          <h3>Upcoming </h3>
+          <h3><router-link to="/events">Show all</router-link></h3>
         </div>
 
-    </div>
-  </section>
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel-item >
+            <evento-list :eventos="upcomingEventos" />
+        </el-carousel-item>
+        </el-carousel>
+
+        
+          <!-- <div class="eventos-line">
+          <h3>Popular events <router-link to="/events">/ Show all events</router-link></h3>
+              <evento-list :eventos="popularEventos" />
+          </div>
+          <div class="eventos-line">
+          <h3> Technologic events <router-link to="/events">/ Show all events</router-link></h3>
+              <evento-list :eventos="technologyEventos" />
+          </div>
+          <div class="eventos-line">
+          <h3>Upcoming events <router-link to="/events">/ Show all events</router-link></h3>
+              <evento-list :eventos="upcomingEventos" />
+          </div> -->
+
     </section>
+  </section>
 
      <!-- eventos.tags.includes('technology') -->
     
@@ -50,6 +83,7 @@
 import eventoPreview from "../components/evento-preview.cmp";
 import eventoList from "../components/evento-list.cmp";
 import eventoFilter from "../components/evento-filter.cmp";
+import eventoTags from "../components/evento-tags.cmp";
 
 export default {
   name: "home",
@@ -75,6 +109,17 @@ export default {
     }
 
   },
+  methods: {
+    carousel() {
+      this.$alert(
+        '<iframe width="390" height="200" src="https://www.youtube.com/embed/ncXwjkm563w?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        "The event will start soon...",
+        {
+          dangerouslyUseHTMLString: true,
+        }
+      );
+    },
+  },
   created() {
     this.$store.dispatch({ type: "loadEventos"});
     // this.$store.getters.eventos;
@@ -87,7 +132,8 @@ export default {
   components: {
     eventoList,
     eventoFilter,
-    eventoPreview
+    eventoPreview,
+    eventoTags
   }
 };
 </script>

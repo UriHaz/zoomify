@@ -5,7 +5,6 @@
       <div class="chat-header">
         <p
           v-if="isTyping"
-          v-show="(msg.from !== loggedInUser.fullName)"
           class="typing"
         >{{msg.from}} is typing...</p>
         <p v-else> Online </p>
@@ -32,7 +31,7 @@ export default {
   data() {
     return {
       evento: null,
-      msg: { from: "Me", txt: "" },
+      msg: { from: "Na'ama", txt: "" },
       msgs: [],
       txt: "is typing...",
       isTyping: false,
@@ -59,7 +58,8 @@ export default {
     },
 
     showUserTyping(msg) {
-      this.msg.from = this.$store.getters.loggedInUser.fullName;
+      // this.msg.from = this.$store.getters.loggedInUser.fullName;
+      this.msg.from = "Na'ama";
       this.isTyping = true;
 
       setTimeout(this.stopTyping, 2000);

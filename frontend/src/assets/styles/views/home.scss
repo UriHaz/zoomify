@@ -1,23 +1,34 @@
+
 .home {
-
-  .eventos-line{
-    margin: 3rem 7.3rem ;
-    h3:first-child {
-      border-bottom: 1px solid  rgb(224, 224, 224);
-
-    }
-
+  
+  .el-row {
+        margin-top: 1rem;
+      }
     
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
+    .carousel-h3{
+
+      margin: 1rem 4.5rem 1rem 4.5rem;
+      border-top: 1px solid  rgb(209, 209, 209);
+      border-bottom: 1px solid  rgb(209, 209, 209);
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        color: $clr3;
+      }
+
+      a {
+        text-decoration: none;
+        color: #705285e0;
+
+          &:hover{
+         color: #3480ccad;
+         }
+
+      }
+    }
 }
  
-
-
 .centered-header {
   
     color: white;
@@ -55,15 +66,14 @@
  
 .hp-btn {
   color: $clr5;
-  background-color: $clr9;
+  background-color: #40a0ff4d;
   margin: 0 0  0 1rem;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 3rem;
-  outline: none;
-  border-style: solid;
-  border-color: $clr9;
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.808);
   border-radius: 0.5rem;
   // width: 15rem;
   text-decoration: none;
@@ -71,7 +81,7 @@
   cursor: pointer;
 
   &:hover{
-    background-color: $clr1;
+    background-color: #669fd8b7;
   }
 }
 

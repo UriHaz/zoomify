@@ -7,5 +7,32 @@
         "imgUrl": "https://i.imgur.com/glxWil9.jpg",
         "createdEventos": [],
         "signedEventos": []
+    },
+    {
+        "fullName": "Tom Shalem",
+        "email": "tom@shalem.com",
+        "password": "red",
+        "isAdmin": false,
+        "imgUrl": "https://i.imgur.com/RLTJjRD.jpg",
+        "createdEventos": [],
+        "signedEventos": []
+    },
+    {
+        "fullName": "Uri Hazan",
+        "email": "uri@hazan.com",
+        "password": "red",
+        "isAdmin": false,
+        "imgUrl": "https://i.imgur.com/HEfoDw0.jpg",
+        "createdEventos": [],
+        "signedEventos": []
+    },
+    {
+        "fullName": "Na'ama Shoshani",
+        "email": "naama@shoshani.com",
+        "password": "red",
+        "isAdmin": false,
+        "imgUrl": "https://i.imgur.com/1cRHS0n.jpg",
+        "createdEventos": [],
+        "signedEventos": []
     }
 ]

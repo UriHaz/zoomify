@@ -133,7 +133,7 @@
         "reviews": [
             {
                 "id": "r001",
-                "fullName": "Keniv Konard",
+                "fullName": "Kevin Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
                 "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
@@ -175,7 +175,7 @@
     },
     {
         "title": "Some Simple Rules for a Perfect Coding",
-        "imgUrl": "https://i.imgur.com/QwZ8IDo.jpg",
+        "imgUrl": "https://i.imgur.com/z2vrf0q.jpg",
         "avgRating": 4.2,
         "raters": 67,
         "createdBy": {
@@ -339,13 +339,6 @@
                 "imgUrl": "https://i.imgur.com/7pkphtf.jpg",
                 "txt": "I was one of the firsts to join this lecture... enjoyed every minute.",
                 "givenRating": "4"
-            },
-            {
-                "id": "r011",
-                "fullName": "Evan West",
-                "imgUrl": "https://i.imgur.com/GxvAgEo.jpg",
-                "txt": "Best lecture I've had for a long time! Waiting for the host's next lecture.",
-                "givenRating": "5"
             }
         ],
         "country": "England",
@@ -1190,7 +1183,7 @@
             },
             {
                 "id": "r001",
-                "fullName": "Keniv Konard",
+                "fullName": "Kevin Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
                 "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
@@ -1218,7 +1211,7 @@
     },
     {
         "title": "How SEO & PPC Supports Each Other",
-        "imgUrl": "https://i.imgur.com/NRbHF5C.jpg",
+        "imgUrl": "https://i.imgur.com/GbptbIO.jpg",
         "avgRating": 5,
         "raters": 100,
         "createdBy": {
@@ -1374,6 +1367,13 @@
                 "imgUrl": "https://i.imgur.com/reQpeUT.jpg",
                 "txt": "I reached out to the host privately and got lots of help, thanks!",
                 "givenRating": "4"
+            },
+            {
+                "id": "r008",
+                "fullName": "Alex Moor",
+                "imgUrl": "https://i.imgur.com/tbYWSGQ.jpg",
+                "review": "The host has some mistakes but other than that I was positively stunned.",
+                "givenRating": "3"
             }
         ],
         "country": "United States",
@@ -1730,7 +1730,7 @@
     },
     {
         "title": "How to Effectively Market your Awesome Product",
-        "imgUrl": "https://i.imgur.com/VTH5vZq.jpg",
+        "imgUrl": "https://i.imgur.com/G4ocdBn.jpg",
         "avgRating": 3.1,
         "raters": 76,
         "createdBy": {
@@ -2221,7 +2221,7 @@
             },
             {
                 "id": "r001",
-                "fullName": "Keniv Konard",
+                "fullName": "Kevin Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
                 "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
@@ -2422,7 +2422,7 @@
     },
     {
         "title": "Mastering HTML & CSS in 60 Minutes",
-        "imgUrl": "https://i.imgur.com/CeUlUj0.jpg",
+        "imgUrl": "https://i.imgur.com/LVeHbRs.jpg",
         "avgRating": 4.7,
         "raters": 78,
         "createdBy": {
@@ -2579,6 +2579,13 @@
                 "imgUrl": "https://i.imgur.com/elpvmwE.jpg",
                 "txt": "I asked the host to talk about a specific topic and so he did! thank you!",
                 "givenRating": "4"
+            },
+            {
+                "id": "r013",
+                "fullName": "Robert Laton",
+                "imgUrl": "https://i.imgur.com/iyp1PLl.jpg",
+                "review": "The host was so pleasant in explaining everything I didn't understand.",
+                "givenRating": "5"
             }
         ],
         "country": "India",
@@ -2589,7 +2596,7 @@
     },
     {
         "title": "Node, APIs, and all the REST",
-        "imgUrl": "https://i.imgur.com/FtmGPew.jpg",
+        "imgUrl": "https://i.imgur.com/hIVk0NL.jpg",
         "avgRating": 4.9,
         "raters": 68,
         "createdBy": {
@@ -2936,7 +2943,7 @@
     },
     {
         "title": "So, What's Really New With Vue?",
-        "imgUrl": "https://i.imgur.com/Hojujnk.jpg",
+        "imgUrl": "https://i.imgur.com/5juW7JZ.jpg",
         "avgRating": 4.7,
         "raters": 96,
         "createdBy": {
@@ -3249,7 +3256,7 @@
             },
             {
                 "id": "r001",
-                "fullName": "Keniv Konard",
+                "fullName": "Kevin Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
                 "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
@@ -3445,7 +3452,7 @@
     },
     {
         "title": "The Grand History of JavaScript",
-        "imgUrl": "https://i.imgur.com/8TZUQaV.jpg",
+        "imgUrl": "https://i.imgur.com/mjfSTok.jpg",
         "avgRating": 4.8,
         "raters": 78,
         "createdBy": {
@@ -3782,7 +3789,7 @@
     },
     {
         "title": "Time to Learn Some Sass Tricks & Hacks",
-        "imgUrl": "https://i.imgur.com/Kt9mDmi.jpg",
+        "imgUrl": "https://i.imgur.com/fSHOWtL.jpg",
         "avgRating": 4.1,
         "raters": 54,
         "createdBy": {
@@ -4253,7 +4260,7 @@
             },
             {
                 "id": "r001",
-                "fullName": "Keniv Konard",
+                "fullName": "Kevin Konard",
                 "imgUrl": "https://i.imgur.com/UvUomIa.jpg",
                 "txt": "I asked too many questions and the event host was so patient, thank you!",
                 "givenRating": "4"
