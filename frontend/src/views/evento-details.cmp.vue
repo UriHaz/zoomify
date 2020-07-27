@@ -18,8 +18,9 @@
       <div class="top-desc">
         <div class="evento-details-title">
           <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}}</span>
+          {{evento.avgRating}}
           <i class="fas fa-star"></i>
-          {{evento.createdBy.rating}} ({{evento.raters}})
+          ({{evento.raters}})
           <h1 class="evento-details-h1">{{evento.title}}</h1>
           <h2 class="evento-details-h2">By {{evento.createdBy.fullName}}</h2>
 
@@ -68,8 +69,7 @@
           <p>{{evento.about}}</p>
         </div>
 
-        <h3>Reviews</h3>
-        <div class="reviews">
+        <!-- <div class="reviews">
           <div v-for="review in evento.reviews" :key="review.id">
             <avatar :src="review.imgUrl"></avatar>
             <p class="review-title">
@@ -79,15 +79,44 @@
             </p>
             <p>{{review.txt}}</p>
           </div>
+        </div> -->
+
+        <section class="reviews-container">
+        <div class="flex space-between">
+        <h3>Reviews</h3>
+        <h4>Show all</h4>
         </div>
 
-        <h3>Related lectures</h3>
-
-        <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+        <el-carousel :interval="0" indicator-position="none" arrow="never" height=260px>
         <el-carousel-item >
-            <evento-list :eventos="relatedEventos"/>
+        <div class="reviews">
+          <div class="review" v-for="review in evento.reviews" :key="review.id">
+            <avatar :src="review.imgUrl"></avatar>
+            <p class="review-title">{{review.fullName}}</p> 
+              <p>{{review.givenRating}} <i class="fas fa-star"></i></p>
+            
+            <p>{{review.txt}}</p>
+          </div>
+        </div>
+
         </el-carousel-item>
         </el-carousel>
+
+        </section>
+
+
+        <section class="related-lectures-container">
+
+          <h3>Related lectures</h3>
+
+          <el-carousel :interval="0" indicator-position="none" arrow="never" height=380px>
+          <el-carousel-item >
+              <evento-list :eventos="relatedEventos"/>
+          </el-carousel-item>
+          </el-carousel>
+
+        </section>
+        
       </div>
       <div class="evento-join">
         <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
@@ -172,7 +201,7 @@ export default {
   methods: {
     modal() {
       this.$alert(
-        '<iframe width="390" height="200" src="https://www.youtube.com/embed/ncXwjkm563w?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<iframe width="390" height="200" src="https://www.youtube.com/embed/T7hCMAckRdg?autoplay=1"controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         "The event will start soon...",
         {
           dangerouslyUseHTMLString: true,

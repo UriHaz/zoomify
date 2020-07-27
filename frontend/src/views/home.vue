@@ -105,7 +105,7 @@ export default {
       return this.$store.getters.eventos.filter(evento => evento.tags.find(tag => tag === "technology")).slice(0,4)     
     },
     upcomingEventos() {
-      return this.$store.getters.eventos.filter(evento => evento.startDate <= "2020-07-30").slice(0,4)  
+      return this.$store.getters.eventos.filter(evento => evento.startDate <= "2020-07-31").slice(0,4)  
     }
 
   },
