@@ -19,18 +19,18 @@ function remove(userId) {
 }
 
 function update(user) {
-    console.log('user in service:', user);
     return httpService.put(`user/${user._id}`, user)
 }
 
 async function login(userCred) {
-    const user = await httpService.post('auth/login', userCred)
-    return _handleLogin(user)
+    console.log('user in service:', userCred);
+    await httpService.post('auth/login', userCred)
+    // return _handleLogin(user)
 }
 
 async function signup(userCred) {
-    const user = await httpService.post('auth/signup', userCred)
-    return _handleLogin(user)
+    await httpService.post('auth/signup', userCred)
+    // return _handleLogin(user)
 }
 async function logout() {
     await httpService.post('auth/logout');
@@ -41,10 +41,10 @@ function query() {
     return httpService.get('user')
 }
 
-function _handleLogin(user) {
-    sessionStorage.setItem('user', JSON.stringify(user))
-    return user;
-}
+// function _handleLogin(user) {
+//     sessionStorage.setItem('user', JSON.stringify(user))
+//     return user;
+// }
 
 //
 
