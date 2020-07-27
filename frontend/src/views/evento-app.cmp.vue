@@ -13,12 +13,16 @@
 
   <div class="list-filter">
     <evento-filter @setFilter="setFilter()" />
+    
   </div>
 
   </div>
 
-  <div class="evento-list">
-    <evento-list v-if="!isLoading" :eventos="eventos" />
+  <div v-if="!isLoading" class="evento-list">
+    <evento-list  :eventos="eventos" />
+  </div>
+  <div v-else class="isLoading">
+  <img src="https://i.pinimg.com/originals/58/4b/60/584b607f5c2ff075429dc0e7b8d142ef.gif" alt="Loading...">
   </div>
 </section>
 </template>

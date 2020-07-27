@@ -1,6 +1,6 @@
 <template>
   <section v-if="evento" class="evento-details main-layout">
-    <div class="evento-details-hero">
+    <div  class="evento-details-hero">
       <div>
         <img :src="evento.imgUrls.img2" />
       </div>
@@ -12,7 +12,9 @@
       </div>
     </div>
 
-    <div class="evento-content flex">
+    
+
+    <div v-if="!isLoading" class="evento-content flex">
       <div class="top-desc">
         <div class="evento-details-title">
           <span v-for="tag in evento.tags" :key="tag" class="evento-tag">{{tag}}</span>
@@ -86,9 +88,6 @@
             <evento-list :eventos="relatedEventos"/>
         </el-carousel-item>
         </el-carousel>
-        <!-- <div class="eventos-line">
-          <evento-list :eventos="relatedEventos" />
-        </div> -->
       </div>
       <div class="evento-join">
         <form @submit.prevent="addGuest" v-if="!loggedInUser" class="guest-sign">
@@ -99,7 +98,7 @@
             <input v-model="guestToAdd.email" type="text" placeholder="Type your Email" />
           </p>
         </form>
-        <button v-if="!join" @click="open" class="join-btn">Book Event</button>
+        <button v-if="!isJoined" @click="open" class="join-btn">Book Event</button>
         <div class="evento-start" v-else>
           <div class="evento-start-txt">
             <h3>Event starts in:</h3>
@@ -120,15 +119,19 @@
             </el-tooltip>
           </div>
         </div>
-        <evento-chat v-if="join"></evento-chat>
+        <evento-chat v-if="isJoined"></evento-chat>
       </div>
     </div>
+    <div v-else class="isLoading">
+  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...">
+  </div>
   </section>
 </template>
 
 
 <script>
 import { eventoService } from "../services/evento.service.js";
+import socketService from "../services/socket.service.js";
 import Avatar from "vue-avatar";
 import eventoList from "../components/evento-list.cmp";
 import eventoChat from "../components/evento-chat.cmp";
@@ -138,8 +141,9 @@ export default {
   data() {
     return {
       evento: null,
-      join: false, //is jonind
+      isJoined: false, //is jonind
       guestToAdd: {},
+      memberToAdd:null,
       countDownSeconds: 59,
       countDownMinutes: 14,
     };
@@ -150,7 +154,6 @@ export default {
       return this.$store.getters.eventos;
     },
     relatedEventos() {
-      // return this.$store.getters.eventos.filter()
       return this.$store.getters.eventos.filter
       (evento => evento.tags.find(tag => this.evento.tags.find(taag => taag === tag)) && evento._id !== this.evento._id)     
 
@@ -161,6 +164,9 @@ export default {
     timerOn() {
       return (this.timer = setInterval(this.timeDown(), 1000));
     },
+     isLoading() {
+      return this.$store.getters.isLoading
+    }
   },
 
   methods: {
@@ -218,25 +224,30 @@ export default {
       this.evento = evento;
     },
     async joinEvent() {
-      this.join = true;
+      this.isJoined = true;
+      // var member ='';
       if (this.loggedInUser) {
-        this.evento.members.push(this.loggedInUser);
-        // await this.$store.dispatch({ type: "addEventoToUser", evento: this.evento })
+         this.memberToAdd = this.loggedInUser;
       } else {
-        this.evento.members.push(this.guestToAdd);
+        this.memberToAdd = this.guestToAdd;
       }
-      this.$store.dispatch({ type: "saveEvento", evento: this.evento });
+      socketService.emit("new member", this.memberToAdd);
+      // this.$store.dispatch({ type: "saveEvento", evento: this.evento });
     },
+
+    showMember(member){
+      this.evento.members.push(member);
+      this.$store.dispatch({ type: "saveEvento", evento: this.evento });
+    }
   
   },
   created() {
     this.$store.dispatch({ type: "loadEventos"});
     this.loadEvento();
-    
+    socketService.setup();
+    socketService.on("show member", this.showMember);
   },
-  // destroyed() {
-  //   // this.$store.dispatch({ type: "loadEventos" });
-  // },
+
 
   components: {
     Avatar,

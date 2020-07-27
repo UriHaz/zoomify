@@ -83,6 +83,9 @@ async function update(user) {
 }
 
 async function add(user) {
+    user.imgUrl = '';
+    user.createdEventos = [];
+    user.signedEventos = [];
     const collection = await dbService.getCollection('user')
     try {
         await collection.insertOne(user);
