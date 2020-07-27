@@ -27,10 +27,10 @@
           </h4>
         </div>
 
-        <div class="evento-info flex space-between">
+        <div class="evento-info">
           <p>
             <i class="far fa-clock"></i>
-            {{evento.dur}} Minutes
+             {{evento.dur}} Minutes
           </p>
           <p>
             <i class="fas fa-globe-americas"></i>
@@ -38,7 +38,7 @@
           </p>
           <p>
             <i class="fas fa-desktop"></i>
-            Join from your computer, phone, or tablet
+            Join from any media
           </p>
           <p>
             <i class="fas fa-users"></i>

@@ -45,12 +45,14 @@
     border-top: solid rgb(211, 211, 211) 1px;
     border-bottom: solid rgb(211, 211, 211) 1px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    // grid-gap: 5px;
+    
     color: $clr3;
 
     i {
         font-size: 1.5rem;
+        margin-left: 3rem;
     }
 
 }
