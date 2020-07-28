@@ -1,7 +1,8 @@
 <template>
 <section>
 
-  <div class="details-hero">
+  <!-- <div class="details-hero"> -->
+  <div class="all-events-hero">
     <h1 class="list-h1">All Events</h1>
     <img src="../assets/imgs/list-cover.jpg" class="hero-list-img" />
     <!-- <img src="../assets/imgs/hero-list.jpg" class="hero-list-img" /> -->
